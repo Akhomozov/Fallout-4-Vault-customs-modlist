@@ -1,6 +1,6 @@
 {
-  "files_scanned": 460,
-  "manifest_files_verified": 448,
+  "files_scanned": 462,
+  "manifest_files_verified": 447,
   "findings": [],
   "runtime_tested": false,
   "scope": "Known local identifiers, paths, credential signatures; plain bytes, UTF-16 and CWS SWF. Not proof of absence of every possible secret."

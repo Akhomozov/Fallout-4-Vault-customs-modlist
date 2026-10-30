@@ -59,7 +59,7 @@ def main():
     parser.add_argument('--source', required=True, type=Path)
     args = parser.parse_args()
     source = args.source.resolve()
-    repo = Path(__file__).resolve().parents[1]
+    repo = Path(__file__).resolve().parents[2]
     assert source != repo and (source/'ModOrganizer.ini').is_file()
     # Re-export must be reviewed rather than silently leave stale files in the package.
     assert not (repo/'mods').exists(), 'mods already exists; use a fresh export directory'
@@ -95,7 +95,9 @@ def main():
             rel = p.relative_to(source)
             sub = p.relative_to(source/'mods'/name)
             why = None
-            if '.bak' in p.name.lower() or p.suffix.lower() in {'.pdb', '.log', '.tmp', '.mohidden'}:
+            if '.readme.' in p.name.lower():
+                why = 'development sidecar document'
+            elif '.bak' in p.name.lower() or p.suffix.lower() in {'.pdb', '.log', '.tmp', '.mohidden'}:
                 why = 'backup/debug/cache'
             elif len(sub.parts) == 1 and p.suffix.lower() not in {'.esp', '.esm', '.esl', '.ba2'}:
                 why = 'MO2 metadata or development document'
@@ -124,8 +126,8 @@ def main():
                 'files': files, 'excluded': excluded, 'sanitized': changes,
                 'source_files_unchanged': True, 'runtime_tested': False,
                 'redistribution_rights_reviewed': False}
-    (repo/'manifests').mkdir(exist_ok=True)
-    (repo/'manifests/export.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (repo/'dev/manifests').mkdir(exist_ok=True)
+    (repo/'dev/manifests/export.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:manifest[k] for k in ('runtime_bytes','source_files_unchanged')},indent=2))
     print(f'Mods: {len(active)}, exported files: {len(files)}, excluded: {len(excluded)}, sanitized: {len(changes)}')
 

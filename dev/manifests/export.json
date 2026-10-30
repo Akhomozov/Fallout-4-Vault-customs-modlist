@@ -69,7 +69,7 @@
     "Vault_customs_corpse_console_f10",
     "Vault_customs_corpse_trace"
   ],
-  "runtime_bytes": 136522341,
+  "runtime_bytes": 136521104,
   "files": [
     {
       "path": "profiles/Vault customs RUS/modlist.txt",
@@ -436,12 +436,6 @@
       "bytes": 65807,
       "sha256": "1f0e29c5ec64ab9ba02d485766cf04b1a026b8457622e50900a4b0b023eccbdb",
       "source_sha256": "1f0e29c5ec64ab9ba02d485766cf04b1a026b8457622e50900a4b0b023eccbdb"
-    },
-    {
-      "path": "mods/Vault_customs_russian_strings_fix/Interface/MainMenu.swf.README.txt",
-      "bytes": 1237,
-      "sha256": "ecc1d19551f8f32930ebdeb633eca93fd7a44b105ade7083edbbf9a6cf6827f8",
-      "source_sha256": "ecc1d19551f8f32930ebdeb633eca93fd7a44b105ade7083edbbf9a6cf6827f8"
     },
     {
       "path": "mods/Vault_customs_russian_strings_fix/Interface/Translations/FTS_FastTravelSettlement_ru.txt",
@@ -3640,6 +3634,11 @@
       "path": "mods/Vault_customs_workshop_stack_guard/meta.ini",
       "reason": "MO2 metadata or development document",
       "bytes": 459
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/MainMenu.swf.README.txt",
+      "reason": "development sidecar document (preserved in dev/notes)",
+      "bytes": 1237
     }
   ],
   "sanitized": [
