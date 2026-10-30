@@ -24,3 +24,6 @@ __pycache__/
 *.pem
 *.key
 /audit-local/
+
+# Private editorial notes
+/docs/*.local.md
