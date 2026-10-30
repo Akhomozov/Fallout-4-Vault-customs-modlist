@@ -1,0 +1,75 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_NudgeUp",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Сдвинуть панель спутника вверх.",
+         "id" : "CSE_NudgeUp"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_NudgeDown",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Сдвинуть панель спутника вниз.",
+         "id" : "CSE_NudgeDown"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_NudgeLeft",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Сдвинуть панель спутника влево.",
+         "id" : "CSE_NudgeLeft"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_NudgeRight",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Сдвинуть панель спутника вправо.",
+         "id" : "CSE_NudgeRight"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_ScaleUp",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Увеличить панель спутника.",
+         "id" : "CSE_ScaleUp"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_ScaleDown",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Уменьшить панель спутника.",
+         "id" : "CSE_ScaleDown"
+      },
+      {
+         "action" : {
+            "form" : "CompanionStatusEnhanced.esp|1732",
+            "function" : "Hotkey_ToggleHUDDisplay",
+            "script" : "CompanionStatusEnhanced:HUDManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "Спрятать или показать панель спутника.",
+         "id" : "CSE_ToggleHUD"
+      }
+   ],
+   "modName" : "CompanionStatusEnhanced"
+}

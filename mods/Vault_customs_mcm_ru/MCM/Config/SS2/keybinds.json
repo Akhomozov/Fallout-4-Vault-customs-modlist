@@ -1,0 +1,225 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_CycleActivePanel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: переключить активную панель.",
+         "id" : "SS2_CycleActivePanels"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_NudgeActivePanelUp",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: сдвинуть активную панель вверх.",
+         "id" : "SS2_NudgeActivePanelUp"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_NudgeActivePanelDown",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: сдвинуть активную панель вниз.",
+         "id" : "SS2_NudgeActivePanelDown"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_NudgeActivePanelLeft",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: сдвинуть активную панель влево.",
+         "id" : "SS2_NudgeActivePanelLeft"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_NudgeActivePanelRight",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: сдвинуть активную панель вправо.",
+         "id" : "SS2_NudgeActivePanelRight"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ScaleActivePanelUp",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: увеличить активную панель.",
+         "id" : "SS2_ScaleActivePanelUp"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ScaleActivePanelDown",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: уменьшить активную панель.",
+         "id" : "SS2_ScaleActivePanelDown"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ForceHideHUD",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: спрятать панели.",
+         "id" : "SS2_ForceHideHUD"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_CycleResourcePanelDetailLevel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: переключить подробность панели ресурсов.",
+         "id" : "SS2_CycleResourcePanelDetailLevel"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_CycleResourcePanelReportLevel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: переключить уровень отчёта в панели ресурсов.",
+         "id" : "SS2_CycleResourcePanelReportLevel"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleResourcePanelReportView",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: режим отчёта в панели ресурсов.",
+         "id" : "SS2_ToggleResourcePanelReportView"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleResourcePanelSupplyComponents",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: переключить между хламом и припасами.",
+         "id" : "SS2_ToggleResourcePanelComponentDisplay"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleInfoBoxPanel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: открыть или закрыть панель сведений.",
+         "id" : "SS2_ToggleInfoBoxPanelVisibility"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleResourcePanel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: открыть или закрыть панель ресурсов.",
+         "id" : "SS2_ToggleResourcePanelVisibility"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleStatusMetersPanel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: открыть или закрыть шкалы состояния.",
+         "id" : "SS2_ToggleStatusMetersVisibility"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleHQPanel",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: открыть или закрыть полосу штаба.",
+         "id" : "SS2_ToggleHQPanelVisibility"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleAllHQExtraInfo",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: подробности на полосе штаба и шкалах состояния в штабе.",
+         "id" : "SS2_ToggleAllHQExtraInfo"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleHQPanelExtraInfo",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: подробности на полосе штаба в штабе.",
+         "id" : "SS2_ToggleHQExtraInfo"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleStatusMetersExtraInfo",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: подробности на шкалах состояния в штабе.",
+         "id" : "SS2_ToggleStatusMetersExtraInfo"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleHoloIcons",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: показывать значки H.O.L.O. перед участками.",
+         "id" : "SS2_ToggleHoloIconsVisibility"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_ToggleHUDDisplay",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: включить или выключить весь интерфейс SS2. Чтобы от этого был толк, задайте панелям «никогда не прятать», иначе они будут появляться и исчезать сами.",
+         "id" : "SS2_ToggleHUD"
+      },
+      {
+         "action" : {
+            "form" : "SS2.esm|4B7C5",
+            "function" : "Hotkey_OpenTownMeetingGavelMenu",
+            "script" : "SimSettlementsV2:Quests:InterfaceManager",
+            "type" : "CallFunction"
+         },
+         "desc" : "SS2: отдать приказ всем поселенцам.",
+         "id" : "SS2_ShowTownMeetingMenu"
+      }
+   ],
+   "modName" : "SS2"
+}

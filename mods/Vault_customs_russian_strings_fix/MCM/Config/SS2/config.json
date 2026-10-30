@@ -1,0 +1,2681 @@
+{
+  "modName": "SS2",
+  "displayName": "Сим поселения 2",
+  "minMcmVersion": 2,
+  "pluginRequirements": [
+    "SS2.esm",
+    "WorkshopFramework.esm"
+  ],
+  "content": [
+    {
+      "text": "<p align='center'><font size='24'>Sim Settlements 2</font></p>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "type": "image",
+      "libName": "SS2",
+      "className": "Logo",
+      "height": 25
+    },
+    {
+      "text": "О",
+      "type": "section"
+    },
+    {
+      "text": "<p>Sim Settlements 2 позволяет строить свои дома, фермы, магазины и многое другое.</p><br><p>Если это ваше первое использование мода, знайте, что вам нужно будет получить голотейп в мире или вы можете спавнить его с кнопки ниже. Запустите голотейп в пипбою, чтобы запустить мод!</p>",
+      "type": "text",
+      "html": true
+    },
+    {
+      "text": " > История сообщений обучения",
+      "type": "button",
+      "action": {
+        "type": "CallFunction",
+        "form": "SS2.esm|EB73",
+        "script": "SimSettlementsV2:Quests:MessageManager",
+        "function": "MCM_ShowTutorialHistoryMenu"
+      }
+    },
+    {
+      "text": " > Отдать голографическую запись",
+      "type": "button",
+      "action": {
+        "type": "CallFunction",
+        "form": "SS2.esm|eb49",
+        "script": "SimSettlementsV2:Quests:SS2Main",
+        "function": "GivePlayerHolotape"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "pageDisplayName": "Горячие клавиши",
+      "content": [
+        {
+          "text": "Переключить горячие клавиши",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ToggleHUD",
+          "text": "Включить/выключить HUD SS2",
+          "type": "hotkey",
+          "help": "Чтобы максимально эффективно использовать это, вам нужно установить для различных панелей HUD значение «Никогда не скрываться автоматически», иначе эти панели могут отображаться/скрываться автоматически."
+        },
+        {
+          "id": "SS2_ToggleHoloIconsVisibility",
+          "text": "Переключить H.O.L.O. Значки включены или выключены.",
+          "type": "hotkey",
+          "help": "Показать/скрыть отображение плавающего H.O.L.O. значки перед сюжетами."
+        },
+        {
+          "id": "SS2_ForceHideHUD",
+          "text": "Принудительно скрыть HUD",
+          "type": "hotkey",
+          "help": "Это предназначено для использования за пределами поселений, когда код не обрабатывает это автоматически."
+        },
+        {
+          "text": "Горячие клавиши панели информационного окна",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ToggleInfoBoxPanelVisibility",
+          "text": "Включите или выключите панель информационного окна.",
+          "type": "hotkey",
+          "help": "Показать/скрыть панель информационного окна. Измените настройки наведения/активации для информационного окна на «Выкл.», чтобы предотвратить его автоматическое повторное отображение."
+        },
+        {
+          "text": "Горячие клавиши HQ HUD",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ToggleHQPanelVisibility",
+          "text": "Включите или выключите панель HQ.",
+          "type": "hotkey",
+          "help": "Показать/скрыть панель штаб-квартиры. Измените настройки наведения/активации для панели HQ на «Выкл.», чтобы предотвратить ее автоматическое повторное отображение."
+        },
+        {
+          "id": "SS2_ToggleHQExtraInfo",
+          "text": "Переключите дополнительные данные, доступные на панели штаб-квартиры, находясь в штаб-квартире.",
+          "type": "hotkey",
+          "help": "Показать/скрыть дополнительные данные, доступные на панели штаб-квартиры, находясь в штаб-квартире. Этим также можно управлять с помощью Toggle All HQ Extra Info."
+        },
+        {
+          "id": "SS2_ToggleAllHQExtraInfo",
+          "text": "Переключить все дополнительные данные HUD, доступные в штаб-квартире.",
+          "type": "hotkey",
+          "help": "Показать/скрыть дополнительные данные, доступные на панели штаб-квартиры и индикаторах состояния, находясь в штаб-квартире."
+        },
+        {
+          "text": "Горячие клавиши управления",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ShowTownMeetingMenu",
+          "text": "Дайте команду всем вашим поселенцам.",
+          "type": "hotkey",
+          "help": "Открывает меню молотка городского собрания. Наличие в инвентаре молотка городского собрания не требуется."
+        },
+        {
+          "text": "Горячие клавиши панели ресурсов",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ToggleResourcePanelVisibility",
+          "text": "Включите или выключите панель ресурсов.",
+          "type": "hotkey",
+          "help": "Показать/скрыть панель ресурсов. Измените настройки автоматического скрытия для панели ресурсов на «Никогда», чтобы предотвратить ее автоматическое повторное отображение."
+        },
+        {
+          "id": "SS2_CycleResourcePanelDetailLevel",
+          "text": "Уровень детализации панели ресурсов цикла",
+          "type": "hotkey",
+          "help": "Измените количество типов ресурсов, отображаемых на панели ресурсов."
+        },
+        {
+          "id": "SS2_CycleResourcePanelReportLevel",
+          "text": "Уровень отчета панели ресурсов цикла",
+          "type": "hotkey",
+          "help": "Измените количество разделов отчета, отображаемых на панели ресурсов."
+        },
+        {
+          "id": "SS2_ToggleResourcePanelReportView",
+          "text": "Переключить вид отчета панели ресурсов",
+          "type": "hotkey",
+          "help": "Переключает отображение панели ресурсов в представлении отчета."
+        },
+        {
+          "id": "SS2_ToggleResourcePanelComponentDisplay",
+          "text": "Toggle Компоненты панели ресурсов",
+          "type": "hotkey",
+          "help": "Переключает отображение ресурсов лома и снабжения."
+        },
+        {
+          "text": "Горячие клавиши индикаторов состояния",
+          "type": "section"
+        },
+        {
+          "id": "SS2_ToggleStatusMetersVisibility",
+          "text": "Включите или выключите индикаторы состояния.",
+          "type": "hotkey",
+          "help": "Показать/скрыть индикаторы состояния. Измените настройки автоматического скрытия для индикаторов состояния на «Никогда», чтобы предотвратить их автоматическое повторное отображение."
+        },
+        {
+          "id": "SS2_ToggleStatusMetersExtraInfo",
+          "text": "Переключите дополнительные данные, доступные для индикаторов состояния, находясь в штаб-квартире.",
+          "type": "hotkey",
+          "help": "Показать/скрыть дополнительные данные, доступные для индикаторов состояния, находясь в штаб-квартире. Этим также можно управлять с помощью горячей клавиши раздела HQ для переключения всей дополнительной информации о штаб-квартире."
+        },
+        {
+          "text": "Горячие клавиши позиции",
+          "type": "section"
+        },
+        {
+          "text": "Временно установите эти горячие клавиши и расположите панели HUD там, где вы хотите, затем вы можете переназначить эти клавиши на что-то другое, если хотите.",
+          "type": "text",
+          "html": false
+        },
+        {
+          "id": "SS2_CycleActivePanels",
+          "text": "Циклическая активная панель HUD",
+          "type": "hotkey",
+          "help": "Активируйте следующую панель HUD для позиционирования."
+        },
+        {
+          "id": "SS2_NudgeActivePanelUp",
+          "text": "Иди сюда",
+          "type": "hotkey",
+          "help": "Слегка подтолкните активную панель HUD вверх."
+        },
+        {
+          "id": "SS2_NudgeActivePanelDown",
+          "text": "Вниз",
+          "type": "hotkey",
+          "help": "Слегка сдвиньте активную панель HUD вниз."
+        },
+        {
+          "id": "SS2_NudgeActivePanelLeft",
+          "text": "Двигаться влево",
+          "type": "hotkey",
+          "help": "Слегка сдвиньте активную панель HUD влево."
+        },
+        {
+          "id": "SS2_NudgeActivePanelRight",
+          "text": "Двигаться вправо",
+          "type": "hotkey",
+          "help": "Слегка сдвиньте активную панель HUD вправо."
+        },
+        {
+          "id": "SS2_ScaleActivePanelUp",
+          "text": "Увеличить размер",
+          "type": "hotkey",
+          "help": "Немного увеличьте размер активной панели HUD."
+        },
+        {
+          "id": "SS2_ScaleActivePanelDown",
+          "text": "Уменьшить размер",
+          "type": "hotkey",
+          "help": "Немного уменьшите размер активной панели HUD."
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Геймплей",
+      "content": [
+        {
+          "text": "Продвинутый",
+          "type": "section"
+        },
+        {
+          "id": "bCityPlansUseF4SEPower:Advanced",
+          "text": "Планы города используют мощность F4SE",
+          "type": "switcher",
+          "help": "При выключении «Планы города» больше не будут пытаться активировать элементы с помощью F4SE. Рекомендуется выключать только при включении объектов с автономным питанием в разделе «Строительство города».",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D47D"
+          }
+        },
+        {
+          "text": "Назначение",
+          "type": "section"
+        },
+        {
+          "id": "bAssignmentRequirements:Assignment",
+          "text": "Требования к назначению",
+          "type": "switcher",
+          "help": "При включении некоторые планы строительства, такие как «Продвинутый» и «Высокотехнологичные», потребуют, чтобы поселенцы соответствовали определенным критериям для назначения, например, СПЕЦИАЛЬНЫЕ характеристики определенной суммы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|219a8"
+          }
+        },
+        {
+          "id": "bAutoAssignment:Assignment",
+          "text": "Автоматическое назначение",
+          "type": "switcher",
+          "help": "<p>Когда ВКЛЮЧЕНО, оселки попытаются автоматически назначиться на доступные/годные элементы в вашем поселении. Рекомендуется отключить Авто-Назначение в Workshop Framework.</p>",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14aeb"
+          }
+        },
+        {
+          "id": "bAutoAssignChangesRole:Assignment",
+          "text": "Автоматическое назначение роли изменений",
+          "type": "switcher",
+          "help": "<p>Когда авто назначение выделяет блок для работы, солдат получит соответствующие роли Гвардии или Поддержки.</p>",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D488"
+          }
+        },
+        {
+          "id": "bManualAssignChangesRole:Assignment",
+          "text": "Назначение изменений вручную",
+          "type": "switcher",
+          "help": "<p>Когда вы назначите блок для работы, солдат получит соответствующие роли Гвардии или Поддержки.</p>",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D489"
+          }
+        },
+        {
+          "text": "Налоговое право",
+          "type": "section"
+        },
+        {
+          "id": "iGlobalTaxRate:Law",
+          "text": "Глобальная налоговая ставка",
+          "type": "slider",
+          "help": "<p>Ставка налога определяет процент выручки, снятой с поселения за день, который будет помещен в воркбэнч для вашего сбора. Высокие налоги накладывают большее наказание на счастье местного поселения.</p>",
+          "valueOptions": {
+            "min": 1,
+            "max": 50,
+            "step": 1,
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20f58"
+          }
+        },
+        {
+          "text": "Баланс",
+          "type": "section"
+        },
+        {
+          "id": "bBuildingPlanConstructionCosts:Balance",
+          "text": "План здания Стоимость строительства",
+          "type": "switcher",
+          "help": "При включении любые затраты на обновление, настроенные для конкретных планов зданий, необходимо будет оплачивать в дополнение к любым затратам на обновление участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b7b"
+          }
+        },
+        {
+          "id": "bBuildingPlanOperatingCosts:Balance",
+          "text": "Эксплуатационные затраты на план строительства",
+          "type": "switcher",
+          "help": "При включении любые ежедневные эксплуатационные расходы, настроенные для конкретных планов здания, необходимо будет оплачивать в дополнение к ежедневным эксплуатационным расходам участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c07"
+          }
+        },
+        {
+          "id": "bBuildingPlanProducedItems:Balance",
+          "text": "Произведенные элементы плана строительства",
+          "type": "switcher",
+          "help": "Когда включено, участки могут производить предметы в верстаке или коммерческой экономике, как определено создателями плана здания.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c08"
+          }
+        },
+        {
+          "id": "bBuildingPlanResources:Balance",
+          "text": "Ресурсы плана строительства",
+          "type": "switcher",
+          "help": "При включении отдельные планы зданий могут влиять на ресурсы поселений, определенные их создателями. Если отключено, влияние на ресурсы поселения будет определяться типами плана участка и плана застройки.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|16c12"
+          }
+        },
+        {
+          "id": "bShopsAutoRestock:Balance",
+          "text": "Автопополнение магазинов",
+          "html": true,
+          "type": "switcher",
+          "help": "Когда ВКЛЮЧЕНО, поставщики поселений восполняют свои товары каждые 48 часов. </p><p>Когда ВЫКЛЮЧЕНО, поставщики поселений восполняют свои товары в зависимости от экономической системы промышленности в Sim Settlements 2.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|21cac"
+          }
+        },
+        {
+          "text": "Городское здание",
+          "type": "section"
+        },
+        {
+          "id": "bAllowLeveledPlans:CityBuilding",
+          "text": "Разрешить уровневые планы",
+          "type": "switcher",
+          "help": "Если включено, планы города с несколькими уровнями будут включены при автоматическом выборе плана города. Эта опция по умолчанию отключена на Xbox из-за проблем с производительностью на старых моделях Xbox.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45ce4"
+          }
+        },
+        {
+          "id": "bAutoAttemptAfterLeader:CityBuilding",
+          "text": "Автоматическая попытка после лидера",
+          "type": "switcher",
+          "help": "При включении вам будет предложено начать разработку плана города после назначения руководителя на стол градостроителя, что избавит вас от необходимости активировать функцию управления планом города.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|249cd"
+          }
+        },
+        {
+          "id": "bBypassLocks:CityBuilding",
+          "text": "Обход блокировок",
+          "type": "switcher",
+          "help": "Если включено, а также включен параметр «Выбор дизайнера», любые планы строительства, использованные дизайнером, будут разрешены, даже если вы еще не разблокировали их во время игры.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45c44"
+          }
+        },
+        {
+          "id": "bChangePlots:CityBuilding",
+          "text": "Изменить графики",
+          "type": "switcher",
+          "help": "Когда включено, а также включен параметр «Выбор дизайнера», при обновлении плана города можно улучшать участки, изменять типы, планы зданий и т. д., чтобы точно соответствовать дизайну в плане города.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45cdc"
+          }
+        },
+        {
+          "id": "bCinematicMode:CityBuilding",
+          "text": "Кинематографический режим",
+          "type": "switcher",
+          "help": "Когда включено, пока строится или модернизируется план города, и вы находитесь в поселении, вы перейдете в кинематографический режим, где вам будет предложена экскурсия по поселению с воздуха.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15811"
+          }
+        },
+        {
+          "id": "bCinematicModeFreeLook:CityBuilding",
+          "text": "Кинематографический режим Free Look",
+          "type": "switcher",
+          "help": "Когда включено, в кинематографическом режиме вам придется управлять камерой самостоятельно, а не сопровождать вас во время экскурсии. Free Look идеален, если у вас наблюдается заикание частоты кадров в кинематографическом режиме.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1582a"
+          }
+        },
+        {
+          "id": "bCinematicModeMusic:CityBuilding",
+          "text": "Музыка в кинематографическом режиме",
+          "type": "switcher",
+          "help": "Если включено, в кинематографическом режиме будет воспроизводиться музыка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|f7c1"
+          }
+        },
+        {
+          "id": "bCinematicModeWideShots:CityBuilding",
+          "text": "Кинематографический режим: общие планы",
+          "type": "switcher",
+          "help": "Если включено, в кинематографическом режиме камера будет отодвигаться назад в различных точках, чтобы обеспечить больший обзор. Если у вас происходит сбой в кинематографическом режиме, отключение этого параметра, скорее всего, предотвратит проблему.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|13ab1"
+          }
+        },
+        {
+          "id": "bCinematicWeatherChanges:CityBuilding",
+          "text": "Кинематографические изменения погоды",
+          "type": "switcher",
+          "help": "При включении режима «Кинематограф» во время строительства плана города погода будет периодически меняться, имитируя ход времени.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|44fbc"
+          }
+        },
+        {
+          "id": "bDesignersChoice:CityBuilding",
+          "text": "Выбор дизайнера",
+          "type": "switcher",
+          "help": "При включении «Планы города» будут использовать планы зданий и оформления, выбранные автором плана города, при условии, что у вас установлены те же самые планы/скины. Примечание. Другие настройки мода могут повлиять на право выбора выбранного сюжета.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|102e0"
+          }
+        },
+        {
+          "id": "iInvolvement:CityBuilding",
+          "text": "Вовлеченность",
+          "type": "dropdown",
+          "help": "Определяет, каким правилам следуют поселения городского плана. Низкий = только ненужные затраты, Средний = ненужные затраты плюс потребности граждан, Глобальное соответствие = все включенные настройки игрового процесса.",
+          "valueOptions": {
+            "options": [
+              "Нет",
+              "Низкие",
+              "Умеренный",
+              "Матч Глобальный"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A74D"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|1EF06",
+            "script": "SimSettlementsV2:Quests:CityPlanManager",
+            "function": "ChangeInvolvementSetting",
+            "params": [
+              "{i}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bLeaderRequirement:CityBuilding",
+          "text": "Требование к лидеру",
+          "type": "switcher",
+          "help": "Когда включено, кто-то в поселении должен быть назначен руководителем, назначив его за стол градостроителя, прежде чем план города можно будет применить или улучшить.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|18cca"
+          }
+        },
+        {
+          "id": "bLimitOutpostPlansToOutposts:CityBuilding",
+          "text": "Ограничьте планы аванпостов аванпостами",
+          "type": "switcher",
+          "help": "Если включено, планы города, помеченные как планы аванпостов, будут доступны только в поселениях, преобразованных в аванпосты.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A50A1"
+          }
+        },
+        {
+          "id": "bSelfPowerObjects:CityBuilding",
+          "text": "Объекты собственной силы",
+          "type": "switcher",
+          "help": "При включении городской план создает объекты, которым требуется электроэнергия, которые будут питаться сами. Если параметр ВЫКЛЮЧЕН и у вас установлен F4SE, объекты, созданные на плане города, будут подключаться самостоятельно.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45ce2"
+          }
+        },
+        {
+          "id": "bStartingPlotLevels:CityBuilding",
+          "text": "Начальные уровни сюжета",
+          "type": "switcher",
+          "help": "Когда включено, план города может начинать участки на более высоком уровне. Если опция «Выбор дизайнера» также включена, более высокий уровень будет определяться исходным проектом плана города.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45ce3"
+          }
+        },
+        {
+          "text": "Затраты",
+          "type": "section"
+        },
+        {
+          "id": "bAssaultCosts:Costs",
+          "text": "Стоимость нападения",
+          "type": "switcher",
+          "help": "Когда включено, штурмы будут стоить вашей империи припасов, обычно в виде боеприпасов.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4BB39"
+          }
+        },
+        {
+          "id": "bAutoPayCityPlanCosts:Costs",
+          "text": "AutoPay: расходы на план города",
+          "type": "switcher",
+          "help": "Если включен параметр «Затраты на строительство плана города», затраты на обновление плана города будут оплачиваться автоматически из инструментария поселения. В противном случае выберите параметр «Доступно обновление» в меню «Управление городом» на рабочем столе градостроителя.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c73"
+          }
+        },
+        {
+          "id": "bAutoPayPlotCosts:Costs",
+          "text": "Автоплатеж: стоимость участка",
+          "type": "switcher",
+          "help": "Если включены параметры «Затраты на строительство участков», улучшения участков будут оплачиваться автоматически из инструментария поселения. В противном случае выберите опцию «Начать строительство» в меню датчика ASAM.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14aec"
+          }
+        },
+        {
+          "id": "bConstructionCostsBuildingPlan:Costs",
+          "text": "Затраты на строительство: план строительства",
+          "type": "switcher",
+          "help": "При включении любые затраты на обновление, настроенные для конкретных планов зданий, необходимо будет оплачивать в дополнение к любым затратам на обновление участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b7b"
+          }
+        },
+        {
+          "id": "bConstructionCostsCityPlan:Costs",
+          "text": "Затраты на строительство: план города",
+          "type": "switcher",
+          "help": "При включении любые затраты на обновление, настроенные для конкретных городских планов, необходимо будет оплачивать в дополнение к любым затратам на обновление города.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c72"
+          }
+        },
+        {
+          "id": "bConstructionCostsPlot:Costs",
+          "text": "Затраты на строительство: участок",
+          "type": "switcher",
+          "help": "Когда включено, для строительства/улучшения участков потребуется определенная стоимость в зависимости от типа и уровня участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b7a"
+          }
+        },
+        {
+          "id": "bMedicalTreatmentCosts:Costs",
+          "text": "Расходы на медицинское лечение",
+          "type": "switcher",
+          "help": "Когда включено, медицинское лечение будет стоить вам расходных материалов империи, обычно в виде химикатов.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DADD"
+          }
+        },
+        {
+          "id": "bLoadoutCosts:Costs",
+          "text": "Затраты на разгрузку",
+          "type": "switcher",
+          "help": "Когда включено, оснащение солдат снаряжением будет стоить вашей империи припасов, обычно в виде доспехов и частей оружия.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4A7"
+          }
+        },
+        {
+          "id": "bOperatingCostsBuildingPlan:Costs",
+          "text": "Эксплуатационные расходы: план строительства",
+          "type": "switcher",
+          "help": "При включении любые ежедневные эксплуатационные расходы, настроенные для конкретных планов здания, необходимо будет оплачивать в дополнение к ежедневным эксплуатационным расходам участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c07"
+          }
+        },
+        {
+          "id": "bOperatingCostsNonPlot:Costs",
+          "text": "Затраты на техническое обслуживание: не связанные с сюжетом",
+          "type": "switcher",
+          "help": "При включении к беспилотным генераторам ресурсов, не связанным с участками, таким как турели, генераторы и водоочистители, будут добавлены ежедневные эксплуатационные расходы. Предполагается, что баланс не будет стоить того, чтобы спамить этими предметами сверх ваших потребностей до поздней игры.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|175dd"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|20B1E",
+            "script": "SimSettlementsV2:Quests:ResourceManager",
+            "function": "RecalculateNonPlotMaintenanceCostsForAllSettlements",
+            "params": []
+          }
+        },
+        {
+          "id": "bOperatingCostsPlot:Costs",
+          "text": "Эксплуатационные расходы: сюжет",
+          "type": "switcher",
+          "help": "При включении некоторые участки потребуют различных ежедневных эксплуатационных расходов в зависимости от используемого на них типа/класса плана здания.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20b56"
+          }
+        },
+        {
+          "id": "bPayCostsFromYourInventory:Costs",
+          "text": "Оплачивайте расходы из своего инвентаря",
+          "type": "switcher",
+          "help": "При включении, если вам когда-либо будет предложено подтвердить, что вы хотите оплатить затраты на строительство, оно будет учитываться и оплачиваться за счет предметов в вашем инвентаре. Если отключено, вместо этого будут учитываться только предметы, находящиеся за пределами вашего инвентаря.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20C74"
+          }
+        },
+        {
+          "id": "bPayCostsFromWorkbench:Costs",
+          "text": "Оплата затрат из Workbench",
+          "type": "switcher",
+          "help": "При включении такие расходы, как затраты на строительство и эксплуатацию, будут оплачиваться из инвентаря верстака. В противном случае они будут тратить только ресурсы, которые они создали сами или которые вы пожертвовали через стол градостроителя.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|21982"
+          }
+        },
+        {
+          "id": "bSoldierRecruitmentCosts:Costs",
+          "text": "Затраты на набор солдат",
+          "type": "switcher",
+          "help": "Когда включено, найм солдат будет стоить ресурсов вашей империи, обычно крышек.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4E8"
+          }
+        },
+        {
+          "id": "bStartupCostsCityPlan:Costs",
+          "text": "Затраты на запуск: план города",
+          "type": "switcher",
+          "help": "При включении для запуска нового плана города потребуется некоторое количество материалов.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c75"
+          }
+        },
+        {
+          "text": "Сложность",
+          "type": "section"
+        },
+        {
+          "id": "bCitizenNeeds:Difficulty",
+          "text": "Потребности граждан",
+          "type": "switcher",
+          "help": "При включении необходимо удовлетворить различные потребности поселения, прежде чем поселенец сможет модернизировать свои здания, даже если прошло достаточно времени. Например, сельскохозяйственные участки не будут модернизироваться, пока не будут удовлетворены потребности в воде.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15e10"
+          }
+        },
+        {
+          "id": "bDestroyedASAMSensors:Difficulty",
+          "text": "Разрушенные датчики ASAM необходимо отремонтировать",
+          "type": "switcher",
+          "help": "Датчики ASAM могут быть уничтожены. Если для этого параметра установлено значение «Необходимо отремонтировать», игрок должен заменить датчик ASAM с помощью опции ремонта, прежде чем сюжет снова обновится, и «Обновление графика» не обойдет это.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|21989"
+          }
+        },
+        {
+          "id": "bDynamicNeeds:Difficulty",
+          "text": "Динамические потребности",
+          "type": "switcher",
+          "help": "При включении поселенцам потребуется различное количество еды, воды, защиты и энергии. Требуемые суммы будут увеличиваться по мере увеличения уровня участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|10a0b"
+          }
+        },
+        {
+          "id": "bVirtualStorageRequirements:Difficulty",
+          "text": "Хранилище мусора требует защиты",
+          "type": "switcher",
+          "help": "Если включено, объекты «Хранилище мусора» потребуют дополнительной защиты в этом поселении.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A74C"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|20B1E",
+            "script": "SimSettlementsV2:Quests:ResourceManager",
+            "function": "MCM_ChangeJunkStorageRequiresDefense",
+            "params": [
+              "{f}{value}"
+            ]
+          }
+        },
+        {
+          "id": "sResourceComplexity:Difficulty",
+          "text": "Сложность ресурса",
+          "type": "dropdown",
+          "help": "Затраты можно обрабатывать тремя способами, которые изменяют количество типов ресурсов, которые необходимо отслеживать: простой (минимальное количество ресурсов), категории (компоненты сгруппированы в категории) или компоненты (каждый ресурс отдельно).",
+          "valueOptions": {
+            "options": [
+              "Простой",
+              "Категории",
+              "Компоненты"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4AC"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|20B1E",
+            "script": "SimSettlementsV2:Quests:ResourceManager",
+            "function": "ChangeComplexitySettingFromMCM",
+            "params": [
+              "{i}{value}"
+            ]
+          }
+        },
+        {
+          "id": "sAgriculturalWaterRequirement:Difficulty",
+          "text": "Потребность в воде для сельского хозяйства",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|49684"
+          }
+        },
+        {
+          "text": "Катастрофы",
+          "type": "section"
+        },
+        {
+          "id": "bHQDisasters:Disasters",
+          "text": "Катастрофы в штаб-квартире",
+          "type": "switcher",
+          "help": "При включении в штаб-квартире периодически могут идти проблемы, в результате чего сотрудникам придется разбираться с ними или понести штрафы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D34D"
+          }
+        },
+        {
+          "id": "bDisastersAttacks:Attacks",
+          "text": "Нападения на штаб",
+          "type": "switcher",
+          "help": "Когда включено, враги будут периодически атаковать штаб, нанося ущерб помещениям и ресурсам. Ваш отдел безопасности может бороться с ними, чтобы предотвратить ущерб.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D3BD"
+          }
+        },
+        {
+          "id": "bDisastersDesertion:Disasters",
+          "text": "Дезертирство",
+          "type": "switcher",
+          "help": "При включении есть шанс, что NPC бросят свою работу и направятся в крупный город. Ваш или административный отдел может вернуть их обратно.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D34F"
+          }
+        },
+        {
+          "id": "bDisastersFires:Disasters",
+          "text": "Пожары",
+          "type": "switcher",
+          "help": "При включении существует вероятность возникновения пожара. Вы можете найти исправный огнетушитель или поручить его потушить отделу обслуживания.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D34E"
+          }
+        },
+        {
+          "id": "bDisastersInfestation:Disasters",
+          "text": "Заражение",
+          "type": "switcher",
+          "help": "При включении есть вероятность, что существа наводнят локации. Вы или отдел безопасности можете их выследить.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D351"
+          }
+        },
+        {
+          "id": "bDisastersMess:Disasters",
+          "text": "Беспорядок среди персонала",
+          "type": "switcher",
+          "help": "При включении существует вероятность того, что сотрудники оставят вокруг беспорядок. Отдел объектов штаб-квартиры будет постоянно убирать их по мере их появления.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D350"
+          }
+        },
+        {
+          "text": "штаб-квартира",
+          "type": "section"
+        },
+        {
+          "id": "bAutomatedDepartments:HQ",
+          "text": "Автоматизированные отделы",
+          "type": "switcher",
+          "help": "Если включено, отделам можно поручить автоматическое выполнение различных проектов, при условии, что у них достаточно ресурсов для этого.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A55DB"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|A55C4",
+            "script": "SimSettlementsV2:HQ:HQAutomationManager",
+            "function": "ToggleAutomation",
+            "params": [
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bChooseDepartmentOnRecruit:HQ",
+          "text": "Выберите отдел при наборе",
+          "type": "switcher",
+          "help": "Если включено, после набора нового человека в штаб-квартиру вам будет предложено выбрать, в какой отдел он будет назначен.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4AFDE"
+          }
+        },
+        {
+          "id": "bCommandsUseTaskList:HQ",
+          "text": "Команды используют список задач",
+          "type": "switcher",
+          "help": "Если включено, проекты, которые вы запускаете в командном режиме, добавляются в список задач отдела и должны быть завершены, когда у отдела есть доступная энергия/ресурсы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A55E5"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|A55C4",
+            "script": "SimSettlementsV2:HQ:HQAutomationManager",
+            "function": "ToggleQueueMode",
+            "params": [
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bDailySpendingLimitedByHQ:HQ",
+          "text": "Ежедневные расходы ограничены штаб-квартирой",
+          "type": "switcher",
+          "help": "При включении расход ресурсов в штаб-квартире ограничивается улучшениями определенных типов помещений штаб-квартиры.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B7D9"
+          }
+        },
+        {
+          "id": "bDailySpendingLimitedByWorkforce:HQ",
+          "text": "Ежедневные расходы ограничены рабочей силой",
+          "type": "switcher",
+          "help": "Когда включено, расход ресурсов в штаб-квартире ограничен количеством рабочей энергии, имеющейся в отделе. Представлены такими ресурсами, как Scrap Logistics.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B7DA"
+          }
+        },
+        {
+          "id": "bDepartmentsEquipWorkers:HQ",
+          "text": "Отделы экипируют работников",
+          "type": "switcher",
+          "help": "Если включено, неуникальным работникам будет назначен наряд в их отделе.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D3E6"
+          }
+        },
+        {
+          "id": "bHQRadioAutoContact:HQ",
+          "text": "Штаб-квартира Радио Авто Контакт",
+          "type": "switcher",
+          "help": "При включении члены штаб-квартиры автоматически свяжутся с вами и сообщат обновления квестов. В противном случае вам нужно будет связаться с ними через пункт помощи HQ Radio.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D50C"
+          }
+        },
+        {
+          "id": "bHQRadioDisablesSomeControls:HQ",
+          "text": "Радио HQ отключает некоторые элементы управления",
+          "type": "switcher",
+          "help": "Если включено, пока HQ Radio используется для разговора, вы не сможете переместить Pipboy или получить к нему доступ. Это помогает сценам воспроизводиться достоверно.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D50B"
+          }
+        },
+        {
+          "id": "bMissionWorkerSelection:HQ",
+          "text": "Выбор миссионерского работника",
+          "type": "switcher",
+          "help": "Если включено, вам будет предложено выбрать сотрудников какого отдела отправить на проекты типа «Миссия».",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B624"
+          }
+        },
+        {
+          "id": "bOverrideTimers:HQ",
+          "text": "Переопределить таймеры",
+          "type": "switcher",
+          "help": "При включении таймеры проекта, которые обычно измеряются в игровых часах, вместо этого выполняются за несколько минут реального времени.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B55B"
+          }
+        },
+        {
+          "id": "bOverrideAutomationTimers:HQ",
+          "text": "Переопределить таймеры автоматизации",
+          "type": "switcher",
+          "help": "При включении отдел запускает автоматические таймеры проектов, которые обычно измеряются в игровых часах, а вместо этого выполняются за несколько минут в реальном времени.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A55D7"
+          }
+        },
+        {
+          "id": "bPASystem:HQ",
+          "text": "Система громкой связи",
+          "type": "switcher",
+          "help": "При включении через акустическую систему будут воспроизводиться периодические объявления, часто связанные со строительством штаб-квартиры.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B795"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2_XPAC_Chapter2.esm|177C0",
+            "script": "SimSettlementsV2:HQ:PASystemManagerQuest",
+            "function": "PAStateUpdatedFromMenu",
+            "params": []
+          }
+        },
+        {
+          "id": "bRecruitmentTimeout:HQ",
+          "text": "Тайм-аут набора",
+          "type": "stepper",
+          "help": "Продолжительность тайм-аута в диалоге найма после выбора «Что-то еще», чтобы вы могли получить доступ к параметрам диалога по умолчанию.",
+          "valueOptions": {
+            "options": [
+              "10",
+              "20",
+              "30"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B658"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|4B297",
+            "script": "SimSettlementsV2:HQ:HQWorkerManagerQuest",
+            "function": "ChangeRecruitmentTimeout",
+            "params": [
+              "{i}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bResourceAccessRequiresSupplyAgreements:HQ",
+          "text": "Доступ к ресурсам требует соглашений о поставках",
+          "type": "switcher",
+          "help": "Если этот параметр включен, каждое поселение должно иметь соглашение о поставках со штаб-квартирой, прежде чем сохраненные ресурсы можно будет потратить в штаб-квартире.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DA0C"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EAF8",
+            "script": "SimSettlementsV2:Quests:EmpireManager",
+            "function": "ChangeHQResourceAccessRequiresSupplyAgreementsSettingFromMCM",
+            "params": []
+          }
+        },
+        {
+          "id": "bRoomConstructionCosts:HQ",
+          "text": "Стоимость строительства помещения",
+          "type": "switcher",
+          "help": "Если отключено, выбор опций строительства или обновления в меню «Управление комнатой» будет бесплатным.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B74D"
+          }
+        },
+        {
+          "id": "bSupplyAgreementsRequireLeaders:HQ",
+          "text": "Соглашения о поставках требуют лидеров",
+          "type": "switcher",
+          "help": "При включении только расчеты с лидерами смогут заключать соглашения о поставках со штаб-квартирой.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4AED9"
+          }
+        },
+        {
+          "text": "Погружение",
+          "type": "section"
+        },
+        {
+          "id": "sCommercialRequirement:Immersion",
+          "text": "Коммерческое требование",
+          "type": "dropdown",
+          "help": "Если для параметра «Коммерческие участки» установлено значение «Дома», перед их постройкой потребуются участки под жилую застройку и грядки в поселении.",
+          "valueOptions": {
+            "options": [
+              "Откл.",
+              "Дома",
+              "Население"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|167F4"
+          }
+        },
+        {
+          "id": "sDaytimeLightingHour:Immersion",
+          "text": "Час дневного освещения",
+          "type": "stepper",
+          "help": "Определяет час, в который утром включатся дневные и ночные фонари.",
+          "valueOptions": {
+            "options": [
+              "05:00",
+              "06:00",
+              "07:00",
+              "08:00",
+              "09:00"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae1"
+          }
+        },
+        {
+          "id": "sNighttimeLightingHour:Immersion",
+          "text": "Час ночного освещения",
+          "type": "stepper",
+          "help": "Определяет час, в который дневное и ночное освещение будет переключаться вечером.",
+          "valueOptions": {
+            "options": [
+              "19:00",
+              "20:00",
+              "21:00",
+              "10 вечера",
+              "23:00",
+              "Полночь"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae2"
+          }
+        },
+        {
+          "id": "bDynamicSoundscape:Immersion",
+          "text": "Динамический звуковой ландшафт",
+          "type": "switcher",
+          "help": "При включении фоновые звуки в ваших поселениях со временем будут меняться в соответствии с процветанием и дизайном поселения.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|139bb"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB6F",
+            "script": "SimSettlementsV2:Quests:SoundscapeManager",
+            "function": "ChangedSoundscapeSetting",
+            "params": [
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bHolidayDecorations:Immersion",
+          "text": "Праздничные украшения",
+          "type": "switcher",
+          "help": "Если включено, некоторые уровни сюжетных построек и планы городов будут украшать праздники, когда в игре наступит подходящее время.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45cde"
+          }
+        },
+        {
+          "id": "bMoveablePlotBuildings:Immersion",
+          "text": "Передвижные земельные постройки",
+          "type": "switcher",
+          "help": "Когда включено, вы сможете собирать участки и перемещать все здание. Если выключено, здание будет снесено при перемещении участка.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14a1e"
+          }
+        },
+        {
+          "id": "bQuestCredits:Immersion",
+          "text": "Квестовые кредиты",
+          "type": "switcher",
+          "help": "Когда этот параметр включен, после завершения некоторых квестов в разделе целей будут показаны некоторые люди, участвовавшие в разработке квестов, например писатели и актеры озвучивания.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20050"
+          }
+        },
+        {
+          "id": "bRealisticBuildTimes:Immersion",
+          "text": "Реалистичные сроки сборки",
+          "type": "switcher",
+          "help": "При включении на строительство или улучшение визуальных эффектов зданий потребуется несколько дней. Когда этот параметр выключен, здания перед вами будут строиться или улучшаться довольно быстро.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|149cd"
+          }
+        },
+        {
+          "id": "bVisitors:Immersion",
+          "text": "Посетители",
+          "type": "stepper",
+          "help": "При включении различные NPC будут посещать ваши поселения по мере строительства и улучшения новых коммерческих и рекреационных участков.",
+          "valueOptions": {
+            "options": [
+              "Включено",
+              "Отключено"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1688a"
+          }
+        },
+        {
+          "id": "sVisitorsMax:Immersion",
+          "text": "Посетители Макс",
+          "type": "slider",
+          "help": "Если параметр «Посетители» включен, это определяет максимальное количество одновременных посетителей, что может помочь решить проблемы с производительностью.",
+          "valueOptions": {
+            "min": 5,
+            "max": 100,
+            "step": 5,
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1688b"
+          }
+        },
+        {
+          "text": "Медицинская",
+          "type": "section"
+        },
+        {
+          "id": "bAlternateActivationCure:Medical",
+          "text": "Альтернативное лечение активации",
+          "type": "switcher",
+          "help": "При включении опция «Медицинское лечение» появится для раненых/заболевших поселенцев, если у вас есть льготы «Медик» или в поселении есть медицинское здание.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B750"
+          }
+        },
+        {
+          "id": "bDiseasesCanCauseDeath:Medical",
+          "text": "Болезни могут привести к смерти",
+          "type": "switcher",
+          "help": "При включении поселенцы, чей уровень болезни превышает их выносливость, имеют шанс умереть каждый день. Чем выше уровень болезни по сравнению с выносливостью, тем выше вероятность смерти.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A597"
+          }
+        },
+        {
+          "id": "bIncapacitation:Medical",
+          "text": "Недееспособность",
+          "type": "switcher",
+          "help": "При включении поселенцы, чей уровень болезни превышает их выносливость, станут недееспособными и не смогут работать, пока некоторые из их болезней не будут вылечены.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A798"
+          }
+        },
+        {
+          "id": "bInjurySystem:Medical",
+          "text": "Система травм",
+          "type": "switcher",
+          "help": "При включении солдаты, все еще лежащие в конце штурма/рейда, будут ранены и нуждаются в медицинской помощи.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DAF0"
+          }
+        },
+        {
+          "id": "bMedicalTreatmentCosts:Medical",
+          "text": "Расходы на медицинское лечение",
+          "type": "switcher",
+          "help": "Когда включено, медицинское лечение будет стоить вам расходных материалов империи, обычно в виде химикатов.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DADD"
+          }
+        },
+        {
+          "id": "bSettlerDisease:Medical",
+          "text": "Болезни поселенцев",
+          "type": "switcher",
+          "help": "При включении поселенцы могут заразиться болезнями, которые повлияют на их характеристики.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A799"
+          }
+        },
+        {
+          "id": "bTreatmentRequirement:Medical",
+          "text": "Требование к лечению",
+          "type": "switcher",
+          "help": "При включении поселенцы не будут выздоравливать естественным путем, и вместо этого им придется лечиться в больнице или у игрока.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DADE"
+          }
+        },
+        {
+          "text": "НПС",
+          "type": "section"
+        },
+        {
+          "id": "bAutoEquipSettlers:NPCs",
+          "text": "Автоэкипировка поселенцев",
+          "type": "switcher",
+          "help": "При включении, если в плане здания на задании поселенца есть униформа, настроенная дизайнером, он будет автоматически оснащен этой униформой.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b83"
+          }
+        },
+        {
+          "id": "bAutoEquipRequiresStore:NPCs",
+          "text": "Для автоматического оснащения требуется магазин",
+          "type": "switcher",
+          "help": "Если включено, автоматическое оснащение поселенцев произойдет только в том случае, если в поселении существует магазин соответствующего типа (магазин одежды для экипировки, магазин оружия для оружия, магазин брони для доспехов).",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b84"
+          }
+        },
+        {
+          "id": "bCommunicationsSetsMaxSettlers:NPCs",
+          "text": "Коммуникационные наборы Max Settlers",
+          "type": "switcher",
+          "help": "Если включено, класс зданий «Связь» изменит максимальное количество поселенцев в поселении на количество доступных коек, а не будет ограничено вашей Харизмой.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DCE6"
+          }
+        },
+        {
+          "id": "bJobTitles:NPCs",
+          "text": "Должности",
+          "type": "switcher",
+          "help": "При включении, если в плане здания на задании поселенца настроен заголовок, слово «Разговор» будет заменено названием задания, когда вы приблизитесь к поселенцу.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14b85"
+          }
+        },
+        {
+          "id": "bLeaderTraits:NPCs",
+          "text": "Черты лидера",
+          "type": "switcher",
+          "help": "При включении уникальные NPC с картами лидеров будут предоставлять поселению бонусы и штрафы. Они могут изменить количество и правила игрового процесса поселений.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|18d97"
+          }
+        },
+        {
+          "id": "bUseCharacterStatCards:NPCs",
+          "text": "СПЕЦИАЛЬНЫЕ характеристики уникальных NPC.",
+          "type": "switcher",
+          "help": "Если включено, если надстройка включает в себя СПЕЦИАЛЬНЫЕ карты характеристик персонажей, настроенные на переопределение уникальных характеристик NPC, они будут использоваться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|219aa"
+          }
+        },
+        {
+          "id": "bCharacterStatCardsCanLowerStats:NPCs",
+          "text": "СПЕЦИАЛЬНЫЕ характеристики уникальных NPC можно снизить",
+          "type": "switcher",
+          "help": "При включении, если надстройка включает в себя СПЕЦИАЛЬНЫЕ карты характеристик персонажей, они могут уменьшить чрезмерные характеристики, которые Bethesda или авторы модов установили для их балансировки.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|49AB1"
+          }
+        },
+        {
+          "id": "bSPECIALStatsAffectPlotOutput:NPCs",
+          "text": "СПЕЦИАЛЬНАЯ статистика влияет на вывод графика",
+          "type": "switcher",
+          "help": "При включении СПЕЦИАЛЬНЫЕ характеристики поселенцев будут по-разному влиять на результаты участков. Например, каждое очко выносливости означает 1 очко дополнительного производства еды.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|219a7"
+          }
+        },
+        {
+          "id": "bSPECIALStatsRolledForSettlers:NPCs",
+          "text": "СПЕЦИАЛЬНАЯ статистика для поселенцев",
+          "type": "switcher",
+          "help": "Каждому поселенцу будет присвоен набор случайных СПЕЦИАЛЬНЫХ характеристик вместо того, чтобы все использовали один и тот же набор характеристик.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|219a9"
+          }
+        },
+        {
+          "text": "Найм сотрудников",
+          "type": "section"
+        },
+        {
+          "id": "bAutoRecruitSoldiers:Recruitment",
+          "text": "Автоматический набор солдат",
+          "type": "switcher",
+          "help": "При включении, если очередь найма пуста, будут набраны солдаты по умолчанию.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A49C7"
+          }
+        },
+        {
+          "id": "bLimitRecruitmentByCityPlan:Recruitment",
+          "text": "Ограничить набор персонала согласно плану города",
+          "type": "switcher",
+          "help": "При включении, если используется план города, количество поселенцев, поддерживаемых текущим уровнем, становится максимальным набором, в отличие от использования ванильных правил, которые составляют максимум 10 поселенцев плюс ваш показатель Харизмы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15665"
+          }
+        },
+        {
+          "id": "bSoldierRecruitmentCosts:Recruitment",
+          "text": "Затраты на набор солдат",
+          "type": "switcher",
+          "help": "Когда включено, найм солдат будет стоить ресурсов вашей империи, обычно крышек.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4E8"
+          }
+        },
+        {
+          "text": "Улучшение",
+          "type": "section"
+        },
+        {
+          "id": "bAutoPayCityPlanUpgradeCosts:Upgrade",
+          "text": "Стоимость обновления плана города AutoPay",
+          "type": "switcher",
+          "help": "Если включен параметр «Затраты на строительство плана города», затраты на обновление плана города будут оплачиваться автоматически из инструментария поселения. В противном случае выберите параметр «Доступно обновление» в меню «Управление городом» на рабочем столе градостроителя.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20c73"
+          }
+        },
+        {
+          "id": "bAutoPayPlotUpgradeCosts:Upgrade",
+          "text": "Стоимость обновления участка AutoPay",
+          "type": "switcher",
+          "help": "Когда включены параметры «Затраты на строительство участков», затраты на строительство участков или улучшений будут оплачиваться автоматически из инструментария поселения. В противном случае выберите опцию «Начать строительство» в меню датчика ASAM.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14aec"
+          }
+        },
+        {
+          "id": "bAutoUpgradeBasicPlans:Upgrade",
+          "text": "Автоматическое обновление базовых планов",
+          "type": "switcher",
+          "help": "Если включено, участки, использующие планы застройки, не имеющие ветвей на выбор, будут автоматически обновляться, если это соответствует критериям. В противном случае эти графики можно обновить вручную из меню датчика ASAM после того, как они станут пригодными.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15b8c"
+          }
+        },
+        {
+          "id": "bAutoUpgradeBranchingPlans:Upgrade",
+          "text": "Планы ветвления автоматического обновления",
+          "type": "switcher",
+          "help": "Если включено, участки, использующие планы застройки с ветвями на выбор, автоматически обновятся, если получат право на случайную доступную ветвь. В противном случае эти графики можно обновить вручную из меню датчика ASAM.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15b8b"
+          }
+        },
+        {
+          "id": "bAutoUpgradeCityPlans:Upgrade",
+          "text": "Автоматическое обновление планов города",
+          "type": "switcher",
+          "help": "Если включено, планы города будут автоматически обновляться, как только они станут пригодными. В противном случае обновление можно запустить с помощью опции «Управление городом» на столе градостроителя.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15810"
+          }
+        },
+        {
+          "id": "bHoldForPreplan:Upgrade",
+          "text": "Удержать для предварительного плана",
+          "type": "switcher",
+          "help": "Если включено, заранее запланированные обновления для участков, которые невозможно обновить, будут ждать до тех пор, пока не будут выполнены требования и не оплачены затраты, прежде чем обновлять. Если отключено, вместо этого сюжет попытается перейти на другую подходящую ветвь.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae3"
+          }
+        },
+        {
+          "id": "bHoldUntilSeen:Upgrade",
+          "text": "Держи, пока не увидишь",
+          "type": "switcher",
+          "help": "Когда включено, участки не будут обновляться несколько раз подряд, не давая вам возможности снова посетить поселение и увидеть его последние изменения.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae4"
+          }
+        },
+        {
+          "text": "Удобство использования",
+          "type": "section"
+        },
+        {
+          "id": "bApplyBansToManualSelection:Usability",
+          "text": "Применить запреты к ручному выбору",
+          "type": "switcher",
+          "help": "Если включено, любые планы зданий, находящиеся в одном из ваших запрещенных списков, также не будут отображаться при попытке изменить план здания вручную, в отличие от простого запрета автоматического выбора плана.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15e01"
+          }
+        },
+        {
+          "id": "bApplyThemesToManualSelection:Usability",
+          "text": "Применить темы к выбору вручную",
+          "type": "switcher",
+          "help": "Если включено, любые планы зданий, которые не являются частью конфигурации темы текущего поселения, также не будут отображаться при попытке изменить план здания вручную, в отличие от простого применения ограничений темы к автоматическому выбору.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A792"
+          }
+        },
+        {
+          "id": "bAutoapplySkins:Usability",
+          "text": "Автоматическое применение скинов",
+          "type": "switcher",
+          "help": "Если включено, любые планы строительства с доступными скинами будут автоматически применяться в случайном порядке (базовая версия без скинов включена в эту рандомизацию).",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|17163"
+          }
+        },
+        {
+          "id": "bAutoplaceFoundations:Usability",
+          "text": "Авторазмещение фундаментов",
+          "type": "switcher",
+          "help": "При включении фундаментные участки автоматически размещают фундамент, при выключении те же самые участки будут ждать, пока вы специально выберете фундамент из меню.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14adf"
+          }
+        },
+        {
+          "id": "bAutoplacePowerPoles:Usability",
+          "text": "Авторазмещение опор электропередач",
+          "type": "switcher",
+          "help": "Если включено, типы графиков, настроенные для этого, будут автоматически размещать опору электропередачи. ПРИМЕЧАНИЕ. Эти опоры не будут автоматически списаны, если участок будет списан.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae0"
+          }
+        },
+        {
+          "id": "bAutosaveBeforeAssaults:Usability",
+          "text": "Автосохранение перед нападениями",
+          "type": "switcher",
+          "help": "Если включено, сохранение будет выполнено непосредственно перед запуском нового штурма.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|a508a"
+          }
+        },
+        {
+          "id": "bSettlersChooseFromAllClasses:Usability",
+          "text": "Поселенцы выбирают любой класс",
+          "type": "switcher",
+          "help": "Если отключено, поселенцы не будут выбирать определенные классы планов зданий, которые помечены как предназначенные для намеренного размещения игроком.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4AD9B"
+          }
+        },
+        {
+          "id": "bRaidWarnings:Usability",
+          "text": "Предупреждения о рейдах",
+          "type": "stepper",
+          "help": "Когда включено, рейды начнут выполнять оборонительные квесты только в том случае, если у вас есть связь в локации.",
+          "valueOptions": {
+            "options": [
+              "Автоматический",
+              "Требовать связи"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DCD1"
+          }
+        },
+        {
+          "id": "bRejectedDonations:Usability",
+          "text": "Отклоненные пожертвования",
+          "type": "stepper",
+          "help": "При пожертвовании материалов через стол градостроителя этот параметр определяет, куда отправляются отклоненные предметы.",
+          "valueOptions": {
+            "options": [
+              "Вернись ко мне",
+              "Магазин в верстаке"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20d1d"
+          }
+        },
+        {
+          "id": "bTerraformerGradingAutoplace:Usability",
+          "text": "Оценка терраформера: Autoplace",
+          "type": "switcher",
+          "help": "Когда включено, терраформеры будут размещать объекты профилирования, чтобы они выглядели более естественно. Примечание. Они будут обнаруживать другие привязанные к ним терраформеры и избегать размещения перекрывающихся друг с другом объектов профилирования.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|141f4"
+          }
+        },
+        {
+          "id": "bTerraformerGradingAutoremove:Usability",
+          "text": "Оценка терраформера: автоматическое удаление",
+          "type": "switcher",
+          "help": "При включении, если Терраформер будет утилизирован, все его автоматически установленные оценки будут удалены вместе с ним.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|141f6"
+          }
+        },
+        {
+          "id": "sTerraformerGradingDelay:Usability",
+          "text": "Оценка терраформера: задержка",
+          "type": "stepper",
+          "help": "Когда функция «Авторазмещение профилирования Терраформера» включена, это определяет, через какое время после постройки Терраформера будет размещено профилирование. Это позволит вам дать себе больше времени, чтобы соединить несколько частей вместе и избежать создания лишних частей.",
+          "valueOptions": {
+            "options": [
+              "5 секунд",
+              "10 секунд",
+              "15 секунд",
+              "30 секунд",
+              "1 минута"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|141f5"
+          }
+        },
+        {
+          "id": "bTownMeetingBehavior:Usability",
+          "text": "Поведение на городских собраниях",
+          "type": "stepper",
+          "help": "Это определяет, как будут вести себя поселенцы, когда в меню «Молоток городского собрания» используется «Собраться».",
+          "valueOptions": {
+            "options": [
+              "Идем со мной",
+              "Соберитесь в этой позиции"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14368"
+          }
+        },
+        {
+          "text": "Визуальный",
+          "type": "section"
+        },
+        {
+          "id": "bDemolitionFX:Visual",
+          "text": "Снос FX",
+          "type": "switcher",
+          "help": "Когда включено, всякий раз, когда вы разрушаете/сбрасываете участок Sim Settlements или сносите здание/сооружение, которое было (или строится) на участке, разыгрывается небольшая сцена/последовательность взрыва, чтобы с эффектом погружения показать полученный снос.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|14ae5"
+          }
+        },
+        {
+          "id": "bCinematicVictoriesAssaults:Visual",
+          "text": "Кинематографические победы: Нападения",
+          "type": "switcher",
+          "help": "При включении после победы в штурме на короткое время будет включен кинематографический режим.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1918B"
+          }
+        },
+        {
+          "id": "bCinematicVictoriesRaids:Visual",
+          "text": "Кинематографические победы: Рейды",
+          "type": "switcher",
+          "help": "При включении после победы в рейде на короткое время будет включен кинематографический режим.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45CDD"
+          }
+        },
+        {
+          "id": "bSoldierRankUpFX:Visual",
+          "text": "Эффекты повышения ранга солдата",
+          "type": "switcher",
+          "help": "Если включено, то при повышении ранга солдата раздается визуальный и звуковой сигнал.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4C9"
+          }
+        },
+        {
+          "id": "bShowWarResultsScreenAssaults:Visual",
+          "text": "Показать экран результатов войны: Нападения",
+          "type": "switcher",
+          "help": "Когда включено, после победы в штурме вам будет представлен экран счета, показывающий, как вы справились.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D49B"
+          }
+        },
+        {
+          "id": "bShowWarResultsScreenRaids:Visual",
+          "text": "Показать экран результатов войны: Рейды",
+          "type": "switcher",
+          "help": "При включении после победы в рейде вам будет представлен экран с результатами, показывающий ваши успехи.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D49D"
+          }
+        },
+        {
+          "text": "Война",
+          "type": "section"
+        },
+        {
+          "id": "bArmoryAutoEquip:War",
+          "text": "Автоматическое снаряжение Оружейной",
+          "type": "switcher",
+          "help": "Когда включено, аванпосты с арсеналами будут автоматически оснащать солдат снаряжением, соответствующим рангу.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D5EE"
+          }
+        },
+        {
+          "id": "bAssaultBehavior:War",
+          "text": "Нападение",
+          "type": "stepper",
+          "help": "После встречи с вашим штурмовым отрядом солдаты будут следовать за вами до тех пор, пока не начнется бой, или немедленно атакуют.",
+          "valueOptions": {
+            "options": [
+              "Следовать за игроком до боя",
+              "Зарядите немедленно"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4BADE"
+          }
+        },
+        {
+          "id": "bAssaultRange:War",
+          "text": "Штурмовой диапазон",
+          "type": "stepper",
+          "help": "Когда включено, для штурмов требуется аванпост в пределах досягаемости от цели атаки.",
+          "valueOptions": {
+            "options": [
+              "Неограниченный диапазон",
+              "Рядом с аванпостами"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A4BB1"
+          }
+        },
+        {
+          "id": "bAutoConvertJobsToMartial:War",
+          "text": "Автоматическое преобразование рабочих мест в военные",
+          "type": "switcher",
+          "help": "При включении, после преобразования поселения в форпост, немуниципальные рабочие участки будут преобразованы в военные.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D476"
+          }
+        },
+        {
+          "id": "bAutoRecruitSoldiers:War",
+          "text": "Автоматический набор солдат",
+          "type": "switcher",
+          "help": "При включении, если очередь найма пуста, будут набраны солдаты по умолчанию.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A49C7"
+          }
+        },
+        {
+          "id": "bAutosaveBeforeAssaults:Usability",
+          "text": "Автосохранение перед нападениями",
+          "type": "switcher",
+          "help": "Если включено, сохранение будет выполнено непосредственно перед запуском нового штурма.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|a508a"
+          }
+        },
+        {
+          "id": "bCinematicVictoriesAssaults:War",
+          "text": "Кинематографические победы: Нападения",
+          "type": "switcher",
+          "help": "При включении после победы в штурме на короткое время будет включен кинематографический режим.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1918B"
+          }
+        },
+        {
+          "id": "bCinematicVictoriesRaids:War",
+          "text": "Кинематографические победы: Рейды",
+          "type": "switcher",
+          "help": "При включении после победы в рейде на короткое время будет включен кинематографический режим.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|45CDD"
+          }
+        },
+        {
+          "id": "bControlVassals:War",
+          "text": "Контролируйте вассалов",
+          "type": "switcher",
+          "help": "Когда включено, вассалы остаются под вашим контролем, а не независимы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1940B"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EAF8",
+            "script": "SimSettlementsV2:Quests:EmpireManager",
+            "function": "ControlVassalSettingChanged",
+            "params": []
+          }
+        },
+        {
+          "id": "bDynamicAssaultSoldiers:War",
+          "text": "Динамические штурмовые солдаты",
+          "type": "stepper",
+          "help": "Если включено, только воины будут доступны в качестве вариантов при начале атаки с помощью ракетницы.",
+          "valueOptions": {
+            "options": [
+              "Любая роль",
+              "Только воины"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A4BAB"
+          }
+        },
+        {
+          "id": "bLimitAssaultstoUninjured:War",
+          "text": "Ограничьте нападения непострадавшими",
+          "type": "switcher",
+          "help": "Когда включено, только непострадавшие солдаты смогут присоединиться к штурму.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A4BB5"
+          }
+        },
+        {
+          "id": "bMortalSoldiers:War",
+          "text": "Смертные солдаты",
+          "type": "switcher",
+          "help": "При включении неуникальные солдаты смертны и могут фактически умереть в бою, а не просто получить ранение.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DAB5"
+          }
+        },
+        {
+          "id": "bMoveInOutpostSoldiers:War",
+          "text": "Переместить солдат на заставу",
+          "type": "dropdown",
+          "help": "Количество солдат-штурмовиков, которые должны вступить в бой после того, как поселение будет захвачено в качестве аванпоста.",
+          "valueOptions": {
+            "options": [
+              "Весь штурмовой отряд",
+              "1",
+              "3",
+              "5",
+              "10",
+              "Нет"
+            ],
+            "sourceType": "PropertyValueInt",
+            "sourceForm": "SS2.esm|EB23",
+            "propertyName": "MCM_MoveInOutpostSoldiers"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangeMoveInOutpostSoldiersSetting",
+            "params": [
+              "{i}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bMoveInTerritoryGuards:War",
+          "text": "Въехать в территориальную охрану",
+          "type": "dropdown",
+          "help": "Количество солдат-штурмовиков, которые останутся охранять территорию после захвата.",
+          "valueOptions": {
+            "options": [
+              "Весь штурмовой отряд",
+              "1",
+              "3",
+              "5",
+              "10",
+              "Нет"
+            ],
+            "sourceType": "PropertyValueInt",
+            "sourceForm": "SS2.esm|EB23",
+            "propertyName": "MCM_MoveInTerritoryGuards"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangeMoveInTerritoryGuardsSetting",
+            "params": [
+              "{i}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bOutpostJobPlotLimitations:War",
+          "text": "Ограничения участка работы на аванпосте",
+          "type": "switcher",
+          "help": "Когда включено, рабочие участки на аванпостах ограничены муниципальными и военными.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D472"
+          }
+        },
+        {
+          "id": "bPlannedAssaultSoldiers:War",
+          "text": "Планируемые штурмовые солдаты",
+          "type": "stepper",
+          "help": "Если включено, при планировании нападения из меню в качестве вариантов будут отображаться только воины.",
+          "valueOptions": {
+            "options": [
+              "Любая роль",
+              "Только воины"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A4BAD"
+          }
+        },
+        {
+          "id": "bRaidWarnings:War",
+          "text": "Предупреждения о рейдах",
+          "type": "stepper",
+          "help": "Когда включено, рейды начнут выполнять оборонительные квесты только в том случае, если у вас есть связь в локации.",
+          "valueOptions": {
+            "options": [
+              "Автоматический",
+              "Требовать связи"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4DCD1"
+          }
+        },
+        {
+          "id": "bSoldierRankUpFX:War",
+          "text": "Эффекты повышения ранга солдата",
+          "type": "switcher",
+          "help": "Если включено, то при повышении ранга солдата раздается визуальный и звуковой сигнал.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D4C9"
+          }
+        },
+        {
+          "id": "bShowWarResultsScreenAssaults:War",
+          "text": "Показать экран результатов войны: Нападения",
+          "type": "switcher",
+          "help": "Когда включено, после победы в штурме вам будет представлен экран счета, показывающий, как вы справились.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D49B"
+          }
+        },
+        {
+          "id": "bShowWarResultsScreenRaids:War",
+          "text": "Показать экран результатов войны: Рейды",
+          "type": "switcher",
+          "help": "При включении после победы в рейде вам будет представлен экран с результатами, показывающий ваши успехи.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4D49D"
+          }
+        },
+        {
+          "text": "Репопуляция мира",
+          "type": "section"
+        },
+        {
+          "id": "bWorldRepopSystem:WorldRepop",
+          "text": "Репопуляция мира",
+          "type": "switcher",
+          "help": "При включении, поскольку поселения производят большое количество излишков еды, воды и энергии, они заставляют неигровых персонажей переселяться в пустые здания в близлежащих районах за пределами поселений.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B793"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Интерфейс",
+      "content": [
+        {
+          "text": "Дополненная реальность",
+          "type": "section"
+        },
+        {
+          "id": "sAugmentedRealityHOLOIcons:HUD",
+          "text": "Дополненная реальность",
+          "type": "dropdown",
+          "help": "Вы также можете индивидуально настроить этот параметр для значков по типу, выбрав параметр «Использовать настройки типа», после чего отобразится параметр «Настроить типы значков».",
+          "valueOptions": {
+            "options": [
+              "Откл.",
+              "Всегда включен",
+              "Режим мастерской",
+              "Использовать настройки типа"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1a3a1"
+          }
+        },
+        {
+          "text": "Штаб-бар",
+          "type": "section"
+        },
+        {
+          "id": "sHQAutohideSetting:HUD",
+          "text": "Панель HQ: настройки автоматического скрытия",
+          "type": "stepper",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с панелью HQ.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A73E"
+          }
+        },
+        {
+          "id": "sHQExtraInfoAutohideSetting:HUD",
+          "text": "Дополнительная информация в HQ Bar: настройка автоматического скрытия",
+          "type": "stepper",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с дополнительной информацией на панели HQ.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4AFDF"
+          }
+        },
+        {
+          "text": "Информационное окно",
+          "type": "section"
+        },
+        {
+          "id": "bInfoBoxActivationDisplay:HUD",
+          "text": "Информационное окно: Дисплей активации",
+          "type": "switcher",
+          "help": "Этот параметр позволяет отображать информационное окно в ответ на активацию элементов. Это не отменяет активацию по умолчанию, а просто приведет к отображению информационного окна в дополнение к активации.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|21969"
+          }
+        },
+        {
+          "id": "bInfoBoxHoverDisplay:HUD",
+          "text": "Информационное окно: отображение при наведении",
+          "type": "switcher",
+          "help": "Этот параметр позволяет отображать информационное окно в ответ на наведение перекрестия на объекты, когда вы приближаетесь к ним. Это может потребовать очень большого количества сценариев, используйте с осторожностью.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|20b57"
+          }
+        },
+        {
+          "text": "Панель ресурсов",
+          "type": "section"
+        },
+        {
+          "id": "sResourcePanelAutohideSetting:HUD",
+          "text": "Панель ресурсов: настройка автоматического скрытия",
+          "type": "dropdown",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с панелью ресурсов.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|2196d"
+          }
+        },
+        {
+          "text": "Информация о поселении",
+          "type": "section"
+        },
+        {
+          "id": "sSettlementInfoAutohideSetting:HUD",
+          "text": "Информация о поселении: настройка автоматического скрытия",
+          "type": "stepper",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с информацией о поселении.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4A739"
+          }
+        },
+        {
+          "text": "Индикаторы состояния",
+          "type": "section"
+        },
+        {
+          "id": "sStatusMetersAutohideSetting:HUD",
+          "text": "Индикаторы состояния: настройка автоматического скрытия",
+          "type": "stepper",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с индикаторами состояния.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|2196c"
+          }
+        },
+        {
+          "id": "sStatusMetersExtraInfoAutohideSetting:HUD",
+          "text": "Индикаторы состояния Дополнительная информация: настройка автоматического скрытия",
+          "type": "stepper",
+          "help": "Этот параметр определяет, как функция автоматического скрытия должна работать с дополнительной информацией индикаторов состояния, доступной в штаб-квартире.",
+          "valueOptions": {
+            "options": [
+              "Никогда не скрывать автоматически",
+              "Всегда скрыто",
+              "Вне режима мастерской"
+            ],
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B2A6"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Уведомления",
+      "content": [
+        {
+          "text": "Уведомления",
+          "type": "section"
+        },
+        {
+          "id": "bCityPlanConstruction:Notifications",
+          "text": "План города Строительство",
+          "type": "switcher",
+          "help": "Если включено, вы будете уведомлены, когда план города завершит любое строительство или модернизацию.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1550e"
+          }
+        },
+        {
+          "id": "bHQAutomationCompletion:Notifications",
+          "text": "Завершение автоматизации штаб-квартиры",
+          "type": "switcher",
+          "help": "Если включено, вы будете уведомлены, когда отдел штаб-квартиры завершит автоматизированный проект.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A560D"
+          }
+        },
+        {
+          "id": "bHQProjectCompletion:Notifications",
+          "text": "Завершение проекта штаб-квартиры",
+          "type": "switcher",
+          "help": "Если включено, вы будете уведомлены, когда отдел штаб-квартиры завершит порученный вам проект.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4B7D8"
+          }
+        },
+        {
+          "id": "bPlotConstruction:Notifications",
+          "text": "Участок Строительство",
+          "type": "switcher",
+          "help": "Если включено, вы будете уведомлены, когда ранее не построенный участок завершит строительство до уровня 1. Эти сообщения направляются через систему сообщений Workshop Framework (см. голозапись Workshop Framework).",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15b78"
+          }
+        },
+        {
+          "id": "bPlotUpgrades:Notifications",
+          "text": "Улучшения сюжета",
+          "type": "switcher",
+          "help": "Если включено, вы будете получать уведомления при каждом обновлении графика. Они передаются через систему сообщений Workshop Framework (см. голозапись Workshop Framework).",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15b79"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Производительность",
+      "content": [
+        {
+          "text": "Производительность",
+          "type": "section"
+        },
+        {
+          "id": "bAllowConcordDefenses:Performance",
+          "text": "Разрешить защиту Конкорда",
+          "type": "switcher",
+          "help": "При включении после определенного момента истории Конкорд начнет добавлять защиту.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|A5869"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2_XPAC_Chapter2.esm|15D50",
+            "script": "SimSettlementsV2:Quests:MQMasterC2",
+            "function": "ToggleConcordDefenses",
+            "params": [
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bRespectBuildLimitCPs:Performance",
+          "text": "Соблюдайте ограничения по застройке – планы города",
+          "type": "switcher",
+          "help": "Если включено, Sim Settlements не будет строить/улучшать планы города, когда поселение достигает предела строительства.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|15b90"
+          }
+        },
+        {
+          "id": "bRespectBuildLimitPlots:Performance",
+          "text": "Соблюдайте лимит строительства – участки",
+          "type": "switcher",
+          "help": "Если включено, Sim Settlements не будет строить/обновлять участки, когда поселение достигает предела строительства.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|4d502"
+          }
+        },
+        {
+          "id": "bSpawnAnimatedObjects:Performance",
+          "text": "Спавн: анимированные объекты",
+          "type": "switcher",
+          "help": "Если отключено, любые объекты, помеченные как анимированные объекты в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A2"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{2}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnAnimationMarkers:Performance",
+          "text": "Spawn: Анимационные маркеры",
+          "type": "switcher",
+          "help": "Если отключено, любые объекты, помеченные как анимированные маркеры в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|142AF"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{10}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnClutter:Performance",
+          "text": "Спаун: Беспорядок",
+          "type": "switcher",
+          "help": "Если отключено, любые объекты, помеченные как «Беспорядок» в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A7"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{8}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnExtraLights:Performance",
+          "text": "Спавн: Дополнительные огни",
+          "type": "switcher",
+          "help": "Если выключено, любые объекты, помеченные как «Дополнительное освещение» в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A1"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{1}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnHighPolyModels:Performance",
+          "text": "Спавн: Высокополигональные модели",
+          "type": "switcher",
+          "help": "Если отключено, любые объекты, помеченные как высокополигональные модели в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|1009F"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{0}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnNPCs:Performance",
+          "text": "Спавн: NPC",
+          "type": "switcher",
+          "help": "Если выключено, любые объекты, помеченные как NPC в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A6"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{6}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnRadios:Performance",
+          "text": "Спавн: Радио",
+          "type": "switcher",
+          "help": "Если выключено, любые объекты, помеченные как радиоприемники в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A4"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{4}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnSoundEmitters:Performance",
+          "text": "Спаун: Звуковые излучатели",
+          "type": "switcher",
+          "help": "Если параметр отключен, любые объекты, помеченные как излучатели звука в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A5"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{5}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnSpecialEffects:Performance",
+          "text": "Спаун: Спецэффекты",
+          "type": "switcher",
+          "help": "Если выключено, любые объекты, помеченные как специальные эффекты в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|100A3"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{3}",
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "bSpawnWaterPlanes:Performance",
+          "text": "Спавн: Водные самолеты",
+          "type": "switcher",
+          "help": "Если отключено, любые объекты, помеченные как водные самолеты в планах застройки участков и планах города, не будут появляться.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "SS2.esm|10085"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|EB23",
+            "script": "SimSettlementsV2:Quests:OptionsManager",
+            "function": "ChangePerformanceClassSetting",
+            "params": [
+              "{i}{9}",
+              "{b}{value}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Инструменты",
+      "content": [
+        {
+          "text": "Отслеживание объектов",
+          "type": "section"
+        },
+        {
+          "text": " > Очистить все",
+          "type": "button",
+          "help": "Отключает отслеживание всех объектов",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}-1"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание маяков",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}80"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание маяков",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}80"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание Management Desk",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}40"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание Management Desk",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}40"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание нового строительства",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}50"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание нового строительства",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}50"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание новых обновлений",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}60"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание новых обновлений",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}60"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание застрявшего графика",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}70"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание застрявшего графика",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}70"
+            ]
+          }
+        },
+        {
+          "text": " > Включить отслеживание графика без питания",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}20"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить отслеживание графика без питания",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}20"
+            ]
+          }
+        },
+        {
+          "text": " > Включить обновляемое отслеживание графиков",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "TrackSettlementObjects",
+            "params": [
+              "{i}30"
+            ]
+          }
+        },
+        {
+          "text": " > Отключить обновляемое отслеживание графика",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb47",
+            "script": "SimSettlementsV2:Quests:PlotManager",
+            "function": "ClearTrackSettlementObjects",
+            "params": [
+              "{i}30"
+            ]
+          }
+        },
+        {
+          "text": "Коды",
+          "type": "section"
+        },
+        {
+          "text": " > Разблокировать все типы графиков",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb49",
+            "script": "SimSettlementsV2:Quests:SS2Main",
+            "function": "ForceUnlockAllPlotTypes"
+          }
+        },
+        {
+          "text": " > Разблокировать все классы зданий",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb49",
+            "script": "SimSettlementsV2:Quests:SS2Main",
+            "function": "ForceUnlockAllBuildingClasses"
+          }
+        },
+        {
+          "text": " > Разблокировать все планы зданий",
+          "type": "button",
+          "help": "",
+          "action": {
+            "type": "CallFunction",
+            "form": "SS2.esm|eb49",
+            "script": "SimSettlementsV2:Quests:SS2Main",
+            "function": "ForceUnlockAllBuildingPlans"
+          }
+        }
+      ]
+    }
+  ]
+}

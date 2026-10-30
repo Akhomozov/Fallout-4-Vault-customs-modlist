@@ -1,0 +1,58 @@
+{
+    "modName": "DisableCompanionCollision",
+    "displayName": "Отключение столкновений со спутником",
+    "minMcmVersion": 2,
+    "content": [
+      {
+        "text": "<p align='center'><font size='30'>Отключение столкновений со спутником</font></p>",
+        "html": true,
+        "type": "text"
+      },
+      {
+        "text": "Настройки",
+        "type": "section"
+      },
+      {
+        "id": "bEnabled:Settings",
+        "text": "Включить мод",
+        "type": "switcher",
+        "valueOptions": {
+          "sourceType": "ModSettingBool"
+        },
+        "action": {
+            "type": "CallExternalFunction",
+            "plugin": "DisableCompanionCollision",
+            "function": "SetOption",
+            "params": ["bEnabled", "{value}"]
+        }
+      },
+      {
+        "id": "bIsActiveOnlyIfPlayerWeaponDrawn:Settings",
+        "text": "Только когда у игрока оружие в руках",
+        "type": "switcher",
+        "valueOptions": {
+          "sourceType": "ModSettingBool"
+        },
+        "action": {
+            "type": "CallExternalFunction",
+            "plugin": "DisableCompanionCollision",
+            "function": "SetOption",
+            "params": ["bIsActiveOnlyIfPlayerWeaponDrawn", "{value}"]
+        }
+      },
+      {
+        "id": "bIsActiveOnlyIfPlayerInCombat:Settings",
+        "text": "Только когда игрок в бою",
+        "type": "switcher",
+        "valueOptions": {
+          "sourceType": "ModSettingBool"
+        },
+        "action": {
+            "type": "CallExternalFunction",
+            "plugin": "DisableCompanionCollision",
+            "function": "SetOption",
+            "params": ["bIsActiveOnlyIfPlayerInCombat", "{value}"]
+        }
+      }
+    ]
+}

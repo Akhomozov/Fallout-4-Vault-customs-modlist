@@ -1,0 +1,1010 @@
+{
+   "content" : [
+      {
+         "className" : "s1",
+         "libName" : "SCM",
+         "type" : "image"
+      }
+   ],
+   "displayName" : "Настройки выживания",
+   "minMcmVersion" : 1,
+   "modName" : "SCM",
+   "pages" : [
+      {
+         "content" : [
+            {
+               "text" : "Основные настройки",
+               "type" : "section"
+            },
+            {
+               "text" : "Чтобы отключить механики выживания, нужно играть на сложности «Выживание»",
+               "type" : "text"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "switchHardcore",
+                  "type" : "CallFunction"
+               },
+               "help" : "Включить или отключить хардкор. Отключает все скриптовые механики выживания: сон, болезни, питание.",
+               "text" : "Хардкор",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "HardcoreEnabled",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Основные настройки"
+      },
+      {
+         "content" : [
+            {
+               "html" : true,
+               "text" : "<p>Это ванильная механика режима «Выживание», а не мод — здесь её можно только выключить целиком.</p><br> <p>Адреналин повышает наносимый урон: <b>+5% за каждый уровень</b>. Уровни набираются убийствами врагов. Сон их снижает, причём сон любой длительности — вместе с уровнями уходит и прибавка к урону.</p><br> <p>Выключите — прибавки к урону не будет вовсе, зато спать можно будет без потерь.</p><br>",
+               "type" : "text"
+            },
+            {
+               "text" : "Адреналин",
+               "type" : "section"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleAdrenaline",
+                  "params" : [
+                     "{value}"
+                  ],
+                  "type" : "CallFunction"
+               },
+               "help" : "Включить или отключить адреналин из режима выживания.",
+               "text" : "Переключатель адреналина",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "AdrenalineEnabled",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Адреналин"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Грузоподъёмность",
+               "type" : "section"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleCarryweightReductionPlayer",
+                  "type" : "CallFunction"
+               },
+               "help" : "Включить или отключить снижение грузоподъёмности игрока.",
+               "text" : "Снижение грузоподъёмности",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_Carryweight_P",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "help" : "Включить или отключить урон при перегрузе.",
+               "text" : "Урон при перегрузе",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "sourceForm" : "SCM.esp|5BB2",
+                  "sourceType" : "GlobalValue"
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Грузоподъёмность"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Потеря сознания",
+               "type" : "section"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleBleedoutCompanion",
+                  "type" : "CallFunction"
+               },
+               "help" : "Если отключено, спутников не нужно лечить после боя, когда они падают без сознания.",
+               "text" : "Лечение спутника",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "sourceForm" : "SCM.esp|90EA",
+                  "sourceType" : "GlobalValue"
+               }
+            },
+            {
+               "text" : "Грузоподъёмность",
+               "type" : "section"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleCarryweightReductionCompanion",
+                  "type" : "CallFunction"
+               },
+               "help" : "Снижение грузоподъёмности спутников (включая Псину).",
+               "text" : "Снижение грузоподъёмности",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_Carryweight_C",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Спутник"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Болезни",
+               "type" : "section"
+            },
+            {
+               "help" : "Включить или отключить болезни.",
+               "text" : "Включить болезни",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_DiseasesEnable",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleDiseaseOnHit",
+                  "type" : "CallFunction"
+               },
+               "help" : "Болезнь больше не передаётся при ударе. (Например, от кротокрыса.)",
+               "text" : "Болезнь при ударе",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_DiseaseOnHit",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "help" : "Болезнь больше не передаётся при попадании эффектом. (Например, от радиоактивного супермутанта или гуля.)",
+               "text" : "Болезнь при попадании эффектом",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_DiseaseFromSpellEnable",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "help" : "В силовой броне болезни от ударов не передаются.",
+               "text" : "Не болеть в силовой броне",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_NoDiseasesPowerArmor",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "help" : "Включает или отключает эффект иммунодефицита.",
+               "text" : "Включить иммунодефицит",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_Immunodeficiency",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "help" : "По умолчанию 1. Меняет число очков, добавляемых к риску заболеть. Значение 0.5 уменьшит их вдвое и снизит шанс подхватить болезнь. Подробнее - на странице описания.",
+               "text" : "Шанс заболеть",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0,
+                  "propertyName" : "SCM_HC_DiseaseChanceModifier",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 0.02. Столько добавляется к риску заболеть. (Да, Ядер-Кола повышает шанс подхватить болезнь.)",
+               "text" : "Риск заболеть от Ядер-Колы",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_DiseaseRiskIncreaser_Cola",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Болезни"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Расчёт усталости",
+               "type" : "section"
+            },
+            {
+               "text" : "Формула расчёта усталости:",
+               "type" : "text"
+            },
+            {
+               "text" : "( Усталость от голода * множ. + Усталость от жажды * множ. + Усталость от недосыпа * множ. ) / ( Усталость от голода + Усталость от жажды + Усталость от недосыпа )",
+               "type" : "text"
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "CallDamageFatigue",
+                  "type" : "CallFunction"
+               },
+               "help" : "По умолчанию 2",
+               "text" : "Усталость от голода",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.1,
+                  "propertyName" : "SCM_HC_FatigueHungerBalance",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.1
+               }
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "CallDamageFatigue",
+                  "type" : "CallFunction"
+               },
+               "help" : "По умолчанию 2",
+               "text" : "Усталость от жажды",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.1,
+                  "propertyName" : "SCM_HC_FatigueThirstBalance",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.1
+               }
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "CallDamageFatigue",
+                  "type" : "CallFunction"
+               },
+               "help" : "По умолчанию 3",
+               "text" : "Усталость от недосыпа",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.1,
+                  "propertyName" : "SCM_HC_FatigueSleepBalance",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.1
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Усталость"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Ограничение сна в кровати",
+               "type" : "section"
+            },
+            {
+               "text" : "Наибольшее время непрерывного сна.",
+               "type" : "text"
+            },
+            {
+               "help" : "По умолчанию 24.",
+               "text" : "Кровать",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_SleepNormalBed",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 5.",
+               "text" : "Матрас",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_SleepMattress",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 2 (усталость). Сон в такой кровати по умолчанию не снимает усталость. Шкала: 0/1 - отдохнувший, 6 - изнеможение.",
+               "text" : "Матрас снимает эффекты недосыпа",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 6,
+                  "min" : 0,
+                  "propertyName" : "SCM_HC_HighestIndexOfSleepEffectsCuredByMattress",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueInt",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 3.",
+               "text" : "Спальный мешок",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_SleepSleepingBag",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 4 (утомление). Сон в такой кровати по умолчанию не снимает утомление. Шкала: 0/1 - отдохнувший, 6 - изнеможение.",
+               "text" : "Спальный мешок снимает эффекты недосыпа",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 6,
+                  "min" : 0,
+                  "propertyName" : "SCM_HC_HighestIndexOfSleepEffectsCuredBySleepingBag",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueInt",
+                  "step" : 1
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Цикл сна",
+               "type" : "section"
+            },
+            {
+               "text" : "Сколько нужно, чтобы устать, и прочие влияющие на цикл эффекты.",
+               "type" : "text"
+            },
+            {
+               "help" : "По умолчанию 14.",
+               "text" : "Цикл нарастания недосыпа",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 240,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_SleepDeprivationGameTimerInterval",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 0.5. Игрок устаёт быстрее. Цикл * это значение = часы до усталости.",
+               "text" : "Множитель усталости от болезни",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.1,
+                  "propertyName" : "SCM_HC_SleepDiseaseSleepinessMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 0.5. Чтобы выспаться, приходится спать дольше. Проспанные часы * это значение = часы полезного сна.",
+               "text" : "Множитель бессонницы от болезни",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.1,
+                  "propertyName" : "SCM_HC_SleepDiseaseInsomniaMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Лечение после сна",
+               "type" : "section"
+            },
+            {
+               "text" : "Здоровье конечностей отделено от общего и настраивается отдельно.",
+               "type" : "text"
+            },
+            {
+               "help" : "Включает или отключает лечение во сне.",
+               "text" : "Восстанавливать здоровье после сна",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_HealHealthAfterSleep",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "help" : "Включает или отключает лечение конечностей во сне.",
+               "text" : "Восстанавливать конечности после сна",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_HealLimbsAfterSleep",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Множитель величины лечения после сна",
+               "type" : "section"
+            },
+            {
+               "help" : "Задаёт предел лечения после сна. Лечение ступени сна * это значение = итоговое лечение. При 0.5 вы никогда не восстановите больше 50% здоровья за сон.",
+               "text" : "Множитель восстановления здоровья после сна",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 1,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_HealModAfterSleep",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Задаёт предел восстановления конечностей после сна. Работает так же, как выше.",
+               "text" : "Множитель восстановления конечностей после сна",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 1,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_HealLimbModAfterSleep",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Ступени лечения при сне.",
+               "type" : "section"
+            },
+            {
+               "text" : "Сколько вы вылечитесь, зависит от числа проспанных часов. Проспав дольше пятой ступени, вы восстановитесь на 100%.",
+               "type" : "text"
+            },
+            {
+               "help" : "По умолчанию 1 час. Проспав не больше X часов, вы восстанавливаете 0% максимального здоровья.",
+               "text" : "Ступень лечения 1 (0%)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_HealStageOne",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 2. Проспав не больше X часов, вы восстанавливаете 15% максимального здоровья.",
+               "text" : "Ступень лечения 2 (15%)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_HealStageTwo",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 3 часа. Проспав не больше X часов, вы восстанавливаете 25% максимального здоровья.",
+               "text" : "Ступень лечения 3 (25%)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_HealStageThree",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 4 часа. Проспав не больше X часов, вы восстанавливаете 45% максимального здоровья.",
+               "text" : "Ступень лечения 4 (45%)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_HealStageFour",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            },
+            {
+               "help" : "По умолчанию 5 часов. Проспав не больше X часов, вы восстанавливаете 75% максимального здоровья.",
+               "text" : "Ступень лечения 5 (75%)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 24,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_HealStageFive",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 1
+               }
+            }
+         ],
+         "pageDisplayName" : "Сон"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Клавиши",
+               "type" : "section"
+            },
+            {
+               "help" : "Создаёт автосохранение.",
+               "id" : "autoSave",
+               "text" : "Клавиша автосохранения",
+               "type" : "hotkey"
+            },
+            {
+               "help" : "Создаёт обычное сохранение. (В режиме выживания нужен мод Unlimited Survival Mode.)",
+               "id" : "hardSave",
+               "text" : "Клавиша обычного сохранения",
+               "type" : "hotkey"
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "IntervalSaveControl",
+                  "type" : "CallFunction"
+               },
+               "help" : "Сохраняет игру через заданный промежуток времени.",
+               "text" : "Сохранение по времени",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "intervalSaveEnabled",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "help" : "Для сохранений по времени используется обычное сохранение вместо автосохранения. (В режиме выживания нужен мод Unlimited Survival Mode.)",
+               "text" : "Обычное сохранение?",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "autoHardSaveEnabled",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "IntervalSave",
+                  "type" : "CallFunction"
+               },
+               "help" : "",
+               "text" : "Частота сохранений (в секундах)",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 1800,
+                  "min" : 30,
+                  "propertyName" : "saveTime",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueInt",
+                  "step" : 1
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Сохранение"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Общий прирост голода и жажды",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию включено. Голод считается по часовому расходу еды и питья, а не по стоимости предмета. (Рекомендуется.)",
+               "text" : "Иной расчёт голода и жажды от предметов",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_HungerThirstGainAlt",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "help" : "По умолчанию 1.0 - влияет на то, как вес и количество предмета насыщают.",
+               "text" : "Множитель веса еды",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_WeightMultiplierFood",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 1.0 - влияет на то, как вес и количество предмета утоляют жажду.",
+               "text" : "Множитель веса напитков",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_WeightMultiplierDrink",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Качество еды",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.7 - качество еды снижает или повышает сытость.",
+               "text" : "Очень плохое",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_QualityVeryPoor",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 0.85 - качество еды снижает или повышает сытость.",
+               "text" : "Плохое",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_QualityPoor",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 1.25 - качество еды снижает или повышает сытость.",
+               "text" : "Неплохое",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_QualityGood",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 1.5 - качество еды снижает или повышает сытость.",
+               "text" : "Хорошее",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_QualityFine",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 2.0 - качество еды снижает или повышает сытость.",
+               "text" : "Отменное",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_QualityExquisite",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Голод",
+               "type" : "section"
+            },
+            {
+               "text" : "Расчёт усвоения",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию включено. Усвоение считается по весу, а не по стоимости в крышках.",
+               "text" : "Считать по весу",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_FoodUseWeight",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Голод",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.65. Для предметов, усиливающих голод. Расход голода за такт * этот множитель = очки голода (кроме Ядер-Колы).",
+               "text" : "Множитель полученного голода",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_IncreasesHungerCostMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 4. Прирост голода за игровой час (в очках).",
+               "text" : "Прирост голода за такт",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 100,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_FoodCostPerTick",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.1
+               }
+            },
+            {
+               "text" : "Уровни голода при значении по умолчанию:",
+               "type" : "text"
+            },
+            {
+               "text" : "6 часов до лёгкого голода. (24 очка)",
+               "type" : "text"
+            },
+            {
+               "text" : "12 часов до голода. (48 очков)",
+               "type" : "text"
+            },
+            {
+               "text" : "24 часа до сильного голода. (96 очков)",
+               "type" : "text"
+            },
+            {
+               "text" : "36 часов до изнеможения от голода. (144 очка)",
+               "type" : "text"
+            },
+            {
+               "text" : "64 часа до истощения. (256 очков)",
+               "type" : "text"
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Ядер-Кола",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.2. Расход голода за такт * это значение = очки голода от одной Ядер-Колы.",
+               "text" : "Множитель прироста голода",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_NukaFoodCostMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Жажда",
+               "type" : "spacer"
+            },
+            {
+               "text" : "Расчёт усвоения",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию включено. Усвоение считается по весу, а не по стоимости в крышках.",
+               "text" : "Считать по весу",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_DrinkUseWeight",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Жажда",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.5. Для предметов, усиливающих жажду. Расход жажды за такт * это значение = очки жажды от такого предмета.",
+               "text" : "Множитель полученной жажды",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_IncreasesThirstCostMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "По умолчанию 4. Прирост жажды за игровой час (в очках).",
+               "text" : "Прирост жажды за такт",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 100,
+                  "min" : 1,
+                  "propertyName" : "SCM_HC_DrinkCostPerTick",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.1
+               }
+            },
+            {
+               "text" : "Уровни жажды при значении по умолчанию:",
+               "type" : "text"
+            },
+            {
+               "text" : "4 часа до лёгкой жажды. (16 очков)",
+               "type" : "text"
+            },
+            {
+               "text" : "9 часов до жажды. (36 очков)",
+               "type" : "text"
+            },
+            {
+               "text" : "18 часов до лёгкого обезвоживания. (72 очка)",
+               "type" : "text"
+            },
+            {
+               "text" : "30 часов до обезвоживания. (120 очков)",
+               "type" : "text"
+            },
+            {
+               "text" : "45 часов до сильного обезвоживания. (180 очков)",
+               "type" : "text"
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Ядер-Кола",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.4. Стоимость * это значение = утоление жажды. (Да, Ядер-Кола утоляет хуже воды; поставьте 1, чтобы она работала как обычная вода.)",
+               "text" : "Множитель утоления жажды Ядер-Колой",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 10,
+                  "min" : 0.01,
+                  "propertyName" : "SCM_HC_NukaThirstCostMult",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Эффекты лечения",
+               "type" : "spacer"
+            },
+            {
+               "action" : {
+                  "form" : "SCM.esp|90E9",
+                  "function" : "ToggleSustenanceEffects",
+                  "type" : "CallFunction"
+               },
+               "help" : "Отключите, чтобы еда восстанавливала здоровье всегда.",
+               "text" : "Лечение от еды",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "SCM_HC_SustenanceEffects",
+                  "sourceForm" : "SCM.esp|90E9",
+                  "sourceType" : "PropertyValueFloat"
+               }
+            }
+         ],
+         "pageDisplayName" : "Питание"
+      }
+   ],
+   "pluginRequirements" : [
+      "SCM.esp"
+   ]
+}

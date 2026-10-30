@@ -1,0 +1,68 @@
+{
+    "modName": "EnemiesFearPowerArmor",
+    "displayName": "Враги боятся силовой брони",
+    "minMcmVersion": 2,
+    "pluginRequirements": [
+        "Enemies Fear Power Armor.esm"
+    ],
+    "content": [
+        {
+            "text": "<font size='30'><b>ВРАГИ БОЯТСЯ СИЛОВОЙ БРОНИ</b></font>",
+            "type": "section"
+        },
+        {
+            "text": "",
+            "type": "section"
+        },
+        {
+            "text": "<font size='20'><b>НАСТРОЙКИ</b></font>",
+            "type": "section"
+        },
+        {
+            "id": "EFPA_MCM_EnableCombatStart",
+            "text": "Начало боя",
+            "type": "stepper",
+            "help": "Могут ли враги испугаться в момент начала боя. (ПО УМОЛЧАНИЮ: ВКЛ)",
+            "valueOptions": {
+                "sourceType": "GlobalValue",
+                "sourceForm": "Enemies Fear Power Armor.esm|007",
+                "options": [
+                    "ВЫКЛ",
+                    "ВКЛ"
+                ]
+            }
+        },
+        {
+            "id": "EFPA_MCM_EnableKillActor",
+            "text": "Убийство врага",
+            "type": "stepper",
+            "help": "Могут ли враги испугаться, когда в бою убит их союзник. (ПО УМОЛЧАНИЮ: ВКЛ)",
+            "valueOptions": {
+                "sourceType": "GlobalValue",
+                "sourceForm": "Enemies Fear Power Armor.esm|00B",
+                "options": [
+                    "ВЫКЛ",
+                    "ВКЛ"
+                ]
+            }
+        },
+        {
+            "id": "EFPA_MCM_EnableIntimidation",
+            "text": "Устрашение",
+            "type": "stepper",
+            "help": "Могут ли враги испугаться, когда их союзник подчинён перком «Устрашение». (ПО УМОЛЧАНИЮ: ВКЛ)",
+            "valueOptions": {
+                "sourceType": "GlobalValue",
+                "sourceForm": "Enemies Fear Power Armor.esm|F99",
+                "options": [
+                    "ВЫКЛ",
+                    "ВКЛ"
+                ]
+            }
+        },
+        {
+            "text": "",
+            "type": "section"
+        }
+    ]
+}

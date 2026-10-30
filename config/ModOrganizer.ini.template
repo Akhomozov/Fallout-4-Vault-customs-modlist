@@ -1,0 +1,27 @@
+[General]
+gameName=Fallout 4
+selected_profile=@ByteArray(Vault customs RUS)
+gamePath=@@GAME_BYTES@@
+version=2.5.2
+first_start=false
+
+[Settings]
+base_directory=@@ROOT@@
+mod_directory=@@MODS@@
+profiles_directory=@@PROFILES@@
+download_directory=@@DOWNLOADS@@
+overwrite_directory=@@OVERWRITE@@
+profile_local_inis=true
+profile_local_saves=true
+check_for_updates=false
+
+[customExecutables]
+size=1
+1\arguments=
+1\binary=@@F4SE@@
+1\hide=false
+1\ownicon=false
+1\steamAppID=
+1\title=Play Vault Customs
+1\toolbar=false
+1\workingDirectory=@@GAME@@

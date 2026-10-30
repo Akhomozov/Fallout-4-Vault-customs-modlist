@@ -1,0 +1,138 @@
+{
+  "minMcmVersion": 1,
+  "modName": "UnlimitedSurvivalMode",
+  "displayName": "Выживание без ограничений",
+  "content": [
+    {
+      "text": "<font size=\"40\"><p align = \"center\">Выживание без ограничений</p></font>",
+      "html": true,
+      "type": "text"
+    },
+
+	{
+      "text": "<font size=\"15\"><p align = \"center\">Эти настройки вступят в силу после перезапуска игры.</p></font>",
+      "html": true,
+      "type": "text"
+    },
+	
+    {
+      "id": "iEnableFastTravel:Settings",
+      "text": "Включить быстрое перемещение",
+      "type": "switcher",
+      "help": "Разрешить быстрое перемещение в режиме выживания.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+	
+    {
+      "id": "iEnableConsole:Settings",
+      "text": "Разблокировать консоль",
+      "type": "switcher",
+      "help": "Разблокировать консоль в режиме выживания.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iEnableGodMode:Settings",
+      "text": "Команды TGM/TIM",
+      "type": "switcher",
+      "help": "Включить консольные команды TGM и TIM.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iEnableQuickSave:Settings",
+      "text": "Включить быстрое сохранение",
+      "type": "switcher",
+      "help": "Вернуть стандартное быстрое сохранение: по горячей клавише создаётся быстрое сохранение.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iEnableSaveLoadButton:Settings",
+      "text": "Кнопка сохранения в меню",
+      "type": "switcher",
+      "help": "Включить кнопку сохранения и быстрого сохранения в меню паузы.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iCanReenableSurvivalMode:Settings",
+      "text": "Можно снова включить выживание",
+      "type": "switcher",
+      "help": "Позволяет вернуться в режим выживания после выхода из него.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iShowAutoSaveSettings:Settings",
+      "text": "Показывать настройки автосохранения",
+      "type": "switcher",
+      "help": "Показывать настройки автосохранения на странице сложности «Выживание» в меню паузы.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iEnableAutoSave:Settings",
+      "text": "Включить автосохранение",
+      "type": "switcher",
+      "help": "Вернуть стандартное автосохранение.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iShowEnemyRedDotOnCompass:Settings",
+      "text": "Показывать красные точки на компасе",
+      "type": "switcher",
+      "help": "Показывать врагов красными точками на компасе.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iShowLocationsOnCompass:Settings",
+      "text": "Показывать локации на компасе",
+      "type": "switcher",
+      "help": "Показывать неоткрытые локации на компасе.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+	
+    {
+      "id": "iDisableStimpakAmmoWeight:Settings",
+      "text": "Убрать вес стимуляторов и патронов",
+      "type": "switcher",
+      "help": "Убрать вес стимуляторов и патронов в режиме выживания.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    },
+
+    {
+      "id": "iEnableAchievement:Settings",
+      "text": "Включить достижения",
+      "type": "switcher",
+      "help": "Включить достижения при игре с модами.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+          }
+    }
+  ]
+}

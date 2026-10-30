@@ -1,0 +1,718 @@
+{
+  "modName": "WorkshopFramework",
+  "displayName": "Workshop Framework",
+  "minMcmVersion": 6,
+  "pluginRequirements": [
+    "WorkshopFramework.esm"
+  ],
+  "content": [
+    {
+      "text": "<p align='center'><font size='24'>Workshop Framework</font></p>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "text": "Описание",
+      "type": "section"
+    },
+    {
+      "text": "<p>Workshop Framework предоставляет новые возможности для управления гемплеем поселений,вносит огромные улучшения скорости и стабильности, а также структуру для других модов, позволяющую изменять функций системы поселений без необходимости перезаписи файлов ванильной игры.</p><br>",
+      "type": "text",
+      "html": true
+    }
+  ],
+  "pages": [
+    {
+      "pageDisplayName": "Горячие клавиши",
+      "content": [
+        {
+          "text": "Горячие клавиши",
+          "type": "section"
+        },
+        {
+          "id": "StartupWorkshop",
+          "text": "Запуск режима мастерской",
+          "type": "hotkey",
+          "help": "Назначьте горячую клавишу для мгновенного запуска режима Мастерской."
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Геймплей поселений",
+      "content": [
+        {
+          "text": "<p>Все настройки по умолчанию идентичны настройкам ванильной игры</p><br>",
+          "type": "text",
+          "html": true
+        },
+        {
+          "text": "Настройки функциональности поселений",
+          "type": "section"
+        },
+        {
+          "id": "AdjustMaxNPCsByCharisma:SettlementOptions",
+          "text": "Настройка максимума НПС зависит от харизмы",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Ваш показатель харизмы увеличивает максимальное количество поселенцев, которые могут быть набраны в поселение",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|A98D"
+          }
+        },
+        {
+          "id": "AllowSettlementsToLeave:SettlementOptions",
+          "text": "Разрешите поселениям уходить",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Если показатель счастья в поселении падает до 0, вы лишаетесь контроля над поселением до того момента, пока не выполните новый радиант квест (радиант квесты выдаются случайно Престоном или другими поселенцами).",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|4CF3"
+          }
+        },
+        {
+          "id": "CapMaxNPCsByBedCount:SettlementOptions",
+          "text": "Макс. жителей от количество кроватей",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Поселенцы будут набираться только при наличии достаточного количества кроватей.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|2A0F1"
+          }
+        },
+        {
+          "id": "ConsumeBasicResourcesOnly:SettlementOptions",
+          "text": "Потребление только базовых ресурсов",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Каждый день поселенцы потребляют пищу и воду, они будут потреблять любые доступные типы. Если этот параметр включен,то поселенцы будут потреблять только базовые ресурсы, полученные из ванильной игры: очищенную воду и такие культуры, как Тошка, Кукуруза и т.д.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|7B0A"
+          }
+        },
+        {
+          "id": "EnableProductionFix:SettlementOptions",
+          "text": "Включить исправление производства",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] В базовой игре в коде есть ограничение на производство еды, воды и хлама, которое из-за ошибки периодически игнорируется. Это исправляет эту ошибку, сильно ограничивая ресурсы, производимые на верстаке.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|18E6A"
+          }
+        },
+        {
+          "id": "LinkedSettlementConsumption:SettlementOptions",
+          "text": "Потребление связаных поселений",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Каждый день ваши поселенцы потребляют пищу и воду. Эта опция позволяет им потреблять пищу и воду из связанных поселений, если связь между поселениями короткая, чтобы помочь сохранить счастье.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|35D6"
+          }
+        },
+        {
+          "id": "RecruitSettlersImmediately:SettlementOptions",
+          "text": "Немедленный набор поселенцев",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Когда будет построен и активировам маяк в первый раз, то в поселение немедленно придет небольшое количество поселенцев.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|9A5A"
+          }
+        },
+        {
+          "id": "RobotsCountTowardsMaxPopulation:SettlementOptions",
+          "text": "Учитывать роботов в лимите набора",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Роботы занимают места в лимите набора жителей через маяк. Если выключено, при проверке лимита учитываются только жители, не являющиеся роботами. В общем счётчике населения роботы остаются при любом положении переключателя.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|91E4"
+          }
+        },
+        {
+          "id": "RobotHappinessLevel:SettlementOptions",
+          "text": "Уровень счастья роботов по умолчанию",
+          "type": "slider",
+          "help": "[По умолчанию: 50] Роботы автоматически получают этот уровень счастья. (Установите значение 80, чтобы уровень счастья роботов был таким же, как у поселенцев.).",
+          "valueOptions": {
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|35D8"
+          }
+        },
+        {
+          "id": "Vault_customs_CurrentSettlementPopulation",
+          "text": "Население текущего поселения",
+          "type": "button",
+          "help": "Показывает всех жителей, людей (включая гулей) и роботов по данным мастерской поселения, где вы находитесь. Вне поселения отчёт недоступен.",
+          "action": {
+            "type": "CallGlobalFunction",
+            "script": "Vault_customs_WorkshopPopulation",
+            "function": "ShowPopulation"
+          }
+        },
+        {
+          "id": "ShelterMechanic:SettlementOptions",
+          "text": "Механика убежищ",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] В ванильной игре существует механика поселений - если над кроватью поселенца отсутствует крыша, то на показатель счастья накладывается штраф. В поселении расположеном в убежище игра часто не обнаруживает крыши, это баг игры. Данная опция позволит отключить данный штраф",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|6B5D"
+          }
+        },
+        {
+          "text": "Параметры назначения",
+          "type": "section"
+        },
+        {
+          "id": "AutoAssignBeds:SettlementOptions",
+          "text": "Автоназначение кроватей",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Игра автоматически присваивает поселенцам установленные кровати.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92A9"
+          }
+        },
+        {
+          "id": "AutoAssignDefenses:SettlementOptions",
+          "text": "Автоназначение охранников",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Игра автоматически назначает поселенцев на установленные посты охраны",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92AA"
+          }
+        },
+        {
+          "id": "AutoAssignFood:SettlementOptions",
+          "text": "Автоназначения на объекты производящии еду",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Игра автоматически назначает поселенцев на културы, которые производят пищу",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92AB"
+          }
+        },
+        {
+          "id": "MaxDefenseWork:SettlementOptions",
+          "text": "Максимальное количество защиты от охранника",
+          "type": "slider",
+          "help": "[По умолчанию: 6] Максимальное количество очков защиты, которое производит один охранник.",
+          "valueOptions": {
+            "min": 1,
+            "max": 30,
+            "step": 1,
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92B6"
+          }
+        },
+        {
+          "id": "MaxFoodWork:SettlementOptions",
+          "text": "Максимальное количество еды от поселенца",
+          "type": "slider",
+          "help": "[По умолчанию: 6] Максимальное количество очков еды, которое производит один поселенец.",
+          "valueOptions": {
+            "min": 1,
+            "max": 30,
+            "step": 1,
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92B7"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Варианты управления дверьми",
+      "content": [
+        {
+          "id": "DoorManagement:DoorOptions",
+          "text": "Управление дверьми",
+          "type": "switcher",
+          "groupControl": 1,
+          "help": "[По умолчанию: ВЫКЛ] Если включено, двери поселения могут быть настроены на автоматическое открытие и закрытие на основе условий, определенных ниже.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB39"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        },
+        {
+          "id": "AutoCloseNPC:DoorOptions",
+          "text": "Автозакрытие открытого NPC",
+          "type": "switcher",
+          "groupCondition": 1,
+          "help": "[По умолчанию: ВКЛ] Двери поселения, открытые NPC, будут автоматически закрываться вскоре после открытия.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB3D"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        },
+        {
+          "id": "AutoClosePlayer:DoorOptions",
+          "text": "Автозакрытие открытого игроком",
+          "type": "switcher",
+          "groupCondition": 1,
+          "help": "[По умолчанию: ВКЛ] Расчетные двери, открытые проигрывателем, будут автоматически закрываться вскоре после открытия.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB3E"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        },
+        {
+          "id": "AutoCloseDelay:DoorOptions",
+          "text": "Задержка автоматического закрытия",
+          "type": "slider",
+          "groupCondition": 1,
+          "help": "[По умолчанию: 5] Количество секунд до срабатывания функции автозакрытия.",
+          "valueOptions": {
+            "min": 5,
+            "max": 15,
+            "step": 5,
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB3C"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        },
+        {
+          "id": "AutoOpenWSEnter:DoorOptions",
+          "text": "Автоматическое открытие всего в режиме мастерской",
+          "type": "switcher",
+          "groupCondition": 1,
+          "help": "[По умолчанию: ВКЛ] В режиме мастерской все двери поселения будут открыты.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB3B"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        },
+        {
+          "id": "AutoCloseWSExit:DoorOptions",
+          "text": "Автоматическое закрытие всего после режима мастерской",
+          "type": "switcher",
+          "groupCondition": 1,
+          "help": "[По умолчанию: ВКЛ] После выхода из режима мастерской все двери поселка закроются.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1DB3A"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1DB38",
+            "function": "SettingsUpdated"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Управление основой",
+      "content": [
+        {
+          "text": "Альтернативные параметры активации",
+          "type": "section"
+        },
+        {
+          "id": "ManageWorkbench:FrameworkOptions",
+          "text": "Управление верстаком",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ.] При выборе пункта \"Управление\" в верстаке поселения откроется меню Управление поселением.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|15132"
+          }
+        },
+        {
+          "text": "Опции импорта макета ",
+          "type": "section"
+        },
+        {
+          "id": "F4SEPowerUpLayout:FrameworkOptions",
+          "text": "F4SE электропитание макета",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] После постройки макета, провода и линии электроппередач будут обрабатываться F4SE.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|1AC7C"
+          }
+        },
+        {
+          "id": "LootableItems:FrameworkOptions",
+          "text": "Сбор подбираемых предметов",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ.] При постройке макета все незакрепленные предметы, найденные в этом макете, будут храниться в мастерской.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D2"
+          }
+        },
+        {
+          "id": "SelfPowerItems:FrameworkOptions",
+          "text": "Собствнное питание построек",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ.] При включении объекты, созданные согласно макету, будут запитаны сами по себе без необходимости подключения к источнику питания.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D3"
+          }
+        },
+        {
+          "id": "SpawnNPCs:FrameworkOptions",
+          "text": "Спавн НИП",
+          "type": "switcher",
+          "help": "[По умолчанию: OFF] Создавать всех НИП, включенных в макет - сюда могут входить поселенцы, брамины и т.д.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D4"
+          }
+        },
+        {
+          "id": "SpawnPowerArmor:FrameworkOptions",
+          "text": "Спаун силовой брони",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ.] Создайте любую броню, входящую в макет.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D5"
+          }
+        },
+        {
+          "text": "Настройки экспорта макета",
+          "type": "section"
+        },
+        {
+          "id": "IncludeAnimals:FrameworkOptions",
+          "text": "Включая животных",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ.] Домашние животные, такие как Брамины, будут включены в экспорт макета.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D7"
+          }
+        },
+        {
+          "id": "IncludePowerArmor:FrameworkOptions",
+          "text": "Включая Силовую броню",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ.] Силовая броня внесена в Макет экспорта поселения",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D6"
+          }
+        },
+        {
+          "id": "ScrapProfile:FrameworkOptions",
+          "text": "Профиль лома",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Запись ванильных элементов будет включена, чтобы помочь системе макетов более аккуратно отбраковывать соответствующие элементы.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|158D8"
+          }
+        },
+        {
+          "text": "Параметры инструментов мастерской",
+          "type": "section"
+        },
+        {
+          "id": "AutoShowInvisibleItems:FrameworkOptions",
+          "text": "Авто-показ невидимых объектов",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] При входе в режим мастерской будут показаны невидимые объекты WSFW.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|2CE8A"
+          }
+        },
+        {
+          "id": "PersistWorkshopItems:FrameworkOptions",
+          "text": "Сохраняемые объекты ресурсов мастерской",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Объекты ресурсов мастерской будут сохраняться в памяти, чтобы предотвратить многие проблемы, которые могут возникнуть при разрешении игре выгрузить их.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|8307"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|6415",
+            "script": "WorkshopFramework:PersistenceManager",
+            "function": "EnablePersistenceManagement",
+            "params": [
+              "{b}{value}"
+            ]
+          }
+        },
+        {
+          "id": "PowerGridAutoRepair:FrameworkOptions",
+          "text": "Авторемонт электросетей",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Требуется F4SE. При входе в поселение энергосеть будет по возможности восстановлена от повреждений.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|2CE88"
+          }
+        },
+        {
+          "id": "PowerGridAutoDestroy:FrameworkOptions",
+          "text": "Автоматическое разрушение электросети",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Требуется F4SE. Если авторемонт энергосети не смог устранить повреждения, то сеть будет уничтожена для предотвращения сбоев.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|2CE89"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Параметры сообщений",
+      "content": [
+        {
+          "id": "AutoplayMessages:MessageOptions",
+          "text": "Автовоспроизведение сообщений",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Все сообщения,которые используют данную систему и добавлены в очередь, начнут отображатся при выполнении условий.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92C6"
+          }
+        },
+        {
+          "id": "SuppressAllMessages:MessageOptions",
+          "text": "Скрытие всех сообщений",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Все сообщения, использующие данную систему, будут отображаться только после активации голозаписи.",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92C8"
+          }
+        },
+        {
+          "id": "SuppressMessagesDuringCombat:MessageOptions",
+          "text": "Скрытие сообщений во время боя",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Все сообщения, использующие данную систему, которые добавлены в очередь во время боя, будут отображаться только после боя",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92C9"
+          }
+        },
+        {
+          "id": "SuppressMessagesDuringConversation:MessageOptions",
+          "text": "Скрытие сообщений во время диалогов",
+          "type": "switcher",
+          "help": "[По умолчанию: ВЫКЛ] Все сообщения, использующие данную систему, которые добавлены в очередь во время диалога, будут отображаться только после того, как вы закончите разговор",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|92CA"
+          }
+        },
+        {
+          "id": "WorkshopTutorialMessages:MessageOptions",
+          "text": "Обучающие сообщения мастерской",
+          "type": "switcher",
+          "help": "[По умолчанию: ВКЛ] Отображать обучающие сообщения, в которых рассказывают о системе мастерской",
+          "valueOptions": {
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|7B0B"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|F99",
+            "function": "MCM_ToggleWorkshopTutorials"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Инструменты",
+      "content": [
+        {
+          "text": "<p>Запуск этих инструментов не даст никакого подтверждения, пока вы не выйдете из MCM.</p><br>",
+          "type": "text",
+          "html": true
+        },
+        {
+          "text": "Заявление прав на поселение",
+          "type": "button",
+          "help": "После выхода из MCM, вы получите контроль над поселением, в котором находитесь и сможете в нем строить.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|F99",
+            "function": "MCM_ClaimSettlement"
+          }
+        },
+        {
+          "text": "Контроль всех поселений",
+          "type": "button",
+          "help": "После выхода из MCM все маркеры поселений будут показаны, а мастерские будут взяты под контроль.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|F99",
+            "function": "ClaimAllSettlements"
+          }
+        },
+        {
+          "text": "Уборка ненужных вещей",
+          "type": "button",
+          "help": "Попытки найти и очистить предметы в текущем местоположении, которые принадлежат макету и были неправильно размещены.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|12B0D",
+            "script": "WorkshopFramework:SettlementLayoutManager",
+            "function": "FindAndRemoveMisplacedItems"
+          }
+        },
+        {
+          "text": "Принудительное закрытие прогресс-баров",
+          "type": "button",
+          "help": "Это закроет все прогресс-бары, созданные системой WSFW. Полезно, если кажется, что один из них завис или мод не смог их закрыть.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269E",
+            "function": "ForceCloseAllProgressBars"
+          }
+        },
+        {
+          "text": "Меню управления поселения",
+          "type": "button",
+          "help": "После выхода из MCM, в меню появятся опции для управления расчетами, такие как импорт/экспорт макета поселения.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|F99",
+            "function": "MCM_PresentManageSettlementMenu"
+          }
+        },
+        {
+          "text": "Меню восстановления удаленных поселений",
+          "type": "button",
+          "help": "В результате будет предложено несколько вариантов восстановления поселений, которые крашнулись при входе в них.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269C",
+            "function": "ShowRemoteLocationManagementMenu"
+          }
+        },
+        {
+          "text": "Сбросить ссылки поселенцев",
+          "type": "button",
+          "help": "Позволит сбросить связи всех поселенцев в нынешнем поселении, чтобы попытаться решить проблемы с населением.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|F99",
+            "function": "RelinkLocalSettlers"
+          }
+        },
+        {
+          "text": "Сброс виджетов интерфеса",
+          "type": "button",
+          "help": "Все виджеты интерфейса, работающие на HUDFramework, которые были зарегистрированы через Workshop Framework's HUDFrameworkManager.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269E",
+            "function": "ResetAllWidgets"
+          }
+        },
+        {
+          "text": "Инструментарий электросетей",
+          "type": "section"
+        },
+        {
+          "text": "Ремонт электросети",
+          "type": "button",
+          "help": "Требуется F4SE. Энергосеть текущегопоселения будет восстановлена, если это возможно.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269C",
+            "function": "MCM_RepairPowerGrid"
+          }
+        },
+        {
+          "text": "Разрушить электросеть",
+          "type": "button",
+          "help": "Требуется F4SE. [Продвинутый] Электросеть текущего поселения будет уничтожена.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269C",
+            "function": "MCM_ResetPowerGrid"
+          }
+        },
+        {
+          "text": "Сканирование электросети",
+          "type": "button",
+          "help": "Требуется F4SE. [Продвинутый] Электросеть текущего поселения будет записана в лог файл.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|269C",
+            "function": "MCM_ScanPowerGrid"
+          }
+        },
+        {
+          "text": "Обновление электросетей",
+          "type": "button",
+          "help": "Требуется F4SE. [Advanced] Запускает обновление анимации для всех объектов, связанных с электричеством, в текущем поселении.",
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|6B5C",
+            "function": "MCM_ForcePowerTransmission"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Продвинутое управление",
+      "content": [
+        {
+          "text": "Параметры многопоточного движка",
+          "type": "section"
+        },
+        {
+          "id": "MaxThreads:AdvancedControls",
+          "text": "Максимум потоков",
+          "type": "slider",
+          "help": "[По умолчанию: 50] Если у вас частые краши или дамп стека, вы можете попробовать уменьшить это.",
+          "valueOptions": {
+            "min": 10,
+            "max": 50,
+            "step": 5,
+            "sourceType": "GlobalValue",
+            "sourceForm": "WorkshopFramework.esm|19D49"
+          },
+          "action": {
+            "type": "CallFunction",
+            "form": "WorkshopFramework.esm|1736",
+            "function": "MCM_ChangeMaxThreads",
+            "params": [
+              "{value}"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

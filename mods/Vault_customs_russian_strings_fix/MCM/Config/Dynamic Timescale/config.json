@@ -1,0 +1,174 @@
+{
+	"modName": "Elzee Dynamic Timescale",
+	"displayName": "Динамический таймскейл",
+	"content" : [
+	
+	{
+    "text": "<p align='center'><font size='32'>Динамический таймскейл</font></p>",
+    "type": "text",
+    "html": true
+    },
+
+	{
+	"id": "Timescale_Base",
+	"text": "Таймскейл: базовый",
+	"type": "slider",
+	"help": "Базовый таймскейл игры. По умолчанию = 20",
+	"valueOptions": {
+	"min": 1,
+	"max": 100,
+	"step": 1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|810"
+	}
+	},
+	
+	{
+	"id": "Timescale_Standing",
+	"text": "Таймскейл: на месте",
+	"type": "slider",
+	"help": "Таймскейл, когда вы стоите на улице вне боя и вне режима мастерской.",
+	"valueOptions": {
+	"min": 1,
+	"max": 100,
+	"step": 1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|805"
+	}
+	},
+
+	{
+	"id": "Timescale_Moving",
+	"text": "Таймскейл: в движении",
+	"type": "slider",
+	"help": "Таймскейл при обычной скорости движения",
+	"valueOptions": {
+	"min": 1,
+	"max": 100,
+	"step": 1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|806"
+	}
+	},
+
+
+	{
+	"id": "CombatFactor",
+	"text": "Коэффициент: бой",
+	"type": "slider",
+	"help": "В бою таймскейл умножается на это значение",
+	"valueOptions": {
+	"min": 0,
+	"max": 5,
+	"step": 0.1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|807"
+	}
+	},
+
+	{
+	"id": "InteriorFactor",
+	"text": "Коэффициент: помещения",
+	"type": "slider",
+	"help": "В помещениях таймскейл умножается на это значение",
+	"valueOptions": {
+	"min": 0,
+	"max": 5,
+	"step": 0.1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|808"
+	}
+	},
+
+	{
+	"id": "WorkshopModeFactor",
+	"text": "Коэффициент: режим мастерской",
+	"type": "slider",
+	"help": "В режиме мастерской таймскейл умножается на это значение",
+	"valueOptions": {
+	"min": 0,
+	"max": 5,
+	"step": 0.1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|809"
+	}
+	},
+
+	{
+	"id": "NightFactor",
+	"text": "Коэффициент: ночь",
+	"type": "slider",
+	"help": "С 21:00 до 5:00 таймскейл умножается на это значение",
+	"valueOptions": {
+	"min": 0,
+	"max": 5,
+	"step": 0.1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|812"
+	}
+	},
+
+	{
+	"id": "MinTimescale",
+	"text": "Минимальный таймскейл",
+	"type": "slider",
+	"help": "Таймскейл не опустится ниже этого значения",
+	"valueOptions": {
+	"min": 1,
+	"max": 40,
+	"step": 1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|80A"
+	}
+	},
+
+	{
+	"id": "MaxTimescale",
+	"text": "Максимальный таймскейл",
+	"type": "slider",
+	"help": "Таймскейл не поднимется выше этого значения",
+	"valueOptions": {
+	"min": 1,
+	"max": 200,
+	"step": 1,
+	"sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|80B"
+	}
+	},
+
+	{
+	"id": "ChimeInterval",
+    "text": "Интервал отбивки",
+    "type": "dropdown",
+    "help": "Интервал сигнала времени, в часах",
+    "valueOptions": {
+    "options": ["Отключено", "1h", "2h", "4h", "8h", "12h"],
+	"sourceType": "GlobalValue",
+	"sourceForm": "Elzee Dynamic Timescale.esp|80E"
+	}
+    },
+
+	{
+	"id": "ChimeSoundOn",
+    "text": "Звук отбивки",
+    "type": "switcher",
+    "help": "Подавать сигнал при показе игрового времени",
+    "valueOptions": {
+    "sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|80F"
+    }
+    },
+
+	{
+	"id": "DebugOn",
+    "text": "Отладочные сообщения",
+    "type": "switcher",
+    "help": "Периодически показывать таймскейл",
+    "valueOptions": {
+    "sourceType": "GlobalValue",
+    "sourceForm": "Elzee Dynamic Timescale.esp|80C"
+    }
+    }
+
+  ]
+}

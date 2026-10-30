@@ -1,0 +1,422 @@
+{
+  "modName": "UneducatedShooter",
+  "displayName": "Инерция и наклоны",
+  "minMcmVersion": 2,
+  "pluginRequirements": [],
+  "content": [
+    {
+      "text": "Инерция и наклоны",
+      "type": "section"
+    },
+    {
+      "text": "<p>Четыре независимые надстройки над видом от первого лица. Каждая включается и настраивается отдельно.</p><br> <p>Инерция — оружие и камера с небольшим запозданием догоняют поворот мыши и плавно возвращаются на место. Реалистичная камера — крен и рыскание при движении; по умолчанию выключена, может укачивать.</p><br> <p>Наклоны — выглядывание из-за угла на свои клавиши вместо ванильного; по умолчанию выключены. Динамическая высота — высота персонажа пересчитывается под текущую позу, поэтому в приседе можно пролезть там, где стоя не пройти.</p><br>",
+      "type": "text",
+      "html": true
+    }
+  ],
+  "pages": [
+    {
+      "pageDisplayName": "Инерция",
+      "content": [
+        {
+          "text": "Инерция",
+          "type": "section"
+        },
+        {
+          "id": "frotLimitX:Inertia",
+          "text": "Предел поворота по горизонтали",
+          "type": "slider",
+          "help": "Ограничивает угол поворота по горизонтали. Значение 0 отключает горизонтальную инерцию.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 180,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotLimitY:Inertia",
+          "text": "Предел поворота по вертикали",
+          "type": "slider",
+          "help": "Ограничивает угол поворота по вертикали. Значение 0 отключает вертикальную инерцию.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 180,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotDivX:Inertia",
+          "text": "Делитель поворота по горизонтали",
+          "type": "slider",
+          "help": "Скорость поворота по горизонтали. Больше значение — меньше инерции.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 50,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotDivY:Inertia",
+          "text": "Делитель поворота по вертикали",
+          "type": "slider",
+          "help": "Скорость поворота по вертикали. Больше значение — меньше инерции.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 50,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotDivXADS:Inertia",
+          "text": "Делитель поворота по горизонтали (в прицеле)",
+          "type": "slider",
+          "help": "Скорость поворота по горизонтали при прицеливании. Больше значение — меньше инерции.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 50,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotDivYADS:Inertia",
+          "text": "Делитель поворота по вертикали (в прицеле)",
+          "type": "slider",
+          "help": "Скорость поворота по вертикали при прицеливании. Больше значение — меньше инерции.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 50,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotADSConditionMult:Inertia",
+          "text": "Множитель возврата в прицеле",
+          "type": "slider",
+          "help": "Умножает скорость возврата при прицеливании. Больше значение — быстрее возврат.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 10,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "frotReturnDiv:Inertia",
+          "text": "Скорость возврата",
+          "type": "slider",
+          "help": "Скорость возврата по обеим осям. Больше значение — быстрее возврат.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 1.05,
+            "max": 10,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "brotDisableInADS:Inertia",
+          "text": "Отключить инерцию в прицеле",
+          "type": "switcher",
+          "help": "Полностью убирает инерцию при прицеливании.",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Реалистичная камера",
+      "content": [
+        {
+          "text": "Реалистичная камера",
+          "type": "section"
+        },
+        {
+          "text": "ВНИМАНИЕ: возможность экспериментальная. Может укачивать и вызывать головокружение.",
+          "type": "text"
+        },
+        {
+          "id": "bRealism:Realism",
+          "text": "Включить реалистичную камеру",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bRealismDisableInPA:Realism",
+          "text": "Отключить в силовой броне",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "fRealismDefaultRotation:Realism",
+          "text": "Наклон по умолчанию",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": -45.0,
+            "max": 45.0,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "fRealismRatio:Realism",
+          "text": "Сила крена",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.01,
+            "max": 5,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "fRealismYawRatio:Realism",
+          "text": "Сила рыскания",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.01,
+            "max": 5,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "fRealismRatioADS:Realism",
+          "text": "Множитель силы в прицеле",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.01,
+            "max": 1,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "fRealismRotLimit:Realism",
+          "text": "Предел крена",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 90,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "fRealismYawRotLimit:Realism",
+          "text": "Предел рыскания",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 90,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "fRealismReturnStep:Realism",
+          "text": "Скорость возврата",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.001,
+            "max": 1,
+            "step": 0.001
+          }
+        },
+        {
+          "id": "fRealismReturnStepADS:Realism",
+          "text": "Множитель возврата в прицеле",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 1,
+            "max": 10,
+            "step": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Наклоны",
+      "content": [
+        {
+          "text": "Наклоны",
+          "type": "section"
+        },
+        {
+          "id": "bleanDisable:Leaning",
+          "text": "Отключить наклоны",
+          "type": "switcher",
+          "help": "Отключение вернёт ванильное выглядывание, но потребуется перезапустить игру.",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "keyLeanLeft",
+          "text": "Наклон влево",
+          "type": "hotkey",
+          "help": "",
+          "valueOptions": {
+            "allowModifierKeys": false
+          }
+        },
+        {
+          "id": "keyLeanRight",
+          "text": "Наклон вправо",
+          "type": "hotkey",
+          "help": "",
+          "valueOptions": {
+            "allowModifierKeys": false
+          }
+        },
+        {
+          "id": "fleanTimeCost:Leaning",
+          "text": "Время наклона",
+          "type": "slider",
+          "help": "Сколько времени занимает полный наклон.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.01,
+            "max": 10,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "fleanMax:Leaning",
+          "text": "Наибольший угол наклона (от 1-го лица)",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 90,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "fleanMax3rd:Leaning",
+          "text": "Наибольший угол наклона (от 3-го лица)",
+          "type": "slider",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 90,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "bToggleLean:Leaning",
+          "text": "Наклон переключателем",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bADSOnly:Leaning",
+          "text": "Только при прицеливании",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bR6Style:Leaning",
+          "text": "В стиле Rainbow Six",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "bRotateInput:Leaning",
+          "text": "Поворачивать ввод прицеливания",
+          "type": "switcher",
+          "help": "Поворачивает ввод мыши и геймпада вместе с наклоном в стиле Tarkov.",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        }
+      ]
+    },
+    {
+      "pageDisplayName": "Динамическая высота",
+      "content": [
+        {
+          "text": "Динамическая высота",
+          "type": "section"
+        },
+        {
+          "id": "bdynamicHeight:Height",
+          "text": "Включить динамическую высоту",
+          "type": "switcher",
+          "help": "",
+          "valueOptions": {
+            "sourceType": "ModSettingBool"
+          }
+        },
+        {
+          "id": "fheightDiffThreshold:Height",
+          "text": "Порог разницы высоты",
+          "type": "slider",
+          "help": "Если разница высоты между кадрами больше этого значения, коробка столкновений игрока обновляется.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0.1,
+            "max": 10,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "fheightBuffer:Height",
+          "text": "Запас высоты",
+          "type": "slider",
+          "help": "Это значение прибавляется к высоте персонажа.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 0,
+            "max": 20,
+            "step": 0.01
+          }
+        },
+        {
+          "id": "fminHeight:Height",
+          "text": "Наименьшая высота",
+          "type": "slider",
+          "help": "Наименьшая определяемая высота. Не даёт провалиться сквозь землю на некоторых анимациях.",
+          "valueOptions": {
+            "sourceType": "ModSettingFloat",
+            "min": 5,
+            "max": 40,
+            "step": 0.1
+          }
+        }
+      ]
+    }
+  ]
+}

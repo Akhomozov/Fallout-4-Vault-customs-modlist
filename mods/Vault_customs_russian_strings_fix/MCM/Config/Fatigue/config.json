@@ -1,0 +1,345 @@
+{
+   "content" : [],
+   "displayName" : "Усталость",
+   "minMcmVersion" : 1,
+   "modName" : "Fatigue",
+   "pages" : [
+      {
+         "content" : [
+            {
+               "html" : true,
+               "text" : "<p>Убирает намертво застывший прицел. Пока вы целитесь и гасите отдачу, оружие медленно тратит очки действия — тем быстрее, чем оно тяжелее. И чем меньше ОД остаётся, тем сильнее ствол гуляет в руках.</p><br> <p><b>Сила</b> уменьшает раскачку при низких ОД. <b>Ловкость</b> уменьшает сам расход и заодно поднимает запас ОД. Но когда очки действия кончились совсем, ни то, ни другое уже не спасает.</p><br>",
+               "type" : "text"
+            },
+            {
+               "text" : "Включить или отключить мод",
+               "type" : "section"
+            },
+            {
+               "action" : {
+                  "form" : "Fatigue.esp|F99",
+                  "function" : "toggleMod",
+                  "type" : "CallFunction"
+               },
+               "help" : "Включает или отключает мод.",
+               "text" : "Система",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "propertyName" : "bModEnable",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueBool"
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Основные настройки"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Порог дрожи",
+               "type" : "section"
+            },
+            {
+               "help" : "По умолчанию 0.40. При каком проценте ОД начинается дрожь. 1 = 100%, 0.01 = 1%",
+               "text" : "Порог срабатывания, %",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 1,
+                  "min" : 0.01,
+                  "propertyName" : "fShake_shakeKickIn",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "text" : "Сила дрожи",
+               "type" : "section"
+            },
+            {
+               "help" : "Минимальная дрожь, которая всегда есть у любого оружия.",
+               "text" : "Минимальная база",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fShake_maxLow",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальная дрожь для оружия этого типа.",
+               "text" : "Пистолет: максимум",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fShakePistol",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальная дрожь для оружия этого типа.",
+               "text" : "Винтовка: максимум",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fShakeRifle",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальная дрожь для оружия этого типа.",
+               "text" : "Тяжёлое оружие: максимум",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fShakeHeavyGun",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальная дрожь для оружия, не попавшего ни в один тип.",
+               "text" : "Прочее оружие: максимум",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fShakeElse",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Настройки дрожи"
+      },
+      {
+         "content" : [
+            {
+               "text" : "Базовый расход ОД",
+               "type" : "section"
+            },
+            {
+               "help" : "Максимальный расход ОД для этого типа оружия.",
+               "text" : "Пистолет: база",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPPistol",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальный расход ОД для этого типа оружия.",
+               "text" : "Винтовка: база",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPRifle",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальный расход ОД для этого типа оружия.",
+               "text" : "Тяжёлое оружие: база",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPHeavyGun",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Максимальный расход ОД для прочих типов оружия.",
+               "text" : "Прочее оружие: база",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPElse",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Минимум для максимального расхода ОД",
+               "type" : "section"
+            },
+            {
+               "help" : "Расход ОД для этого типа оружия не опустится ниже этого значения.",
+               "text" : "Пистолет",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPPistol_maxLow",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Расход ОД для этого типа оружия не опустится ниже этого значения.",
+               "text" : "Винтовка",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPRifle_maxLow",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Расход ОД для этого типа оружия не опустится ниже этого значения.",
+               "text" : "Тяжёлое оружие",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPHeavyGun_maxLow",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Расход ОД для прочих типов оружия не опустится ниже этого значения.",
+               "text" : "Прочее оружие",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 5,
+                  "min" : 0.01,
+                  "propertyName" : "fDamageAPElse_maxLow",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "text" : "Расход ОД от отдачи",
+               "type" : "section"
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: пистолет",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilPistolModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: винтовка",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilRifleModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: тяжёлое оружие",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilHeavyGunModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: лазер и плазма",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilEnergyModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: огнемёт",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilFlamerModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "help" : "Тратит ОД при стрельбе. 0 отключает. При 1 выстрел тратит столько же ОД, сколько прицеливание.",
+               "text" : "Расход ОД от отдачи: прочее",
+               "type" : "slider",
+               "valueOptions" : {
+                  "max" : 15,
+                  "min" : 0,
+                  "propertyName" : "fDamageAPRecoilElseModifier",
+                  "sourceForm" : "Fatigue.esp|F99",
+                  "sourceType" : "PropertyValueFloat",
+                  "step" : 0.01
+               }
+            },
+            {
+               "type" : "spacer"
+            }
+         ],
+         "pageDisplayName" : "Настройки расхода ОД"
+      }
+   ],
+   "pluginRequirements" : [
+      "Fatigue.esp"
+   ]
+}

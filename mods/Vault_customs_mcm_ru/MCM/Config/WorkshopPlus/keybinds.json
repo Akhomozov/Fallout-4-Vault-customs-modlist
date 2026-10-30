@@ -1,0 +1,284 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|F99",
+            "function" : "Hotkey_Undo",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: отменить.",
+         "id" : "WP_Undo"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|F99",
+            "function" : "Hotkey_Redo",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: вернуть.",
+         "id" : "WP_Redo"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|F99",
+            "function" : "Hotkey_CloneGrabbed",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: клонировать.",
+         "id" : "WP_Clone"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ToggleAutoChangeLayersOnMove",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: авто-смена слоя при переносе.",
+         "id" : "WP_ToggleAutoChangeLayersOnMove"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_PlaceLayerHandle",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: поставить метку слоя.",
+         "id" : "WP_PlaceLayerHandle"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|FBCD",
+            "function" : "Hotkey_PlaceBlueprintController",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: поставить пульт чертежа.",
+         "id" : "WP_PlaceBlueprintController"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "Hotkey_ExitWorkshopModeAndSave",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сохранить в мастерской.",
+         "id" : "WP_WorkshopSave"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_CreateNewLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: создать слой.",
+         "id" : "WP_CreateLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_SwitchToNextLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сменить активный слой.",
+         "id" : "WP_SwitchActiveLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ClearActiveLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: очистить активный слой.",
+         "id" : "WP_ClearActiveLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_DisableActiveLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: удалить активный слой.",
+         "id" : "WP_DeleteActiveLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ToggleLayerLink",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: связать слои.",
+         "id" : "WP_ToggleLayerLink"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_DuplicateActiveLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: продублировать активный слой.",
+         "id" : "WP_DuplicateActiveLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ToggleActiveLayer",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: включить или выключить активный слой.",
+         "id" : "WP_ToggleActiveLayer"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_HideAllLayers",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: спрятать все слои.",
+         "id" : "WP_HideAllLayers"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_HideInactiveLayers",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: спрятать неактивные слои.",
+         "id" : "WP_HideInactiveLayers"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ShowAllLayers",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: показать все слои.",
+         "id" : "WP_ShowAllLayers"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ToggleActiveLayerHighlighting",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: авто-подсветка активного слоя.",
+         "id" : "WP_ToggleActiveLayerHighlighting"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ToggleLayerHighlight",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: подсветка слоя.",
+         "id" : "WP_ToggleLayerHighlight"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ClearAllHighlighting",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: снять всю подсветку слоёв.",
+         "id" : "WP_ClearAllHighlighting"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_NudgeWidgetUp",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сдвинуть панель слоёв вверх.",
+         "id" : "WP_NudgeLayerHUDUp"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_NudgeWidgetDown",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сдвинуть панель слоёв вниз.",
+         "id" : "WP_NudgeLayerHUDDown"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_NudgeWidgetLeft",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сдвинуть панель слоёв влево.",
+         "id" : "WP_NudgeLayerHUDLeft"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_NudgeWidgetRight",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сдвинуть панель слоёв вправо.",
+         "id" : "WP_NudgeLayerHUDRight"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ScaleWidgetUp",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: увеличить панель слоёв.",
+         "id" : "WP_ScaleLayerHUDUp"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED7",
+            "function" : "Hotkey_ScaleWidgetDown",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: уменьшить панель слоёв.",
+         "id" : "WP_ScaleLayerHUDDown"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "Hotkey_ToggleFlight",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: полёт в режиме мастерской.",
+         "id" : "WP_ToggleFlight"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "Hotkey_ToggleFreezeTime",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: остановить время в режиме мастерской.",
+         "id" : "WP_ToggleFreezeTime"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "ToggleSpeed",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: ускорение в режиме мастерской.",
+         "id" : "WP_ToggleSpeedBuff"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "Hotkey_ToggleFreeBuildMode",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: свободная стройка в ближайшем поселении.",
+         "id" : "WP_ToggleFreeBuildMode"
+      },
+      {
+         "action" : {
+            "form" : "WorkshopPlus.esp|1ED5",
+            "function" : "ClearAllTracking",
+            "type" : "CallFunction"
+         },
+         "desc" : "Workshop Plus: сбросить всё, что отслеживает Workshop Plus.",
+         "id" : "WP_ClearAllTracking"
+      }
+   ],
+   "modName" : "WorkshopPlus"
+}

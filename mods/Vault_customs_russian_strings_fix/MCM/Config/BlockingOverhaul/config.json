@@ -1,0 +1,287 @@
+{
+   "content" : [
+      {
+         "html" : true,
+         "text" : "<p>Переделывает блок в ближнем бою — по одним правилам для игрока и для врагов.</p><br> <p>Блок больше не спасает от любой атаки ближнего боя. Удары когтя смерти, чудища, матки болотников и стража не блокируются вообще. Остальные гасятся по-разному: удар человека — полностью, болотника — на три четверти, супермутанта — наполовину, яо-гая — на четверть.</p><br> <p>Каждый блок стоит очков действия, и чем крупнее враг, тем дороже. Если ОД меньше порога, блок не срабатывает: удар проходит и отбрасывает. Сила и силовая броня снижают цену блока в ОД.</p><br>",
+         "type" : "text"
+      },
+      {
+         "text" : "Общие настройки",
+         "type" : "section"
+      },
+      {
+         "help" : "По умолчанию включено.",
+         "text" : "Альтернативный блок",
+         "type" : "switcher",
+         "valueOptions" : {
+            "sourceForm" : "BlockingOverhaul.esp|17",
+            "sourceType" : "GlobalValue"
+         }
+      },
+      {
+         "text" : "Настройки отбрасывания",
+         "type" : "section"
+      },
+      {
+         "help" : "По умолчанию включено.",
+         "text" : "Отбрасывание",
+         "type" : "switcher",
+         "valueOptions" : {
+            "sourceForm" : "BlockingOverhaul.esp|F",
+            "sourceType" : "GlobalValue"
+         }
+      },
+      {
+         "help" : "По умолчанию включено. Требует включённой отдачи.",
+         "text" : "Силовые атаки вызывают отбрасывание",
+         "type" : "switcher",
+         "valueOptions" : {
+            "sourceForm" : "BlockingOverhaul.esp|FA1",
+            "sourceType" : "GlobalValue"
+         }
+      },
+      {
+         "text" : "Настройки цены блока",
+         "type" : "section"
+      },
+      {
+         "help" : "По умолчанию включено.",
+         "text" : "Цена блока включена",
+         "type" : "switcher",
+         "valueOptions" : {
+            "sourceForm" : "BlockingOverhaul.esp|FA2",
+            "sourceType" : "GlobalValue"
+         }
+      },
+      {
+         "help" : "По умолчанию 15. Расы: люди, собаки, мелкие насекомые, кротокрысы, дикие гули",
+         "text" : "Цена блока: без оружия",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|D",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 25. ",
+         "text" : "Цена блока: силовая атака без оружия",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|14",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 2.5.",
+         "text" : "Цена блока: потрошитель",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|E",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 20.",
+         "text" : "Цена блока: одноручное ближнее",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|6",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 30.",
+         "text" : "Цена блока: силовая атака одноручным",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|FA0",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 30.",
+         "text" : "Цена блока: двуручное ближнее",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|C",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 40.",
+         "text" : "Цена блока: силовая атака двуручным",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|B",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 35. Расы: пёс ВРЭ, мистер Помощник, болотники, робомозг, малый заглот",
+         "text" : "Цена блока: средние",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|8",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 45. Расы: штурмотрон, болотник-охотник, супермутанты, синты",
+         "text" : "Цена блока: сильные",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|F9A",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 60. Расы: удильщик, туманник, заглот, король болотников, радскорпион, яо-гай",
+         "text" : "Цена блока: очень сильные",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|9",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 75. Расы: коготь смерти, чудище, крокодилокоготь, матка болотников, рак-отшельник",
+         "text" : "Цена блока: непробиваемые",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|A",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "text" : "Общий множитель цены блока",
+         "type" : "section"
+      },
+      {
+         "help" : "По умолчанию 0.75. Базовые ОД (одноручное или двуручное) + [вес оружия] * [это значение]",
+         "text" : "Множитель веса оружия",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 10,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|1A",
+            "sourceType" : "GlobalValue",
+            "step" : 0.01
+         }
+      },
+      {
+         "help" : "По умолчанию 0.5. Снижает цену блока на [Сила] * [это значение]",
+         "text" : "Множитель снижения цены блока",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 25,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|7",
+            "sourceType" : "GlobalValue",
+            "step" : 0.01
+         }
+      },
+      {
+         "help" : "По умолчанию 0.5. Снижает цену блока на [это значение] * ([Сила] * [множитель снижения цены блока])",
+         "text" : "Множитель цены блока в силовой броне",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 1,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|18",
+            "sourceType" : "GlobalValue",
+            "step" : 0.01
+         }
+      },
+      {
+         "text" : "Настройки отбрасывания и порогов блока",
+         "type" : "section"
+      },
+      {
+         "help" : "По умолчанию 19. Если при блоке у вас меньше этого числа ОД, атака становится непробиваемой и персонажа отбрасывает.",
+         "text" : "Порог для ближнего боя (ОД) ",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|5",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 34. Если при блоке у вас меньше этого числа ОД, атака становится непробиваемой и персонажа отбрасывает.",
+         "text" : "Порог для средних (ОД) ",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|10",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 44. Если при блоке у вас меньше этого числа ОД, атака становится непробиваемой и персонажа отбрасывает.",
+         "text" : "Порог для сильных (ОД) ",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|11",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      },
+      {
+         "help" : "По умолчанию 59. Если при блоке у вас меньше этого числа ОД, атака становится непробиваемой и персонажа отбрасывает.",
+         "text" : "Порог для очень сильных (ОД) ",
+         "type" : "slider",
+         "valueOptions" : {
+            "max" : 100,
+            "min" : 0,
+            "sourceForm" : "BlockingOverhaul.esp|12",
+            "sourceType" : "GlobalValue",
+            "step" : 0.5
+         }
+      }
+   ],
+   "displayName" : "Переработка блока",
+   "minMcmVersion" : 1,
+   "modName" : "BlockingOverhaul",
+   "pluginRequirements" : [
+      "BlockingOverhaul.esp"
+   ]
+}

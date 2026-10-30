@@ -1,0 +1,26 @@
+# Local MO2 state and credentials
+/ModOrganizer.ini
+/portable.txt
+/downloads/
+/overwrite/
+/logs/
+/webcache/
+/cache/
+/GameLogs/
+/Stock Game Folder/
+**/saves/
+**/Saves/
+*.fos
+*.f4se
+*.log
+*.dmp
+*.pdb
+*.bak*
+*.tmp
+*.mohidden
+__pycache__/
+.env
+.env.*
+*.pem
+*.key
+/audit-local/

@@ -1,0 +1,21 @@
+MainMenu.swf - patched copy of the file from "[PC] MCM Booster".
+
+Changes, character 94 (SplashScreenText_tf, the start splash line):
+  * rect  -40,6560,-40,541  ->  -8740,15260,-1160,541
+    (330x29 px -> 1200x85 px). The mid-point of the rect (3260 twips) MUST be
+    kept: the PlaceObject matrix of the field is tx = -3260, so only that
+    mid-point puts the box in the middle of the screen. The box grows upwards,
+    so the last line lands where the original single line was.
+  * all lines are written into the field as plain Russian text, in three <p>
+    paragraphs. The $Press any button to start token is gone on purpose: the
+    engine looks the WHOLE text of the field up in Translate_ru.txt, so a
+    token stops resolving as soon as anything else is added next to it.
+
+Rebuild after an MCM Booster update:
+  _RU_toolkit\mainmenu_hint.ps1 -In "<booster>\Interface\MainMenu.swf" `
+      -Out <out.swf> -Line1File _RU_toolkit\mainmenu_hint_line1.txt `
+      -Line2File _RU_toolkit\mainmenu_hint_line2.txt `
+      -Line3File _RU_toolkit\mainmenu_hint_line3.txt -ExtraTopTwips 560
+  (always patch the pristine Booster file, never an already patched one)
+
+Rollback: delete this file, MCM Booster's own MainMenu.swf takes over.

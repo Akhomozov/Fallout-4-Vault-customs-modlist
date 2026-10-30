@@ -1,0 +1,21 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "form" : "Fallout4.esm|1",
+            "type" : "SendEvent"
+         },
+         "desc" : "Наклон влево",
+         "id" : "keyLeanLeft"
+      },
+      {
+         "action" : {
+            "form" : "Fallout4.esm|1",
+            "type" : "SendEvent"
+         },
+         "desc" : "Наклон вправо",
+         "id" : "keyLeanRight"
+      }
+   ],
+   "modName" : "UneducatedShooter"
+}

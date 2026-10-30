@@ -1,0 +1,65 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "function" : "mcm_triggerHotkey",
+            "params" : [
+               1
+            ],
+            "script" : "M8rTrueStormsMCM",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Смена погоды, клавиша 1",
+         "id" : "M8rTrueStormsHotkey1"
+      },
+      {
+         "action" : {
+            "function" : "mcm_triggerHotkey",
+            "params" : [
+               2
+            ],
+            "script" : "M8rTrueStormsMCM",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Смена погоды, клавиша 2",
+         "id" : "M8rTrueStormsHotkey2"
+      },
+      {
+         "action" : {
+            "function" : "mcm_triggerHotkey",
+            "params" : [
+               3
+            ],
+            "script" : "M8rTrueStormsMCM",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Смена погоды, клавиша 3",
+         "id" : "M8rTrueStormsHotkey3"
+      },
+      {
+         "action" : {
+            "function" : "mcm_triggerHotkey",
+            "params" : [
+               4
+            ],
+            "script" : "M8rTrueStormsMCM",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Смена погоды, клавиша 4",
+         "id" : "M8rTrueStormsHotkey4"
+      },
+      {
+         "action" : {
+            "function" : "mcm_triggerHotkey",
+            "params" : [
+               5
+            ],
+            "script" : "M8rTrueStormsMCM",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Смена погоды, клавиша 5",
+         "id" : "M8rTrueStormsHotkey5"
+      }
+   ],
+   "modName" : "TrueStorms"
+}

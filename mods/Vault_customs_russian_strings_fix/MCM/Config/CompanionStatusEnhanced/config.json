@@ -1,0 +1,305 @@
+{
+	"modName": "CompanionStatusEnhanced",
+	"displayName": "Состояние спутников (CSE)",
+	"minMcmVersion": 2,
+	"pluginRequirements": ["CompanionStatusEnhanced.esp"],
+	"pages": [
+		{
+			"pageDisplayName": "Горячие клавиши",
+			"content": [				
+				{
+				  "id": "CSE_ToggleHUD",
+				  "text": "Включить или выключить панель CSE",
+				  "type": "hotkey",
+				  "help": "Чтобы это работало в полную силу, поставьте настройку «Когда показывать» в значение «По горячей клавише MCM»."
+				},
+                {
+				  "text": "Горячие клавиши положения",
+				  "type": "section"
+				},
+				{
+				"text": "Назначьте эти клавиши на время, расставьте панель как нужно, а потом при желании переназначьте их на что-то другое.",
+				"type": "text",
+				"html": false
+				},
+				{
+				  "id": "CSE_NudgeUp",
+				  "text": "Сдвинуть вверх",
+				  "type": "hotkey",
+				  "help": "Немного сдвинуть панель CSE вверх."
+				},
+				{
+				  "id": "CSE_NudgeDown",
+				  "text": "Сдвинуть вниз",
+				  "type": "hotkey",
+				  "help": "Немного сдвинуть панель CSE вниз."
+				},
+				{
+				  "id": "CSE_NudgeLeft",
+				  "text": "Сдвинуть влево",
+				  "type": "hotkey",
+				  "help": "Немного сдвинуть панель CSE влево."
+				},
+				{
+				  "id": "CSE_NudgeRight",
+				  "text": "Сдвинуть вправо",
+				  "type": "hotkey",
+				  "help": "Немного сдвинуть панель CSE вправо."
+				},
+				{
+				  "id": "CSE_ScaleUp",
+				  "text": "Увеличить размер",
+				  "type": "hotkey",
+				  "help": "Немного увеличить панель CSE."
+				},
+				{
+				  "id": "CSE_ScaleDown",
+				  "text": "Уменьшить размер",
+				  "type": "hotkey",
+				  "help": "Немного уменьшить панель CSE."
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Настройки отображения",
+			"content": [				
+				{
+					"id": "CharacterIconsSetting",
+					"text": "Значки персонажей",
+					"type": "switcher",
+					"help": "Показывать ли значки персонажей рядом с полосками.",
+					"valueOptions": {
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E22"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_DisplayCharacterIcons",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "GenericIconsSetting",
+					"text": "Общие значки",
+					"type": "switcher",
+					"help": "Если значки персонажей включены - показывать ли общий значок тем, у кого своего нет.",
+					"valueOptions": {
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E23"
+					},
+					"action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_DisplayGenericIcons",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "WhenToShowSetting",
+					"text": "Когда показывать",
+					"type": "dropdown",
+					"help": "Когда панель CSE появляется и скрывается сама.",
+					"valueOptions": {
+						"options": ["По горячей клавише MCM", "Всегда", "В бою", "Только раненых"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|1ECE"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_WhenToShow",
+						"params": ["{i}{value}"]
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Положение и размер",
+			"content": [
+				{
+					"text": "Положение",
+					"type": "section"
+				},
+				{
+					"id": "HorizontalSetting",
+					"text": "По горизонтали",
+					"type": "dropdown",
+					"help": "С какой стороны экрана показывать панель. Сдвиг горячими клавишами перекрывает эту настройку.",
+					"valueOptions": {
+						"options": ["Слева", "Справа"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E26"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_Position_Horizontal",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "VerticalSetting",
+					"text": "По вертикали",
+					"type": "dropdown",
+					"help": "Положение панели по вертикали. Сдвиг горячими клавишами перекрывает эту настройку.",
+					"valueOptions": {
+						"options": ["Вверху", "Внизу"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E27"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_Position_Vertical",
+						"params": ["{i}{value}"]
+					}
+				},				
+				{
+					"text": "Размер",
+					"type": "section"
+				},
+				{
+					"text": "<p>Размер меняется горячими клавишами «Увеличить» и «Уменьшить».</p>",
+					"type": "text",
+					"html": true
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Отслеживание",
+			"content": [				
+				{
+					"text": "Подробности отслеживания",
+					"type": "section"
+				},
+				{
+					"text": "<p>Можно включить отслеживание через цели квеста: спутники в разных состояниях отмечаются квестом «Состояние спутников». Здесь настраивается, когда и показывать ли эти цели.</p>",
+					"type": "text",
+					"html": true
+				},
+				{
+					"id": "TrackStatusSetting",
+					"text": "Отслеживать состояние",
+					"type": "dropdown",
+					"help": "В каком состоянии должен быть спутник, чтобы его отслеживали.",
+					"valueOptions": {
+						"options": ["Не отслеживать", "Отслеживать всех", "Только раненых", "Только сбитых с ног"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E1C"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeTrackingStatus",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "TrackTypeSetting",
+					"text": "Тип отслеживания",
+					"type": "dropdown",
+					"help": "Позволяет отслеживать только определённые типы спутников. Чтобы отключить отслеживание совсем, используйте настройку «Отслеживать состояние».",
+					"valueOptions": {
+						"options": ["Все типы", "Только уникальных NPC"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E29"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeTrackingType",
+						"params": ["{i}{value}"]
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Настройки для нескольких спутников",
+			"content": [				
+				{
+					"id": "FillDirectionSetting",
+					"text": "Направление заполнения",
+					"type": "dropdown",
+					"help": "Задаёт, в какую сторону добавляются полоски после первой. Обычно менять не нужно, если вы не двигаете панель горячими клавишами.",
+					"valueOptions": {
+						"options": ["Снизу вверх", "Сверху вниз"],
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|5435"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_FillDirection",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "MaxFollowersSetting",
+					"text": "Максимум спутников на экране",
+					"type": "slider",
+					"help": "Наибольшее число полосок спутников, показываемых одновременно.",
+					"valueOptions": {
+						"min": 1,
+						"max": 20,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E24"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_MaxFollowersToShow",
+						"params": ["{i}{value}"]
+					}
+				},
+				{
+					"id": "MaxPerColumnSetting",
+					"text": "Максимум в столбце",
+					"type": "slider",
+					"help": "Если полосок спутников больше этого числа, добавится второй столбец.",
+					"valueOptions": {
+						"min": 1,
+						"max": 10,
+						"step": 1,
+						"sourceType": "GlobalValue",
+						"sourceForm": "CompanionStatusEnhanced.esp|2E25"
+					},
+					 "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "ChangeSetting_MaxPerColumn",
+						"params": ["{i}{value}"]
+					}
+				}
+			]
+		},
+		{
+			"pageDisplayName": "Инструменты",
+			"content": [				
+				{
+				  "id": "CSE_ResetFollowers",
+				  "text": "Сбросить полоски спутников",
+				  "help": "Убирает все полоски спутников и показывает заново только для нынешних спутников.",
+				  "type": "button",
+				  "action": {
+						"type": "CallFunction",
+						"form": "CompanionStatusEnhanced.esp|1732",
+						"script": "CompanionStatusEnhanced:HUDManager",
+						"function": "MCM_RegisterCurrentFollowers"
+					}
+				}
+			]
+		}
+	]
+}

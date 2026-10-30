@@ -1,0 +1,76 @@
+{
+  "modName": "Vault_customs_settler_names",
+  "displayName": "Имена поселенцев",
+  "minMcmVersion": 1,
+  "pluginRequirements": ["Vault_customs_settler_names.esp"],
+  "content": [
+    {
+      "text": "<p align='center'><font size='28'>Имена поселенцев</font></p>",
+      "type": "text",
+      "html": true
+    },
+    {
+      "text": "Посмотрите на поселенца, минитмена или снабженца и нажмите клавишу \"Спросить имя\" — он назовёт случайное имя, и оно останется за ним. Минитмены получают имя вида \"Боб минитмен\".",
+      "type": "text"
+    },
+    {
+      "text": "Клавиша",
+      "type": "section"
+    },
+    {
+      "id": "VCSN_renamingHotkey",
+      "text": "Спросить имя",
+      "type": "hotkey",
+      "help": "Даёт имя NPC, на которого вы смотрите."
+    },
+    {
+      "text": "Настройки",
+      "type": "section"
+    },
+    {
+      "text": "Спрашивать повторно",
+      "type": "switcher",
+      "help": "Если включено, у уже названного NPC можно спросить имя ещё раз — выпадет новое.",
+      "valueOptions": {
+        "sourceType": "GlobalValue",
+        "sourceForm": "Vault_customs_settler_names.esp|800"
+      }
+    },
+    {
+      "text": "Проверка имени",
+      "type": "switcher",
+      "help": "Если включено, имя выдаётся только NPC с безличным именем: Поселенец, Минитмен, Рабочий и т. п. Персонажи со своим именем не переименуются. Работает при установленном F4SE.",
+      "valueOptions": {
+        "sourceType": "GlobalValue",
+        "sourceForm": "Vault_customs_settler_names.esp|803"
+      }
+    },
+    {
+      "text": "Имена снабженцев",
+      "type": "switcher",
+      "help": "Разрешает давать имена снабженцам. Подпись \"Снабженец\" при этом сменится на имя.",
+      "valueOptions": {
+        "sourceType": "GlobalValue",
+        "sourceForm": "Vault_customs_settler_names.esp|805"
+      }
+    },
+    {
+      "text": "Редкие имена",
+      "type": "switcher",
+      "help": "Добавляет необычные имена. Шанс выпадения — 1%.",
+      "valueOptions": {
+        "sourceType": "GlobalValue",
+        "sourceForm": "Vault_customs_settler_names.esp|802"
+      }
+    },
+    {
+      "text": "Рецепты в химлаборатории",
+      "type": "switcher",
+      "help": "Голозапись настроек и предмет \"Спросить имя\" для избранного изготавливаются в химлаборатории. Выключите, чтобы убрать оба рецепта.",
+      "valueOptions": {
+        "sourceType": "GlobalValue",
+        "sourceForm": "Vault_customs_settler_names.esp|801"
+      }
+    }
+  ]
+}

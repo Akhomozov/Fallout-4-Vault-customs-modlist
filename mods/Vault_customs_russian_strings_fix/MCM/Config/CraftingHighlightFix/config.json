@@ -1,0 +1,83 @@
+{
+  "minMcmVersion": 2,
+  "modName": "CraftingHighlightFix",
+  "displayName": "Подсветка при крафте",
+  "content": [
+    {
+      "text": "<font size='30'><p align='center'>Подсветка при крафте</p></font>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "text": "О моде",
+      "type": "section"
+    },
+    {
+      "text": "Мод позволяет отключить подсветку предметов на верстаках.",
+      "type": "text"
+    },
+    { "type": "spacer" },
+    {
+      "text": "Настройки",
+      "type": "section"
+    },
+    {
+      "id": "bDisableCraftingHighlights:Main",
+      "text": "Отключить подсветку при крафте",
+      "type": "switcher",
+      "help": "Отключать ли подсветку на верстаках.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "bDisableInventoryMenuHighlights:Main",
+      "text": "Отключить подсветку в меню торговли",
+      "type": "switcher",
+      "help": "Отключать ли подсветку в меню торговли, обмена и контейнеров.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iPowerArmorShaderMode:Main",
+      "text": "Подсветка на станции силовой брони",
+      "type": "dropdown",
+      "help": "Задаёт вид подсветки на станции силовой брони.",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["Полностью выключена", "Включена (как в оригинале)", "Только контур"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iRobotWorkbenchShaderMode:Main",
+      "text": "Подсветка на верстаке для роботов",
+      "type": "dropdown",
+      "help": "Задаёт вид подсветки на верстаке для роботов.",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["Полностью выключена", "Включена (как в оригинале)", "Только контур"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    }
+  ]
+}

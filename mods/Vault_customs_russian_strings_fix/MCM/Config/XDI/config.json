@@ -1,0 +1,123 @@
+{
+  "minMcmVersion": 4,
+  "modName": "XDI",
+  "displayName": "Интерфейс диалогов",
+  "pluginRequirements": ["XDI.esm"],
+  "content": [
+    {
+      "text": "<font size='40'><p align='center'>Расширенный интерфейс диалогов</p></font>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "type": "spacer",
+	  "numLines":1
+    },
+    {
+      "text": "Настройки меню диалогов",
+      "type": "section"
+    },
+    {
+      "id": "bWrapText:DialogueMenu",
+      "text": "Перенос текста",
+      "type": "switcher",
+      "help": "Этот параметр определяет, будет ли текст переноситься по ширине диалогового меню. Если выключено, размер текста будет автоматически соответствовать размеру меню.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "bDimSpokenOptions:DialogueMenu",
+      "text": "Приглушенные разговоры",
+      "type": "switcher",
+      "help": "Определяет, будут ли голосовые опции приглушены. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "bEnableOptionHotkeys:DialogueMenu",
+      "text": "Горячие клавиши",
+      "type": "switcher",
+      "help": "Определяет, будут ли клавиши 1-9 активировать соответствующую опцию диалога. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "bShowOptionNumbers:DialogueMenu",
+      "text": "Отображать номера реплик в диалоге",
+      "type": "switcher",
+      "help": "Управляет отображением номеров реплик. По умолчанию: ВЫКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "fSubtitlesX:DialogueMenu",
+      "text": "Положение субтитров [X]",
+      "type": "textinputFloat",
+      "help": "Управляет положением субтитров по X, когда диалоговое меню открыто. По умолчанию: 0, 40",
+      "valueOptions": {
+        "sourceType": "ModSettingFloat"
+      }
+    },
+    {
+      "id": "fSubtitlesY:DialogueMenu",
+      "text": "Положение субтитров [Y]",
+      "type": "textinputFloat",
+      "help": "Управляет положением субтитров по Y, когда диалоговое меню открыто. По умолчанию: 0, 40",
+      "valueOptions": {
+        "sourceType": "ModSettingFloat"
+      }
+    },
+    { "type": "spacer" },
+    {
+      "text": "Диалоговые реплики",
+      "type": "section"
+    },
+    {
+      "id": "bShowIcons:DialogueMenu",
+      "text": "Отображать значки реплик",
+      "type": "switcher",
+      "help": "Определяет, включены ли значки реплик диалога. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "groupControl": 1
+    },
+    {
+      "id": "bShowQuestionIcon:DialogueMenu",
+      "text": "Отметка вариантов, не продолжающих разговор",
+      "type": "switcher",
+      "help": "Если этот параметр включен, рядом с репликами, которые не продолжат разговор, будет отображаться значок вопроса. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "groupCondition": 1
+    },
+    { "type": "spacer" },
+    {
+      "text": "Параметры отображения диалогового меню",
+      "type": "section"
+    },
+    {
+      "id": "bShowBrackets:DialogueMenu",
+      "text": "Отображать скобки",
+      "type": "switcher",
+      "help": "Управляет отображением скобок в диалоговом меню. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    },
+    {
+      "id": "bShowShadedBackground:DialogueMenu",
+      "text": "Отображать фон",
+      "type": "switcher",
+      "help": "Определяет, используется ли затененный фон для диалогового меню. По умолчанию: ВКЛ.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      }
+    }
+  ]
+}

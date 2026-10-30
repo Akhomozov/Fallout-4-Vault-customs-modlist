@@ -1,0 +1,14 @@
+{
+  "modName": "Vault_customs_settler_names",
+  "keybinds": [
+    {
+      "id": "VCSN_renamingHotkey",
+      "desc": "Спросить имя",
+      "action": {
+        "type": "CallFunction",
+        "form": "Vault_customs_settler_names.esp|F9C",
+        "function": "hotkeyRenameFirstPart_mcm"
+      }
+    }
+  ]
+}

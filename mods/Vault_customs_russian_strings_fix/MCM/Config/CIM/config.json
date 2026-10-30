@@ -1,0 +1,504 @@
+{
+   "modName":"CIM",
+   "displayName":"Контроль инвентаря спутника",
+   "minMcmVersion":2,
+   "pluginRequirements": ["CIM.esl"],
+   "content":[
+      { "type":"spacer", "numLines":2 },
+      {
+         "text":"<p align='center'><font size='50'>Companion Inventory Monitor<br/><font size='10'>(v1.0)</font></font></p>",
+         "html":true,
+         "type":"text"
+      },
+      { "type":"spacer", "numLines":2 },
+      {
+         "text":"<p align='center'><font size='30'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+         "html":true,
+         "type":"text"
+      }
+   ],
+   "pages":[
+      {
+         "pageDisplayName":"Основное",
+         "content":[
+            {
+               "text": "<p align='center'><b><font size='24'>Companion Inventory Monitor <font size='10'>(v1.0)</font></font></b><br/><font size='14'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+               "html": true,
+               "type": "text"
+            },
+            { "type":"spacer" },
+            {
+               "text": "Основное",
+               "type": "section"
+            },
+            {
+               "id":"bEnabled:Main",
+               "text":"Слежение включено",
+               "type":"switcher",
+               "help":"Следить ли за изменениями в инвентаре спутника",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Спутники",
+               "type": "section"
+            },
+            {
+               "id":"iRefreshTimeInSeconds:Main",
+               "text":"Период обновления списка спутников, в секундах",
+               "type":"slider",
+               "help":"Как часто обновляется список ваших спутников (ставьте меньше, если часто их меняете)",
+               "valueOptions":{
+                  "min": 1,
+                  "max": 600,
+                  "step": 5,
+                  "sourceType":"ModSettingInt"
+               }
+            }
+         ]
+      },
+      {
+         "pageDisplayName":"Фильтры",
+         "content":[
+            {
+               "text": "<p align='center'><b><font size='24'>Companion Inventory Monitor <font size='10'>(v1.0)</font></font></b><br/><font size='14'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+               "html": true,
+               "type": "text"
+            },
+            { "type":"spacer" },
+            {
+               "text": "Оружие",
+               "type": "section"
+            },
+            {
+               "id":"iWeaponMin:Filters",
+               "text":"Минимальная стоимость оружия",
+               "type":"slider",
+               "help":"Оружие подбирается, только если стоит не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            {
+               "id":"bWeaponBetterOnly:Filters",
+               "text":"Только оружие дороже имеющегося",
+               "type":"switcher",
+               "help":"Брать ли только оружие дороже имеющегося",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bWeaponLegendaryOnly:Filters",
+               "text":"Только легендарное оружие",
+               "type":"switcher",
+               "help":"Брать ли только легендарное оружие",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Одежда",
+               "type": "section"
+            },
+            {
+               "id":"iApparelMin:Filters",
+               "text":"Минимальная стоимость одежды",
+               "type":"slider",
+               "help":"Одежда подбирается, только если стоит не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            {
+               "id":"bApparelBetterOnly:Filters",
+               "text":"Только одежда дороже имеющейся",
+               "type":"switcher",
+               "help":"Брать ли только одежду дороже имеющейся",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bApparelLegendaryOnly:Filters",
+               "text":"Только легендарная одежда",
+               "type":"switcher",
+               "help":"Брать ли только легендарную одежду",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Медицина",
+               "type": "section"
+            },
+            {
+               "id":"iAidMin:Filters",
+               "text":"Минимальная стоимость медикаментов",
+               "type":"slider",
+               "help":"Медикаменты подбираются, только если стоят не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Патроны",
+               "type": "section"
+            },
+            {
+               "id":"iAmmoMin:Filters",
+               "text":"Минимальная стоимость патронов",
+               "type":"slider",
+               "help":"Патроны подбираются, только если стоят не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Хлам",
+               "type": "section"
+            },
+            {
+               "id":"iJunkMin:Filters",
+               "text":"Минимальная стоимость хлама",
+               "type":"slider",
+               "help":"Хлам подбирается, только если стоит не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Модификации",
+               "type": "section"
+            },
+            {
+               "id":"iModMin:Filters",
+               "text":"Минимальная стоимость модификаций",
+               "type":"slider",
+               "help":"Модификации подбираются, только если стоят не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Разное",
+               "type": "section"
+            },
+            {
+               "id":"iMiscMin:Filters",
+               "text":"Минимальная стоимость разного",
+               "type":"slider",
+               "help":"Разные предметы подбираются, только если стоят не меньше этой суммы",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 10,
+                  "sourceType":"ModSettingInt"
+               }
+            }
+         ]
+      },
+      {
+         "pageDisplayName":"Перегруз",
+         "content":[
+            {
+               "text": "<p align='center'><b><font size='24'>Companion Inventory Monitor <font size='10'>(v1.0)</font></font></b><br/><font size='14'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+               "html": true,
+               "type": "text"
+            },
+            { "type":"spacer" },
+            {
+               "text": "Перегруз",
+               "type": "section"
+            },
+            {
+               "id":"bOverweightEnabled:Overweight",
+               "text":"Проверка перегруза включена",
+               "type":"switcher",
+               "help":"Должен ли спутник нести меньше своего предела грузоподъёмности",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bTakeAsMuchAsPossible:Overweight",
+               "text":"Брать как можно больше",
+               "type":"switcher",
+               "help":"Брать ли спутнику как можно больше, когда предметов несколько",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bShowCapacityWhenOverweight:Overweight",
+               "text":"Показывать заполненность при перегрузе",
+               "type":"switcher",
+               "help":"Показывать ли остаток места в сообщении о том, что спутник загружен",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Пороги заполненности",
+               "type": "section"
+            },
+            {
+               "id":"iCapacityOne:Overweight",
+               "text":"Порог заполненности 1",
+               "type":"slider",
+               "help":"Уведомление появится, когда заполненность спутника пройдёт этот порог в процентах (0 - отключено)",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 95,
+                  "step": 5,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            {
+               "id":"iCapacityTwo:Overweight",
+               "text":"Порог заполненности 2",
+               "type":"slider",
+               "help":"Уведомление появится, когда заполненность спутника пройдёт этот порог в процентах (0 - отключено)",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 95,
+                  "step": 5,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            {
+               "id":"iCapacityThree:Overweight",
+               "text":"Порог заполненности 3",
+               "type":"slider",
+               "help":"Уведомление появится, когда заполненность спутника пройдёт этот порог в процентах (0 - отключено)",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 95,
+                  "step": 5,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            {
+               "id":"iCapacityFour:Overweight",
+               "text":"Порог заполненности 4",
+               "type":"slider",
+               "help":"Уведомление появится, когда заполненность спутника пройдёт этот порог в процентах (0 - отключено)",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 95,
+                  "step": 5,
+                  "sourceType":"ModSettingInt"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Исключения",
+               "type": "section"
+            },
+            {
+               "id":"iStimpaksAllowed:Overweight",
+               "text":"Разрешено стимуляторов",
+               "type":"slider",
+               "help":"Сколько стимуляторов можно взять, когда спутник загружен (для лечения спутника нужен хотя бы 1)",
+               "valueOptions":{
+                  "min": 0,
+                  "max": 1000,
+                  "step": 1,
+                  "sourceType":"ModSettingInt"
+               }
+            }
+         ]
+      },
+      {
+         "pageDisplayName":"Сообщения",
+         "content":[
+            {
+               "text": "<p align='center'><b><font size='24'>Companion Inventory Monitor <font size='10'>(v1.0)</font></font></b><br/><font size='14'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+               "html": true,
+               "type": "text"
+            },
+            { "type":"spacer" },
+            {
+               "text": "Сообщения",
+               "type": "section"
+            },
+            {
+               "id":"bCompanionOverweightMsg:Messages",
+               "text":"Сообщение «спутник загружен»",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда спутник больше не может нести",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bContainerEmptyMsg:Messages",
+               "text":"Сообщение «контейнер пуст»",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда спутник забирает последний предмет из контейнера",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bCompanionCapacityDuringTradingMsg:Messages",
+               "text":"Сообщение о заполненности (во время обмена с игроком)",
+               "type":"switcher",
+               "help":"Показывать ли остаток свободного места у спутника во время обмена с игроком",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bCompanionCapacityAfterTradingMsg:Messages",
+               "text":"Сообщение о заполненности (после обмена с игроком)",
+               "type":"switcher",
+               "help":"Показывать ли остаток свободного места у спутника после обмена с игроком",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bCompanionCapacityAddedRemovedMsg:Messages",
+               "text":"Сообщение о заполненности (после добавления или изъятия вещей)",
+               "type":"switcher",
+               "help":"Показывать ли остаток свободного места у спутника после добавления или изъятия вещей",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bItemPickUpMsg:Messages",
+               "text":"Сообщение «предмет подобран»",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда спутник подбирает вещи",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bItemReturnMsg:Messages",
+               "text":"Сообщение «предмет возвращён»",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда спутник возвращает вещи из-за перегруза",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bItemFilteredMsg:Messages",
+               "text":"Сообщение «предмет отсеян фильтром»",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда предмет не проходит фильтр",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            {
+               "id":"bStimpaksAllowedMsg:Messages",
+               "text":"Сообщение о разрешённых стимуляторах",
+               "type":"switcher",
+               "help":"Показывать ли уведомление, когда спутник берёт стимуляторы, хотя уже загружен",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            },
+            { "type":"spacer" },
+            {
+               "text": "Отладка",
+               "type": "section"
+            },
+            {
+               "id":"bTraceMsg:Messages",
+               "text":"Трассировка событий инвентаря (ОТЛАДКА)",
+               "type":"switcher",
+               "help":"Показывать ли трассировку событий CIM (ОТЛАДКА)",
+               "valueOptions":{
+                  "sourceType":"ModSettingBool"
+               }
+            }
+         ]
+      },
+      {
+         "pageDisplayName":"Отладка",
+         "content":[
+            {
+               "text": "<p align='center'><b><font size='24'>Companion Inventory Monitor <font size='10'>(v1.0)</font></font></b><br/><font size='14'>Следит за инвентарём спутника, фильтрует и ограничивает его</font></p>",
+               "html": true,
+               "type": "text"
+            },
+            { "type":"spacer" },
+            {
+               "text": "Отладка",
+               "type": "section"
+            },
+            {
+               "text": "Проверить, работает ли мод",
+               "type": "button",
+               "help": "Проверяет, работает ли мод сейчас",
+               "action": {
+                  "type": "CallFunction",
+                  "form": "CIM.esl|01000001",
+                  "script": "CIM_Quest",
+                  "function": "CheckRunning"
+               }
+            },
+            {
+               "text": "Принудительный запуск",
+               "type": "button",
+               "help": "Принудительно запускает мод",
+               "action": {
+                  "type": "CallFunction",
+                  "form": "CIM.esl|01000001",
+                  "script": "CIM_Quest",
+                  "function": "ForceStart"
+               }
+            },
+            {
+               "text": "Принудительная остановка",
+               "type": "button",
+               "help": "Принудительно останавливает мод",
+               "action": {
+                  "type": "CallFunction",
+                  "form": "CIM.esl|01000001",
+                  "script": "CIM_Quest",
+                  "function": "ForceStop"
+               }
+            },
+            { "type":"spacer", "numLines":"3" },
+            {
+               "text": "<p align='center'><b><font size='26'>ВНИМАНИЕ!!!</font><br/><font size='22'>Не трогайте эти действия, если <u>не понимаете, что делаете</u>: запущенные не вовремя, они могут дать неожиданный результат.</font></b></p>",
+               "html": true,
+               "type": "text"
+            }
+         ]
+      }
+   ]
+}

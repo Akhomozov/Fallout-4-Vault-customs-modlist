@@ -1,0 +1,22 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.template text eol=lf
+*.dll binary
+*.pex binary
+*.esp binary
+*.esm binary
+*.esl binary
+*.nif binary
+*.hkx binary
+*.dds binary
+*.swf binary
+*.bgsm binary
+*.bgem binary
+*.strings binary
+*.dlstrings binary
+*.ilstrings binary
+# Preserve exact bytes and manifest hashes; override extension rules above.
+mods/** -text
+profiles/** -text

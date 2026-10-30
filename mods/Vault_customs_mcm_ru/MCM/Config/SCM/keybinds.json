@@ -1,0 +1,23 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "form" : "SCM.esp|90E9",
+            "function" : "autoSave",
+            "type" : "CallFunction"
+         },
+         "desc" : "Создать автосохранение.",
+         "id" : "autoSave"
+      },
+      {
+         "action" : {
+            "form" : "SCM.esp|90E9",
+            "function" : "hardSave",
+            "type" : "CallFunction"
+         },
+         "desc" : "Создать полное сохранение. (Нужен мод Unlimited Survival Mode)",
+         "id" : "hardSave"
+      }
+   ],
+   "modName" : "SCM"
+}

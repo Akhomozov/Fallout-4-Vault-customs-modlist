@@ -1,0 +1,13 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "command" : "StartWorkshop",
+            "type" : "RunConsoleCommand"
+         },
+         "desc" : "Войти в режим мастерской",
+         "id" : "StartupWorkshop"
+      }
+   ],
+   "modName" : "WorkshopFramework"
+}

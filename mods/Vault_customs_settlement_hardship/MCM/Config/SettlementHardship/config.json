@@ -1,0 +1,133 @@
+{
+	"modName": "SettlementHardship",
+	"displayName": "Непотребства в поселениях",
+	"content": [
+		{
+			"text": "<p align='center'><font size='28'>Непотребства в поселениях</font></p>",
+			"type": "text",
+			"html": true
+		},
+		{
+			"text": "Свет и шум вокруг кровати жителя и трупы по поселению меняют счастье. Радиусы заданы в единицах игры: 70 единиц — это метр.",
+			"type": "text"
+		},
+
+		{ "text": "Общее", "type": "section" },
+		{
+			"text": "Мод включён",
+			"type": "switcher",
+			"help": "Выключенный мод обнуляет свои очки при следующем пересчёте.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|804" }
+		},
+		{
+			"text": "Сообщать об изменениях",
+			"type": "switcher",
+			"help": "Короткое сообщение, когда сумма очков поселения изменилась.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|80E" }
+		},
+		{
+			"text": "Технические сообщения",
+			"type": "switcher",
+			"help": "Отладочные уведомления при каждом пересчёте.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|80D" }
+		},
+		{
+			"text": "Предел на одного жителя",
+			"type": "slider",
+			"help": "Ниже этого значения очки одного жителя не опускаются. По умолчанию -30.",
+			"valueOptions": { "min": -60, "max": 0, "step": 5, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|80A" }
+		},
+
+		{ "text": "Свет у кровати", "type": "section" },
+		{
+			"text": "Есть свет",
+			"type": "slider",
+			"help": "Очки, когда рядом с кроватью горит лампа, свеча, огонь или костёр. По умолчанию +5.",
+			"valueOptions": { "min": 0, "max": 20, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|805" }
+		},
+		{
+			"text": "Нет света",
+			"type": "slider",
+			"help": "Очки, когда рядом с кроватью света нет. По умолчанию -10.",
+			"valueOptions": { "min": -30, "max": 0, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|806" }
+		},
+		{
+			"text": "Радиус света",
+			"type": "slider",
+			"help": "350 единиц — это 5 метров. Расстояние считается по прямой во все стороны.",
+			"valueOptions": { "min": 70, "max": 1050, "step": 35, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|809" }
+		},
+		{
+			"text": "Учитывать стены",
+			"type": "switcher",
+			"help": "Включено: лампа за стеной не считается. Выключено: годится любая лампа в радиусе.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|80B" }
+		},
+
+		{ "text": "Шум и запах", "type": "section" },
+		{
+			"text": "Штраф за соседство",
+			"type": "slider",
+			"help": "Генератор, турель, шумный станок или кухня рядом с кроватью. По умолчанию -5.",
+			"valueOptions": { "min": -30, "max": 0, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|812" }
+		},
+		{
+			"text": "Радиус шума",
+			"type": "slider",
+			"help": "280 единиц — это 4 метра. Стены не учитываются.",
+			"valueOptions": { "min": 70, "max": 1400, "step": 35, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|813" }
+		},
+
+		{ "text": "Трупы в поселении", "type": "section" },
+		{
+			"text": "Штраф за тело",
+			"type": "slider",
+			"help": "За каждое тело человека, гуля или супермутанта. По умолчанию -5.",
+			"valueOptions": { "min": -20, "max": 0, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|815" }
+		},
+		{
+			"text": "Предел за трупы",
+			"type": "slider",
+			"help": "Сколько тела могут отнять в сумме. По умолчанию -30.",
+			"valueOptions": { "min": -100, "max": 0, "step": 5, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|816" }
+		},
+		{
+			"text": "Радиус поиска тел",
+			"type": "slider",
+			"help": "5000 единиц — это 71 метр от верстака. Тело ещё должно быть в локации самого поселения.",
+			"valueOptions": { "min": 1000, "max": 12000, "step": 500, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_settlement_hardship.esp|817" }
+		},
+
+		{ "text": "Проверка", "type": "section" },
+		{
+			"text": "Пересчитать и показать",
+			"type": "button",
+			"help": "Пересчитывает поселение, в котором вы стоите, и показывает общий экран.",
+			"action": { "type": "CallFunction", "form": "Vault_customs_settlement_hardship.esp|800", "script": "Vault_customs_Hardship", "function": "Report" }
+		},
+		{
+			"text": "Показать без пересчёта",
+			"type": "button",
+			"help": "Тот же экран по последним данным.",
+			"action": { "type": "CallFunction", "form": "Vault_customs_settlement_hardship.esp|800", "script": "Vault_customs_Hardship", "function": "Status" }
+		},
+		{
+			"text": "Что видит правило света здесь",
+			"type": "button",
+			"help": "Лампы вокруг вас: расстояние, питание, стены.",
+			"action": { "type": "CallFunction", "form": "Vault_customs_settlement_hardship.esp|800", "script": "Vault_customs_Hardship", "function": "LightHere" }
+		},
+		{
+			"text": "Что видит правило шума здесь",
+			"type": "button",
+			"help": "Шумные объекты и кухни вокруг вас.",
+			"action": { "type": "CallFunction", "form": "Vault_customs_settlement_hardship.esp|800", "script": "Vault_customs_Hardship", "function": "NoiseHere" }
+		},
+		{
+			"text": "Тела вокруг верстака",
+			"type": "button",
+			"help": "Какие тела засчитаны, а какие вне поселения.",
+			"action": { "type": "CallFunction", "form": "Vault_customs_settlement_hardship.esp|800", "script": "Vault_customs_Hardship", "function": "CorpseHere" }
+		}
+	]
+}

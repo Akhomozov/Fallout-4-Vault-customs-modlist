@@ -1,0 +1,14 @@
+{
+   "keybinds" : [
+      {
+         "action" : {
+            "function" : "StartWheelMenu",
+            "script" : "M8rWheelMenuStarter",
+            "type" : "CallGlobalFunction"
+         },
+         "desc" : "Открыть колесо выбора",
+         "id" : "wheelMenuHotkey"
+      }
+   ],
+   "modName" : "WheelMenu"
+}

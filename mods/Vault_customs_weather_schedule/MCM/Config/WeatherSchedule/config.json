@@ -1,0 +1,109 @@
+{
+	"modName": "WeatherSchedule",
+	"displayName": "Погода по часам",
+	"content": [
+		{
+			"text": "<p align='center'><font size='28'>Погода по часам</font></p>",
+			"type": "text",
+			"html": true
+		},
+		{
+			"text": "Погоду по-прежнему выбирает игра. Мод только смотрит на час и подменяет то, что в этот час идти не должно. Если начало и конец окна совпадают, ограничения нет.",
+			"type": "text"
+		},
+
+		{ "text": "Общее", "type": "section" },
+		{
+			"text": "Мод включён",
+			"type": "switcher",
+			"help": "Выключенный мод ничего не подменяет.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|801" }
+		},
+		{
+			"text": "Как часто проверять",
+			"type": "slider",
+			"help": "Реальные секунды между проверками. Меньше — быстрее ловит неподходящую погоду. По умолчанию 20.",
+			"valueOptions": { "min": 5, "max": 120, "step": 5, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|802" }
+		},
+		{
+			"text": "Светящееся море не трогать",
+			"type": "switcher",
+			"help": "В Светящемся море радшторм — обычная погода, расписание там не действует.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|80D" }
+		},
+		{
+			"text": "Сообщать о подменах",
+			"type": "switcher",
+			"help": "Короткое сообщение в углу, когда погода заменена не по часу.",
+			"valueOptions": { "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|80E" }
+		},
+
+		{ "text": "Туман и дымка", "type": "section" },
+		{
+			"text": "С какого часа",
+			"type": "slider",
+			"help": "По умолчанию с 23:00.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|807" }
+		},
+		{
+			"text": "До какого часа",
+			"type": "slider",
+			"help": "По умолчанию до 09:00. Окно может идти через полночь.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|808" }
+		},
+
+		{ "text": "Радиоактивные штормы", "type": "section" },
+		{
+			"text": "С какого часа",
+			"type": "slider",
+			"help": "По умолчанию с 16:00.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|80B" }
+		},
+		{
+			"text": "До какого часа",
+			"type": "slider",
+			"help": "По умолчанию до 08:00.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|80C" }
+		},
+
+		{ "text": "Дождь", "type": "section" },
+		{
+			"text": "С какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения: начало и конец равны нулю.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|809" }
+		},
+		{
+			"text": "До какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|80A" }
+		},
+
+		{ "text": "Ясно и пасмурно", "type": "section" },
+		{
+			"text": "Ясно: с какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|803" }
+		},
+		{
+			"text": "Ясно: до какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|804" }
+		},
+		{
+			"text": "Пасмурно: с какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|805" }
+		},
+		{
+			"text": "Пасмурно: до какого часа",
+			"type": "slider",
+			"help": "По умолчанию без ограничения. Пасмурная погода — запасной вариант для подмен, полностью её запрещать не стоит.",
+			"valueOptions": { "min": 0, "max": 24, "step": 1, "sourceType": "GlobalValue", "sourceForm": "Vault_customs_weather_schedule.esp|806" }
+		}
+	]
+}

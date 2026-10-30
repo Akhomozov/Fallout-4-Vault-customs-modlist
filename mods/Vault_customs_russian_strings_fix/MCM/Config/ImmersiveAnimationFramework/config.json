@@ -1,0 +1,67 @@
+{
+   "content" : [
+      {
+         "html" : true,
+         "text" : "<p>Персонаж по-настоящему ест, пьёт и колется: вместо того чтобы вещь просто исчезла из рук, проигрывается анимация — и от первого лица, и от третьего.</p><br> <p>Посуда подбирается под содержимое: бутылка «Ядер-колы», фляга, миска. Приборы выбираются случайно и меняются от запуска к запуску, у каждой анимации несколько вариантов. Под психо персонаж вдобавок реагирует на врага рядом.</p><br> <p>Анимация занимает время и на него вы беззащитны — поэтому в бою она по умолчанию выключена.</p><br>",
+         "type" : "text"
+      },
+      {
+         "align" : "center",
+         "html" : true,
+         "text" : "<p align='center'><font size='36'>Immersive Animation Framework</font></p>",
+         "type" : "text"
+      }
+   ],
+   "displayName" : "Анимации взаимодействия",
+   "minMcmVersion" : 2,
+   "modName" : "ImmersiveAnimationFramework",
+   "pages" : [
+      {
+         "content" : [
+            {
+               "text" : "Основное",
+               "type" : "section"
+            },
+            {
+               "type" : "spacer"
+            },
+            {
+               "help" : "Разрешить анимации в бою. ПО УМОЛЧАНИЮ: ВЫКЛ",
+               "text" : "Анимации в бою",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "sourceForm" : "ImmersiveAnimationFramework.esp|817",
+                  "sourceType" : "GlobalValue"
+               }
+            },
+            {
+               "help" : "Выберите: НИКОГДА, ТОЛЬКО ОТ ПЕРВОГО ЛИЦА или ВСЕГДА. ПО УМОЛЧАНИЮ: НИКОГДА",
+               "text" : "Анимации в силовой броне",
+               "type" : "dropdown",
+               "valueOptions" : {
+                  "options" : [
+                     "НИКОГДА",
+                     "ТОЛЬКО ОТ ПЕРВОГО ЛИЦА",
+                     "ВСЕГДА"
+                  ],
+                  "sourceForm" : "ImmersiveAnimationFramework.esp|818",
+                  "sourceType" : "GlobalValue"
+               }
+            },
+            {
+               "help" : "Если включено, звук крышки прозвучит перед анимацией с бутылкой. ПО УМОЛЧАНИЮ: ВЫКЛ",
+               "text" : "Звук подбора крышки",
+               "type" : "switcher",
+               "valueOptions" : {
+                  "sourceForm" : "ImmersiveAnimationFramework.esp|92b",
+                  "sourceType" : "GlobalValue"
+               }
+            }
+         ],
+         "pageDisplayName" : "Общие настройки"
+      }
+   ],
+   "pluginRequirements" : [
+      "ImmersiveAnimationFramework.esp"
+   ]
+}

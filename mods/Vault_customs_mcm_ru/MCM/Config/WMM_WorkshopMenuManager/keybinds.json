@@ -1,0 +1,16 @@
+{
+	"modName": "WMM_WorkshopMenuManager",
+	"keybinds": [
+
+		{
+			"id": "OpenBuildMenuKey",
+			"desc": "Открыть меню управления строительством.",
+			"action": {
+  			  "type": "CallFunction",
+          			  "form": "WMM_WorkshopMenuManager.esp|829",
+  			  "function": "openMenuManager",
+  			  "params": []
+			}
+    	}
+	]
+}

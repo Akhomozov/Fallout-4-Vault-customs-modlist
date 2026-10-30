@@ -1,0 +1,3842 @@
+{
+  "profile": "Vault customs RUS",
+  "active_vault_customs": [
+    "Vault_customs_visible_favorites_mcm",
+    "Vault_customs_blood_splash_fix",
+    "Vault_customs_normal_finishers",
+    "Vault_customs_lowered_no_speed",
+    "Vault_customs_turret_soundfix",
+    "Vault_customs_pa_finishers",
+    "Vault_customs_sneaky_kills_compat",
+    "Vault_customs_lever_lowered",
+    "Vault_customs_enemy_level_floor",
+    "Vault_customs_wall_weapon_racks",
+    "Vault_customs_NR_settings",
+    "Vault_customs_mcm_ru",
+    "Vault_customs_russian_strings_fix",
+    "Vault_customs_place_mcm",
+    "Vault_customs_ss2_defaults",
+    "Vault_customs_lock_variants",
+    "Vault_customs_no_combat_auras",
+    "Vault_customs_warm_lights",
+    "Vault_customs_hydro_optics",
+    "Vault_customs_weather_schedule",
+    "Vault_customs_pipboy_light_on_pelvis",
+    "Vault_customs_vault113_no_perk",
+    "Vault_customs_settlement_hardship",
+    "Vault_customs_auto_siren",
+    "Vault_customs_attacks_when_present",
+    "Vault_customs_city_plan_notes",
+    "Vault_customs_settler_names",
+    "Vault_customs_cep_encounter_trim",
+    "Vault_customs_power_armor",
+    "Vault_customs_burn_corpses",
+    "Vault_customs_codsworth_tougher",
+    "Vault_customs_perks_test",
+    "Vault_customs_perks",
+    "Vault_customs_scrapper",
+    "Vault_customs_dismemberment_by_race",
+    "Vault_customs_casing_tuning",
+    "Vault_customs_ragdoll_tuning",
+    "Vault_customs_corpse_guard",
+    "Vault_customs_corpse_cleanup",
+    "Vault_customs_dismemberment_tuning",
+    "Vault_customs_dismemberment_rules_robco",
+    "Vault_customs_no_lock_difficulty_text",
+    "Vault_customs_clothing_texture_fix",
+    "Vault_customs_scrapheap_collision_fix",
+    "Vault_customs_immersive_glass",
+    "Vault_customs_notification_control",
+    "Vault_customs_ui_color_sync",
+    "Vault_customs_hide_companion_names",
+    "Vault_customs_workbench_dps_column",
+    "Vault_customs_dialogue_camera",
+    "Vault_customs_inventory_hints",
+    "Vault_customs_recent_items",
+    "Vault_customs_workshop_menu_root",
+    "Vault_customs_workshop_menu",
+    "Vault_customs_workshop_preview",
+    "Vault_customs_stove_preview",
+    "Vault_customs_backpack_stack",
+    "Vault_customs_main_menu_deck",
+    "Vault_customs_dialogue_tree_guard",
+    "Vault_customs_workshop_stack_guard"
+  ],
+  "excluded_inactive_mods": [
+    "Vault_customs_DLSS5_test_display",
+    "Vault_customs_DLSS5_test_shadows",
+    "Vault_customs_corpse_base_mesh_test",
+    "Vault_customs_corpse_console_f10",
+    "Vault_customs_corpse_trace"
+  ],
+  "runtime_bytes": 136522341,
+  "files": [
+    {
+      "path": "profiles/Vault customs RUS/modlist.txt",
+      "bytes": 34228,
+      "sha256": "68a830768799ec1f45dff610c39f904f0df8bfcf1a6f0a3470ca63073522bd6e",
+      "source_sha256": "68a830768799ec1f45dff610c39f904f0df8bfcf1a6f0a3470ca63073522bd6e"
+    },
+    {
+      "path": "profiles/Vault customs RUS/plugins.txt",
+      "bytes": 19804,
+      "sha256": "c9cd156aff975439be715e73139960bf8f91c51c0259671f1f848268337aeafa",
+      "source_sha256": "c9cd156aff975439be715e73139960bf8f91c51c0259671f1f848268337aeafa"
+    },
+    {
+      "path": "profiles/Vault customs RUS/loadorder.txt",
+      "bytes": 19386,
+      "sha256": "15c6344934c0d0d2f7c3a63a12c68461ab09b93fc1f202573eddc4e10e853914",
+      "source_sha256": "15c6344934c0d0d2f7c3a63a12c68461ab09b93fc1f202573eddc4e10e853914"
+    },
+    {
+      "path": "profiles/Vault customs RUS/archives.txt",
+      "bytes": 13708,
+      "sha256": "dbd0d5b9ced4371f0053403ffc8548b761ec73bfcad5fee1584b9476fe206247",
+      "source_sha256": "dbd0d5b9ced4371f0053403ffc8548b761ec73bfcad5fee1584b9476fe206247"
+    },
+    {
+      "path": "profiles/Vault customs RUS/lockedorder.txt",
+      "bytes": 59,
+      "sha256": "9962fbb07e4c40c4c39b6fe7cedf3f1527cdda5ad0a60d7d53a872b5ae52812d",
+      "source_sha256": "9962fbb07e4c40c4c39b6fe7cedf3f1527cdda5ad0a60d7d53a872b5ae52812d"
+    },
+    {
+      "path": "profiles/Vault customs RUS/settings.ini",
+      "bytes": 84,
+      "sha256": "40196cc186af865412c5ef0f629355ad7bf96dcc61907d41df8c00ebfaf2c7fb",
+      "source_sha256": "40196cc186af865412c5ef0f629355ad7bf96dcc61907d41df8c00ebfaf2c7fb"
+    },
+    {
+      "path": "profiles/Vault customs RUS/fallout4.ini",
+      "bytes": 4035,
+      "sha256": "d18725559063365b8ba8c63d1a0b0bf814046be774259d7b7dce6bcba7f16f18",
+      "source_sha256": "de7b20d14905538737e66ca37ebfdbeae17142268fd30dbf6220a625f1491494"
+    },
+    {
+      "path": "profiles/Vault customs RUS/fallout4custom.ini",
+      "bytes": 4358,
+      "sha256": "b3dd8db913aa3ec362fbfa9c2b8c8400f809728a61ff5d48b78a6a5d021c8373",
+      "source_sha256": "59cb1e98b4af2658c9086f2a5b7a0e4301b5150ace476d4b7c8097cf10d115a3"
+    },
+    {
+      "path": "profiles/Vault customs RUS/fallout4prefs.ini",
+      "bytes": 4854,
+      "sha256": "fddf5a348b38a3e31ecb9953296e5ca5461c53603096739f7ed28f08357d04d0",
+      "source_sha256": "fddf5a348b38a3e31ecb9953296e5ca5461c53603096739f7ed28f08357d04d0"
+    },
+    {
+      "path": "profiles/Vault customs RUS/initweaks.ini",
+      "bytes": 36,
+      "sha256": "c35e72b526cf46723f3559435de33c388f431966e48f66dfb6556283609cd27c",
+      "source_sha256": "c35e72b526cf46723f3559435de33c388f431966e48f66dfb6556283609cd27c"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/F4SE/Plugins/VisibleFavoritesMCMF4.dll",
+      "bytes": 906240,
+      "sha256": "39a2edb77871f6dca6ee022f5b307bf744c2e98b069d897b7d71e0b2baa3d020",
+      "source_sha256": "39a2edb77871f6dca6ee022f5b307bf744c2e98b069d897b7d71e0b2baa3d020"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/MCM/Config/VisibleFavoritesMCM/config.json",
+      "bytes": 7322,
+      "sha256": "3298215bd7393163383e5df5f5d4e97aa59bca14aac0957d2b096980d1a220c3",
+      "source_sha256": "3298215bd7393163383e5df5f5d4e97aa59bca14aac0957d2b096980d1a220c3"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/MCM/Config/VisibleFavoritesMCM/settings.ini",
+      "bytes": 58,
+      "sha256": "2b7da924c36fb0fc3defb6cfb5074e3db35145955f70b7f877c93e24a58083f3",
+      "source_sha256": "2b7da924c36fb0fc3defb6cfb5074e3db35145955f70b7f877c93e24a58083f3"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Vault_customs_VisibleFavoritesMCM.pex",
+      "bytes": 7703,
+      "sha256": "ecbc8c53f7951ba1201bb682ba4aa516170b67ed29dc104838eb6091c8a10aee",
+      "source_sha256": "50b18fdf829b0c30d531b2e444eb06d70e318f9a9714f7dbaad163611a091db4"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Vault_customs_VisibleFavoritesNative.pex",
+      "bytes": 422,
+      "sha256": "586e24343980098d0f5c6b98da7b3a06117dfcea460555867d96f7d2d2e60afc",
+      "source_sha256": "3582a75ca67f97dee87c3643dba8c47d4d9523e46585669f20d299f834d8467c"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Vault_customs_VisibleFavoritesMCM.esp",
+      "bytes": 413,
+      "sha256": "5070af863b4503767a36c5d6737ba0af93cd7fbfc166ee3cd77f79ec84047353",
+      "source_sha256": "5070af863b4503767a36c5d6737ba0af93cd7fbfc166ee3cd77f79ec84047353"
+    },
+    {
+      "path": "mods/Vault_customs_blood_splash_fix/Vault_customs_blood_splash_fix.esp",
+      "bytes": 428,
+      "sha256": "bcd42cb68dc53cae8967108cc9b2e639cd72191ec52731d9d3ba9dbec9b5fcd7",
+      "source_sha256": "bcd42cb68dc53cae8967108cc9b2e639cd72191ec52731d9d3ba9dbec9b5fcd7"
+    },
+    {
+      "path": "mods/Vault_customs_normal_finishers/F4SE/Plugins/NormalFinishersF4.dll",
+      "bytes": 1039360,
+      "sha256": "c70df6a95cc2ccd313c290049dd57f84441d432ec4afb85c0605b3cdacbbceda",
+      "source_sha256": "484c12b64e7e404c8f209da36c85133f4dd5e26bd8765b6ab8df7caae47ba8fb"
+    },
+    {
+      "path": "mods/Vault_customs_lowered_no_speed/Vault_customs_lever_cadence.esp",
+      "bytes": 974,
+      "sha256": "886b24e96e493b940e2342e051e52f8c39ed5bbeeb348db9dbdd4842ab59acee",
+      "source_sha256": "886b24e96e493b940e2342e051e52f8c39ed5bbeeb348db9dbdd4842ab59acee"
+    },
+    {
+      "path": "mods/Vault_customs_lowered_no_speed/Vault_customs_lowered_no_speed.esp",
+      "bytes": 881,
+      "sha256": "d4fd2b84634cc7eea6cbd659e0e60db8bab06cb372ec4d202e5ac365b5aacf23",
+      "source_sha256": "d4fd2b84634cc7eea6cbd659e0e60db8bab06cb372ec4d202e5ac365b5aacf23"
+    },
+    {
+      "path": "mods/Vault_customs_turret_soundfix/Meshes/Actors/Turret/Behaviors/TurretStandingRootBehavior.hkx",
+      "bytes": 9296,
+      "sha256": "a76497e2469e020a89ccadede36ab1dcf68e478e573506874ebeec57e1004b00",
+      "source_sha256": "a76497e2469e020a89ccadede36ab1dcf68e478e573506874ebeec57e1004b00"
+    },
+    {
+      "path": "mods/Vault_customs_turret_soundfix/Meshes/Actors/Turret/Behaviors/TurretWorkshopRootBehavior.hkx",
+      "bytes": 9280,
+      "sha256": "46ef41016e994d18341f8652d1863d4bdcaa26beaf5b4ae0567226eea839a7d2",
+      "source_sha256": "46ef41016e994d18341f8652d1863d4bdcaa26beaf5b4ae0567226eea839a7d2"
+    },
+    {
+      "path": "mods/Vault_customs_pa_finishers/Vault_customs_pa_finishers.esp",
+      "bytes": 1431,
+      "sha256": "e1457a3f55767c97d96815989dcea437d013adb0522d7a9b4fbcf21d27d321ad",
+      "source_sha256": "e1457a3f55767c97d96815989dcea437d013adb0522d7a9b4fbcf21d27d321ad"
+    },
+    {
+      "path": "mods/Vault_customs_sneaky_kills_compat/Vault_customs_sneaky_kills_compat.esp",
+      "bytes": 963,
+      "sha256": "0699648f3a51b82613021c6642c668f6b369c3b8c685717378fc00e889cd4601",
+      "source_sha256": "0699648f3a51b82613021c6642c668f6b369c3b8c685717378fc00e889cd4601"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/Henry/WPNIdleGunDown.hkx",
+      "bytes": 59808,
+      "sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f",
+      "source_sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/Henry/WPNRunGunDown.hkx",
+      "bytes": 9168,
+      "sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685",
+      "source_sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/Marlin/WPNIdleGunDown.hkx",
+      "bytes": 59808,
+      "sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f",
+      "source_sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/Marlin/WPNRunGunDown.hkx",
+      "bytes": 9168,
+      "sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685",
+      "source_sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/WPNIdleGunDown.hkx",
+      "bytes": 59808,
+      "sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f",
+      "source_sha256": "02a2377a60cf212fe3dc2958ae9b55145f212454eef91f45902c7931a937399f"
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/Meshes/Actors/Character/_1stPerson/Animations/GeckoLeverRifle/WPNRunGunDown.hkx",
+      "bytes": 9168,
+      "sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685",
+      "source_sha256": "5cfffe89ad4c99db08f3c40bfd9487c31526e05b617ac6c09ca7044860596685"
+    },
+    {
+      "path": "mods/Vault_customs_enemy_level_floor/F4SE/Plugins/EnemyLevelFloorF4.dll",
+      "bytes": 1017344,
+      "sha256": "44292a41b99536c4951a47097822f5af3967f892b7c044bf9541b20aa74a4b1e",
+      "source_sha256": "d40d4f9aec6df7779e5ec021b9f2c90546c8c56b1e8a91c22a20f0d6e96810f7"
+    },
+    {
+      "path": "mods/Vault_customs_enemy_level_floor/F4SE/Plugins/EnemyLevelFloorF4.ini",
+      "bytes": 209,
+      "sha256": "b0ee61edd29323cdb963038170574c19fa96291c6acb0f7793240d7b37cea0b5",
+      "source_sha256": "b0ee61edd29323cdb963038170574c19fa96291c6acb0f7793240d7b37cea0b5"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Meshes/DLC05/SetDressing/Workshop/WeaponRack/DLC05WorkshopPistolRack01.nif",
+      "bytes": 18633,
+      "sha256": "b4bcbca8f1e12a614cc94ddf3d0b2c54dab3c0fa581e0e2cb02df2cdd7c9450b",
+      "source_sha256": "b4bcbca8f1e12a614cc94ddf3d0b2c54dab3c0fa581e0e2cb02df2cdd7c9450b"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Meshes/DLC05/SetDressing/Workshop/WeaponRack/DLC05WorkshopPistolRack02.nif",
+      "bytes": 15238,
+      "sha256": "b2730ff108b6b9d1dcc3f29b2e5b1d38c21277b08f525a27dda991c03ab5d675",
+      "source_sha256": "b2730ff108b6b9d1dcc3f29b2e5b1d38c21277b08f525a27dda991c03ab5d675"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Meshes/DLC05/SetDressing/Workshop/WeaponRack/DLC05WorkshopPistolRack03.nif",
+      "bytes": 17977,
+      "sha256": "b348fe717c9840755054075cbfbb6c50b4bba8c57e739e8ee19ee6ad99e91d9e",
+      "source_sha256": "b348fe717c9840755054075cbfbb6c50b4bba8c57e739e8ee19ee6ad99e91d9e"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Meshes/DLC05/SetDressing/Workshop/WeaponRack/DLC05WorkshopPistolRack04.nif",
+      "bytes": 14818,
+      "sha256": "d0d15f37d2a1390fe110c0def0e999e67a0c47ec88a3a835c23793c5961bab77",
+      "source_sha256": "d0d15f37d2a1390fe110c0def0e999e67a0c47ec88a3a835c23793c5961bab77"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Scripts/DLC05/WeaponRackScript.pex",
+      "bytes": 11466,
+      "sha256": "adec9d81374d0bd5ff2fdb258a8cb3c8260de19c432eb11c72832b64a2b5f3f5",
+      "source_sha256": "11c6dfec5937d743033f4076121ce8da2c2be5a8427c7cdafc8d67412e6add05"
+    },
+    {
+      "path": "mods/Vault_customs_NR_settings/F4SE/Plugins/F4SEMenuFramework.ini",
+      "bytes": 854,
+      "sha256": "5e358b73872b201119b1eabe766cd16e795d8efe4ce8161082e9126fb836aace",
+      "source_sha256": "5e358b73872b201119b1eabe766cd16e795d8efe4ce8161082e9126fb836aace"
+    },
+    {
+      "path": "mods/Vault_customs_NR_settings/F4SE/Plugins/HighFPSPhysicsFix.ini",
+      "bytes": 12777,
+      "sha256": "afbd462268d5611940c1aea291200e3f1225f147526e3cd3e51584a10cca337d",
+      "source_sha256": "afbd462268d5611940c1aea291200e3f1225f147526e3cd3e51584a10cca337d"
+    },
+    {
+      "path": "mods/Vault_customs_NR_settings/F4SE/Plugins/ShadowBoostFO4.ini",
+      "bytes": 1491,
+      "sha256": "9bb95bd0f152621a31b7830f3b8ab948ee748399988633b08fb4a1805ad2f845",
+      "source_sha256": "9bb95bd0f152621a31b7830f3b8ab948ee748399988633b08fb4a1805ad2f845"
+    },
+    {
+      "path": "mods/Vault_customs_NR_settings/MCM/Settings/Upscaling.ini",
+      "bytes": 1044,
+      "sha256": "cc0522af10508238d850447aa0c63208a6b63326615c9f7b28d709c22f30bd1d",
+      "source_sha256": "cc0522af10508238d850447aa0c63208a6b63326615c9f7b28d709c22f30bd1d"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/Interface/Translations/MCM_ru.txt",
+      "bytes": 1942,
+      "sha256": "c08f60432a79137d996f4dd585eaf72775d437be902261b1805674c930b32d6c",
+      "source_sha256": "c08f60432a79137d996f4dd585eaf72775d437be902261b1805674c930b32d6c"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/Interface/Translations/UneducatedShooter_ru.txt",
+      "bytes": 6664,
+      "sha256": "d9d83f1efe9f42f290d6de31a45d950fd065de38ed87197eab4e4c01455f5b74",
+      "source_sha256": "d9d83f1efe9f42f290d6de31a45d950fd065de38ed87197eab4e4c01455f5b74"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/Interface/Translations/WMM_WorkshopMenuManager_ru.txt",
+      "bytes": 3456,
+      "sha256": "0768ab111126a3330ee13f5db746b2e0f141629aff1eda7df12cc43ac06c18b0",
+      "source_sha256": "0768ab111126a3330ee13f5db746b2e0f141629aff1eda7df12cc43ac06c18b0"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/CompanionStatusEnhanced/keybinds.json",
+      "bytes": 2598,
+      "sha256": "819617beae4c85bc84e6d2b01db435880d64949673d04225b44fc79c82ef9843",
+      "source_sha256": "819617beae4c85bc84e6d2b01db435880d64949673d04225b44fc79c82ef9843"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/MCMCategorizer/Translation/MCM_MCMCategorizer_ru.txt",
+      "bytes": 3813,
+      "sha256": "99af7524ab3b29dd59ba082e0c63e449e3184c2dea374c6faf5b455c3f7c0ad9",
+      "source_sha256": "99af7524ab3b29dd59ba082e0c63e449e3184c2dea374c6faf5b455c3f7c0ad9"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/SCM/keybinds.json",
+      "bytes": 605,
+      "sha256": "966c64e8f6a5bc46b269015df55d41daa68f2864325a5c51c5f676c84492f038",
+      "source_sha256": "966c64e8f6a5bc46b269015df55d41daa68f2864325a5c51c5f676c84492f038"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/SS2/keybinds.json",
+      "bytes": 8721,
+      "sha256": "92c9f5cee720fe493e28665465764ba69f49e32a4622a416685c57f712a22272",
+      "source_sha256": "92c9f5cee720fe493e28665465764ba69f49e32a4622a416685c57f712a22272"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/TrueStorms/keybinds.json",
+      "bytes": 1760,
+      "sha256": "5028bff50710443bf719a2398624ee843ebd258c81507ebf362c269099a7f0c2",
+      "source_sha256": "5028bff50710443bf719a2398624ee843ebd258c81507ebf362c269099a7f0c2"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/UneducatedShooter/config.json",
+      "bytes": 14510,
+      "sha256": "c0887e3b3cb3225646af7466f11e6dfdca2ab34d166c960a42f92be7876b60e7",
+      "source_sha256": "c0887e3b3cb3225646af7466f11e6dfdca2ab34d166c960a42f92be7876b60e7"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/UneducatedShooter/keybinds.json",
+      "bytes": 461,
+      "sha256": "22d835da4e0b78133d575b1789e50419d71728d5bcc0bc3ee5c9c3958b8fb387",
+      "source_sha256": "22d835da4e0b78133d575b1789e50419d71728d5bcc0bc3ee5c9c3958b8fb387"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/Upscaling/config.json",
+      "bytes": 4103,
+      "sha256": "f8a6b53292bdd058de47b624abdaa44b50d30c7fcb40649c1a41922449bc6550",
+      "source_sha256": "f8a6b53292bdd058de47b624abdaa44b50d30c7fcb40649c1a41922449bc6550"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/WheelMenu/keybinds.json",
+      "bytes": 332,
+      "sha256": "a187b519796e981e56d34aea77296bd1b059b95ac927a8499ea634688377b1b0",
+      "source_sha256": "a187b519796e981e56d34aea77296bd1b059b95ac927a8499ea634688377b1b0"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/WMM_WorkshopMenuManager/keybinds.json",
+      "bytes": 374,
+      "sha256": "b8ee0ba3b048a56d49f6ea0b2866b927265b96de702541de8fa90ab467e67005",
+      "source_sha256": "b8ee0ba3b048a56d49f6ea0b2866b927265b96de702541de8fa90ab467e67005"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/WorkshopFramework/keybinds.json",
+      "bytes": 296,
+      "sha256": "450c3bf628103dc2c1e23f62fc2bb5ac0c7f44b69e545379de96b50c41dc9a94",
+      "source_sha256": "450c3bf628103dc2c1e23f62fc2bb5ac0c7f44b69e545379de96b50c41dc9a94"
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/MCM/Config/WorkshopPlus/keybinds.json",
+      "bytes": 9494,
+      "sha256": "c68a0f39a26d101bbe09a248c68e4e37630786961e9fa9f5f8063e7d54bcf9ce",
+      "source_sha256": "c68a0f39a26d101bbe09a248c68e4e37630786961e9fa9f5f8063e7d54bcf9ce"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/FallUI HUD/Translation/Translate_ru.txt",
+      "bytes": 13668,
+      "sha256": "93583b99bbad781008f8c05a0ccd2d34e499e960951138058a249b1ce42946d4",
+      "source_sha256": "93583b99bbad781008f8c05a0ccd2d34e499e960951138058a249b1ce42946d4"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/FallUI Inventory/Translation/FallUIInv_ru.txt",
+      "bytes": 2332,
+      "sha256": "9d0c1714627777aca7672ee50391003dd1a1a4d5f28782831b12c9e9742f22b6",
+      "source_sha256": "9d0c1714627777aca7672ee50391003dd1a1a4d5f28782831b12c9e9742f22b6"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/ItemSorter/FIS/AutoTags/IndexedTags_ru.txt",
+      "bytes": 117816,
+      "sha256": "d576676e45640956ac5593522558a8fe67bd89837ab38c3f091b0722caf6cba7",
+      "source_sha256": "d576676e45640956ac5593522558a8fe67bd89837ab38c3f091b0722caf6cba7"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/ItemSorter/FIS/Translation/FISCategories_ru.txt",
+      "bytes": 2916,
+      "sha256": "415e4b8b59e702490fa8f38cedaa0b1ee8395988a176e6ac99b80f70eb5367d5",
+      "source_sha256": "415e4b8b59e702490fa8f38cedaa0b1ee8395988a176e6ac99b80f70eb5367d5"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/MainMenu.swf",
+      "bytes": 65807,
+      "sha256": "1f0e29c5ec64ab9ba02d485766cf04b1a026b8457622e50900a4b0b023eccbdb",
+      "source_sha256": "1f0e29c5ec64ab9ba02d485766cf04b1a026b8457622e50900a4b0b023eccbdb"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/MainMenu.swf.README.txt",
+      "bytes": 1237,
+      "sha256": "ecc1d19551f8f32930ebdeb633eca93fd7a44b105ade7083edbbf9a6cf6827f8",
+      "source_sha256": "ecc1d19551f8f32930ebdeb633eca93fd7a44b105ade7083edbbf9a6cf6827f8"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/Translations/FTS_FastTravelSettlement_ru.txt",
+      "bytes": 3232,
+      "sha256": "33aaca0eab5453a96af61c6ac95fbd84a6d6daa8e8f06318a20d68ca0a1844b1",
+      "source_sha256": "33aaca0eab5453a96af61c6ac95fbd84a6d6daa8e8f06318a20d68ca0a1844b1"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Interface/Translations/UneducatedShooter_ru.txt",
+      "bytes": 6824,
+      "sha256": "095b94a194bf4eaa9107e500a2945ed197dff2110be4ab07b0e9a547e841d8db",
+      "source_sha256": "095b94a194bf4eaa9107e500a2945ed197dff2110be4ab07b0e9a547e841d8db"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/_MCMSettingsManager/Translation/Translate_ru.txt",
+      "bytes": 8806,
+      "sha256": "ab19b8f237c44a8d7f7e81c7768226287f960fcd4e6f7bc9837ed9082d56391a",
+      "source_sha256": "ab19b8f237c44a8d7f7e81c7768226287f960fcd4e6f7bc9837ed9082d56391a"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/AdjustableSurvivalModeDamage/config.json",
+      "bytes": 1736,
+      "sha256": "c23d04fb272a41cce2c93294e6fb4fc2121c305c79bcb7537e4e165509d7db0b",
+      "source_sha256": "c23d04fb272a41cce2c93294e6fb4fc2121c305c79bcb7537e4e165509d7db0b"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/BlockingOverhaul/config.json",
+      "bytes": 11522,
+      "sha256": "36c862f9e07bfcb9b75a76bc8017e0a2c6b6615e120f4f952715a9803dc41276",
+      "source_sha256": "36c862f9e07bfcb9b75a76bc8017e0a2c6b6615e120f4f952715a9803dc41276"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/CIM/config.json",
+      "bytes": 22193,
+      "sha256": "4cc5765ff80c1ecf8ceddbb1c8e324744797ebfb97e1a6f41cd2a957cb3a4260",
+      "source_sha256": "4cc5765ff80c1ecf8ceddbb1c8e324744797ebfb97e1a6f41cd2a957cb3a4260"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/CompanionStatusEnhanced/config.json",
+      "bytes": 11388,
+      "sha256": "e08959d25b2ab09f2d8480b028357ecf8557294cf63494d1e4782bd484365e46",
+      "source_sha256": "e08959d25b2ab09f2d8480b028357ecf8557294cf63494d1e4782bd484365e46"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/CraftingHighlightFix/config.json",
+      "bytes": 2957,
+      "sha256": "7292591cdb427ded5f117a22f9ac0830b9c581c10ab16949ae7a451cfea9650b",
+      "source_sha256": "7292591cdb427ded5f117a22f9ac0830b9c581c10ab16949ae7a451cfea9650b"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/DisableCompanionCollision/config.json",
+      "bytes": 1900,
+      "sha256": "91304bb0e3bf30176e5d4da251bd90af9b2de145991625bf81a3aad0f1170c3c",
+      "source_sha256": "91304bb0e3bf30176e5d4da251bd90af9b2de145991625bf81a3aad0f1170c3c"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/Dynamic Timescale/config.json",
+      "bytes": 4521,
+      "sha256": "4f8c619aca6da15491224f57c59105396bd7176607184e6de267bc5cc4f9292c",
+      "source_sha256": "4f8c619aca6da15491224f57c59105396bd7176607184e6de267bc5cc4f9292c"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/EnemiesFearPowerArmor/config.json",
+      "bytes": 2449,
+      "sha256": "ba97eef5b41ba02273113aca108c65f7e633bd04af4dcf090a652f8eec1cc3d3",
+      "source_sha256": "ba97eef5b41ba02273113aca108c65f7e633bd04af4dcf090a652f8eec1cc3d3"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUI/Translation/MCM_FallUIInv_ru.txt",
+      "bytes": 52060,
+      "sha256": "e6343a031e41c5bc74685fe44f97cc4cdb971705f9bd3c35d257d72faf122e2d",
+      "source_sha256": "e6343a031e41c5bc74685fe44f97cc4cdb971705f9bd3c35d257d72faf122e2d"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUIConfirmBoxes/Translation/MCM_FallUIConfirm_ru.txt",
+      "bytes": 17066,
+      "sha256": "289ba56fc8a759f7025b5ec9f76c851803244a2843c55ffc9b46d6beb2a22906",
+      "source_sha256": "289ba56fc8a759f7025b5ec9f76c851803244a2843c55ffc9b46d6beb2a22906"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUIHUD/Translation/MCM_FallUIHUD_ru.txt",
+      "bytes": 10404,
+      "sha256": "934656a0d84daa43636e80412443a60bead4514ff8cb5197e7cc3eeee65c46ac",
+      "source_sha256": "934656a0d84daa43636e80412443a60bead4514ff8cb5197e7cc3eeee65c46ac"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUIIconLibrary/Translation/MCM_FallUIIconLibrary_ru.txt",
+      "bytes": 1874,
+      "sha256": "c8bd36ae368710f4c5edcd52dfe69233f2356b716987094e6c31c05ef938eed2",
+      "source_sha256": "c8bd36ae368710f4c5edcd52dfe69233f2356b716987094e6c31c05ef938eed2"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUIMap/Translation/MCM_FallUIMap_ru.txt",
+      "bytes": 8002,
+      "sha256": "38ec4881ea5dd6d63c01de36b06fd893adab178aac94b5bde788753d8b033900",
+      "source_sha256": "38ec4881ea5dd6d63c01de36b06fd893adab178aac94b5bde788753d8b033900"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FallUIWorkbench/Translation/MCM_FallUIWorkbench_ru.txt",
+      "bytes": 5042,
+      "sha256": "df7a3142c765bb5d76bbc1a3b27f51f1d0f40a42af5fd67a41d4cb26c2171831",
+      "source_sha256": "df7a3142c765bb5d76bbc1a3b27f51f1d0f40a42af5fd67a41d4cb26c2171831"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/Fatigue/config.json",
+      "bytes": 14720,
+      "sha256": "ca551f439f701c9071235d352eed975a66a714ec84a76e2c55ea3d6d9364fcfd",
+      "source_sha256": "ca551f439f701c9071235d352eed975a66a714ec84a76e2c55ea3d6d9364fcfd"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/FIS/Translation/MCM_FIS_ru.txt",
+      "bytes": 4232,
+      "sha256": "9bbc2644da014844facc15abaf14fc02f63d680b2a37579b1183e3e8d5f12ccb",
+      "source_sha256": "9bbc2644da014844facc15abaf14fc02f63d680b2a37579b1183e3e8d5f12ccb"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/Flashlight Stealth Fix/config.json",
+      "bytes": 1798,
+      "sha256": "8b0874c5103d0c80aab53492d185edc21a8a9a9146b368c56a28367388ea2158",
+      "source_sha256": "8b0874c5103d0c80aab53492d185edc21a8a9a9146b368c56a28367388ea2158"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/ImmersiveAnimationFramework/config.json",
+      "bytes": 3238,
+      "sha256": "e8f22cb46c2d02a1b563730d963d839dd009552074a3589b97be5e22c904f1bf",
+      "source_sha256": "e8f22cb46c2d02a1b563730d963d839dd009552074a3589b97be5e22c904f1bf"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/LegendariesTheyCanUse/config.json",
+      "bytes": 2030,
+      "sha256": "feca81b5853b59b285e931d06775770aa6936213312499084defeb4fdf25ffae",
+      "source_sha256": "feca81b5853b59b285e931d06775770aa6936213312499084defeb4fdf25ffae"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/MCMCategorizer/Translation/MCM_MCMCategorizer_ru.txt",
+      "bytes": 1784,
+      "sha256": "7807315cef714c2ff2e68a52509bbaae26f08c39ee1be3cf3cb9021f6225bb30",
+      "source_sha256": "7807315cef714c2ff2e68a52509bbaae26f08c39ee1be3cf3cb9021f6225bb30"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/SCM/config.json",
+      "bytes": 42425,
+      "sha256": "57425b8bb7ac163248a6a386119d3a6a43d1570e3828aa1c8c35c7e9856921b0",
+      "source_sha256": "57425b8bb7ac163248a6a386119d3a6a43d1570e3828aa1c8c35c7e9856921b0"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/SKKPlayerUndead/config.json",
+      "bytes": 6494,
+      "sha256": "837ad4b4ae8fca3e02274516df22876f20945a07b8107aa7cc983a570c2f2b68",
+      "source_sha256": "837ad4b4ae8fca3e02274516df22876f20945a07b8107aa7cc983a570c2f2b68"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/SS2/config.json",
+      "bytes": 140900,
+      "sha256": "66f0cb1d79199b82203809ff6567625817b822b43328d72343609da848e42cdd",
+      "source_sha256": "66f0cb1d79199b82203809ff6567625817b822b43328d72343609da848e42cdd"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/TrueStorms/Translation/MCM_TrueStorms_ru.txt",
+      "bytes": 5700,
+      "sha256": "812c6d32da3357d1bd4c7181d841cd0fbccdc334fdf576dff80f3ed346ba06f7",
+      "source_sha256": "812c6d32da3357d1bd4c7181d841cd0fbccdc334fdf576dff80f3ed346ba06f7"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/UnlimitedSurvivalMode/config.json",
+      "bytes": 4811,
+      "sha256": "d296e2b1885bb51b75e6cc9e2b27d7aa2eaaa3a3b600a9ec58845e16a6f941f7",
+      "source_sha256": "d296e2b1885bb51b75e6cc9e2b27d7aa2eaaa3a3b600a9ec58845e16a6f941f7"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/WorkshopFramework/config.json",
+      "bytes": 36502,
+      "sha256": "82f42abeef29741af60f22e28324ac09687fe98d219203f54b95787a3166cf9d",
+      "source_sha256": "82f42abeef29741af60f22e28324ac09687fe98d219203f54b95787a3166cf9d"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/XDI/config.json",
+      "bytes": 4910,
+      "sha256": "04f7ef990c78a961c9751d5445d478f6f6c4e58b62e7bf235aedf3339104ba1c",
+      "source_sha256": "04f7ef990c78a961c9751d5445d478f6f6c4e58b62e7bf235aedf3339104ba1c"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/ZZ_MCMBooster/Translation/MCMConfig_ru.txt",
+      "bytes": 618,
+      "sha256": "3726ca849bffcec1e6816fbc6128f9be3b7d069cdb2f276dfc6a70c1c1cc5068",
+      "source_sha256": "3726ca849bffcec1e6816fbc6128f9be3b7d069cdb2f276dfc6a70c1c1cc5068"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Scripts/Vault_customs_WorkshopPopulation.pex",
+      "bytes": 2362,
+      "sha256": "0c8b1e165360c398e34d5af3e2e1d05b905b755ad8b21cf571d0c55fb3f3afb2",
+      "source_sha256": "881c140c2e9f43a73262f9fbf9793c37668c1eaa19fb2b4e8a9aad7d24e202b4"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/DLCNukaWorld_ru.STRINGS",
+      "bytes": 496961,
+      "sha256": "0fe54035fc759e5c6e8510a627d7f3406f8cb1c85a15b313a5ba3d8722f24f42",
+      "source_sha256": "0fe54035fc759e5c6e8510a627d7f3406f8cb1c85a15b313a5ba3d8722f24f42"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/Fallout4_ru.DLSTRINGS",
+      "bytes": 1051781,
+      "sha256": "f8a0b1b094a2288a85112964eedab68442ba38f7e9d41de5ee95f9d4972e6f59",
+      "source_sha256": "f8a0b1b094a2288a85112964eedab68442ba38f7e9d41de5ee95f9d4972e6f59"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/Fallout4_ru.STRINGS",
+      "bytes": 3054247,
+      "sha256": "f2e4cb35591f8364eba4a68708a756ef6433b033a6ec4e6b076a758142740792",
+      "source_sha256": "f2e4cb35591f8364eba4a68708a756ef6433b033a6ec4e6b076a758142740792"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/Riley Sticks Around_ru.DLSTRINGS",
+      "bytes": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+      "source_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/Riley Sticks Around_ru.ILSTRINGS",
+      "bytes": 149,
+      "sha256": "93d5a87a9fc7cab618a79be2031f1fc4cdb2ec89ab8030fe40f7757c23f5446e",
+      "source_sha256": "93d5a87a9fc7cab618a79be2031f1fc4cdb2ec89ab8030fe40f7757c23f5446e"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Strings/Riley Sticks Around_ru.STRINGS",
+      "bytes": 132,
+      "sha256": "a228bb4d254ba7796f0b377dd671182fcbefedd369ea1df1dedfc6a6aa2735b8",
+      "source_sha256": "a228bb4d254ba7796f0b377dd671182fcbefedd369ea1df1dedfc6a6aa2735b8"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/F4SE/Plugins/place.ini",
+      "bytes": 4029,
+      "sha256": "57ad8b0f856372f17298f743b95583096b8c6d36218c97d692d4fa4dccec2f53",
+      "source_sha256": "57ad8b0f856372f17298f743b95583096b8c6d36218c97d692d4fa4dccec2f53"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/MCM/Config/PlaceEverywhere/config.json",
+      "bytes": 11160,
+      "sha256": "2008af7715786e5dafe7c251026da63ae44b6783d050f95d1e67f498bbfdbd62",
+      "source_sha256": "2008af7715786e5dafe7c251026da63ae44b6783d050f95d1e67f498bbfdbd62"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/MCM/Config/PlaceEverywhere/settings.ini",
+      "bytes": 849,
+      "sha256": "a7fcd3ca01aaf2256e04c200b295235b31a4c4b1e5fe6195fc5287800768edd3",
+      "source_sha256": "a7fcd3ca01aaf2256e04c200b295235b31a4c4b1e5fe6195fc5287800768edd3"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Scripts/Vault_customs_PlaceMCM.pex",
+      "bytes": 4800,
+      "sha256": "bc16e3978ae862c863836f458ba01a5061bafcae64ce20e0048ba174fa4cc52c",
+      "source_sha256": "1d4b2a63aa52156b0ae36659f862b1d2c56ebfcbc59d1beb435b9c72c9391744"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Vault_customs_place_mcm.esp",
+      "bytes": 399,
+      "sha256": "07e271086f83cc227dae7fdda321f87f5b80a40a14a991a7dee6b27f997d8cd6",
+      "source_sha256": "07e271086f83cc227dae7fdda321f87f5b80a40a14a991a7dee6b27f997d8cd6"
+    },
+    {
+      "path": "mods/Vault_customs_ss2_defaults/MCM/Settings/_MCMSettingsManager.ini",
+      "bytes": 42795,
+      "sha256": "ae6af523ef0d12ca9bb796bb61e17763ffba6f9c3441c71f7dff814328e6f53c",
+      "source_sha256": "ae6af523ef0d12ca9bb796bb61e17763ffba6f9c3441c71f7dff814328e6f53c"
+    },
+    {
+      "path": "mods/Vault_customs_ss2_defaults/Vault_customs_ss2_defaults.esp",
+      "bytes": 1053,
+      "sha256": "8459f4dc4a01afc7cb03c8e39c8f9dc295d4eac03f6c9f18432eb7b9c988b29e",
+      "source_sha256": "8459f4dc4a01afc7cb03c8e39c8f9dc295d4eac03f6c9f18432eb7b9c988b29e"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.dll",
+      "bytes": 1070080,
+      "sha256": "e4423adefe38c028743b078fd8cf093a3038953cf0a462db908eef76e49fb425",
+      "source_sha256": "a9298faeb19813068a891d591c879139845319b66e9f1a22ec3f1955aa4732db"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.ini",
+      "bytes": 2618,
+      "sha256": "02fe3b2555574092e1849f77df5cfd8bbe145f777ffed538ea98efc65af36e4b",
+      "source_sha256": "02fe3b2555574092e1849f77df5cfd8bbe145f777ffed538ea98efc65af36e4b"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Materials/Interface/Lockpicking/LockInterfaceLockV1.BGSM",
+      "bytes": 405,
+      "sha256": "4724d19a2490d622a76670ba1c24d8e5b8531a6eeb5cbf6a198356cd33788db1",
+      "source_sha256": "4724d19a2490d622a76670ba1c24d8e5b8531a6eeb5cbf6a198356cd33788db1"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Materials/Interface/Lockpicking/LockInterfaceLockV2.BGSM",
+      "bytes": 405,
+      "sha256": "f6682deee90ffc4279355ff5107c8d6f7ecf494a48784ac46eb8551f6894ae58",
+      "source_sha256": "f6682deee90ffc4279355ff5107c8d6f7ecf494a48784ac46eb8551f6894ae58"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Materials/Interface/Lockpicking/LockInterfaceLockV3.BGSM",
+      "bytes": 405,
+      "sha256": "fa7c1a4374d597b66c8989120b26092e1d6e289ce55348c3e7df9898189cc44b",
+      "source_sha256": "fa7c1a4374d597b66c8989120b26092e1d6e289ce55348c3e7df9898189cc44b"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Materials/Interface/Lockpicking/LockInterfaceLockV4.BGSM",
+      "bytes": 405,
+      "sha256": "061daeb75c34ec837dd4bd6a407165f5004442f3e78d37efa91c53cc82d461a4",
+      "source_sha256": "061daeb75c34ec837dd4bd6a407165f5004442f3e78d37efa91c53cc82d461a4"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Meshes/Interface/LockPicking/LockPickLockV0.nif",
+      "bytes": 30615,
+      "sha256": "997b52733cbc1aaa9efa0bbe719eb38f0929524e60aeb1ebce42651bd1c7b87f",
+      "source_sha256": "997b52733cbc1aaa9efa0bbe719eb38f0929524e60aeb1ebce42651bd1c7b87f"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Meshes/Interface/LockPicking/LockPickLockV1.nif",
+      "bytes": 30675,
+      "sha256": "a02b22f0d3c13af66618b30c9ae0c49cd53f750bdaf29c10525ad0a49ea89548",
+      "source_sha256": "a02b22f0d3c13af66618b30c9ae0c49cd53f750bdaf29c10525ad0a49ea89548"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Meshes/Interface/LockPicking/LockPickLockV2.nif",
+      "bytes": 30675,
+      "sha256": "fa18313ff9bc5567ce5baaf07419ae9e87f6d49ce44cd1b1bc5487ec505bcb31",
+      "source_sha256": "fa18313ff9bc5567ce5baaf07419ae9e87f6d49ce44cd1b1bc5487ec505bcb31"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Meshes/Interface/LockPicking/LockPickLockV3.nif",
+      "bytes": 30675,
+      "sha256": "b2c869261888072d3016c68ab6ba5ba85561e333f8255710e1776bc253be12f0",
+      "source_sha256": "b2c869261888072d3016c68ab6ba5ba85561e333f8255710e1776bc253be12f0"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Meshes/Interface/LockPicking/LockPickLockV4.nif",
+      "bytes": 30675,
+      "sha256": "a03f8d53bd9aae8e7b26b47f819fc05c086fc84fec65fff725a3406664f4d0b1",
+      "source_sha256": "a03f8d53bd9aae8e7b26b47f819fc05c086fc84fec65fff725a3406664f4d0b1"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterface01_d.dds",
+      "bytes": 5592580,
+      "sha256": "4f983f4dd847591b233ef617622a3026f8545b50dfe76b13a7cb89acf66c4a39",
+      "source_sha256": "4f983f4dd847591b233ef617622a3026f8545b50dfe76b13a7cb89acf66c4a39"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterface01_n.dds",
+      "bytes": 22369796,
+      "sha256": "747b3d92c99ad64646172d4aba9204dd12576ae63c4019b05c02689a1addd121",
+      "source_sha256": "747b3d92c99ad64646172d4aba9204dd12576ae63c4019b05c02689a1addd121"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterface01_s.dds",
+      "bytes": 1398276,
+      "sha256": "556bf9a01bdec23a01a1ee3d124e4a4b2357de67b8122db6912f1b22c0d2929a",
+      "source_sha256": "556bf9a01bdec23a01a1ee3d124e4a4b2357de67b8122db6912f1b22c0d2929a"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV1_d.dds",
+      "bytes": 5592580,
+      "sha256": "bb47f16481d8499fd8eeec512811f5f02de8ee01741878b1a2af6cdfcc8e0f32",
+      "source_sha256": "bb47f16481d8499fd8eeec512811f5f02de8ee01741878b1a2af6cdfcc8e0f32"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV1_n.dds",
+      "bytes": 5592580,
+      "sha256": "07ac561be61b1b66cf80646a500532ab7d7969ca50b45f6c65a9d20d4c140259",
+      "source_sha256": "07ac561be61b1b66cf80646a500532ab7d7969ca50b45f6c65a9d20d4c140259"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV1_s.dds",
+      "bytes": 5592580,
+      "sha256": "3ffe9e22442171451acd119697eb8d7ccea3bd982fc80b144528adcf598dfffc",
+      "source_sha256": "3ffe9e22442171451acd119697eb8d7ccea3bd982fc80b144528adcf598dfffc"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV2_d.dds",
+      "bytes": 5592560,
+      "sha256": "09ede5050664dfb93e166bb12de29607206d5bfb3aa61392500b762cad3c2f48",
+      "source_sha256": "09ede5050664dfb93e166bb12de29607206d5bfb3aa61392500b762cad3c2f48"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV2_n.dds",
+      "bytes": 4194432,
+      "sha256": "ba85c3cd83fb2fef1d165186e8fb210302f9ea2448e8834703ef1cb4c356a179",
+      "source_sha256": "ba85c3cd83fb2fef1d165186e8fb210302f9ea2448e8834703ef1cb4c356a179"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV2_s.dds",
+      "bytes": 4194432,
+      "sha256": "2d224af633778a3064d763cde0384edb08b91e54c0554bb1604ce4133050f895",
+      "source_sha256": "2d224af633778a3064d763cde0384edb08b91e54c0554bb1604ce4133050f895"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV3_d.dds",
+      "bytes": 2796344,
+      "sha256": "90bce7c42ca82ed80e43abcc71dc48cc5798085be5989aa4d9033cf8cc1ba144",
+      "source_sha256": "90bce7c42ca82ed80e43abcc71dc48cc5798085be5989aa4d9033cf8cc1ba144"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV3_n.dds",
+      "bytes": 5592560,
+      "sha256": "23d85e5d28efccb421380d8e1930ef4f13aad109fb4feac729a9e33e1ce1fbd0",
+      "source_sha256": "23d85e5d28efccb421380d8e1930ef4f13aad109fb4feac729a9e33e1ce1fbd0"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV3_s.dds",
+      "bytes": 5592560,
+      "sha256": "09ea2180496349c4a8bb690b187c6eac7529a3d4838e0de3d01a37d97d0c3c2d",
+      "source_sha256": "09ea2180496349c4a8bb690b187c6eac7529a3d4838e0de3d01a37d97d0c3c2d"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV4_d.dds",
+      "bytes": 2796344,
+      "sha256": "f841f8bb0e07832adcc478e948bd76ae82c04ea0c1eb62f25fd48f8a6b353b9e",
+      "source_sha256": "f841f8bb0e07832adcc478e948bd76ae82c04ea0c1eb62f25fd48f8a6b353b9e"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV4_n.dds",
+      "bytes": 5592560,
+      "sha256": "8369c2b374532f4e56b65e0d5694b9739f7f152ad07784d4177b9f5f5ab1bacc",
+      "source_sha256": "8369c2b374532f4e56b65e0d5694b9739f7f152ad07784d4177b9f5f5ab1bacc"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/Textures/Interface/Lockpicking/LockInterfaceV4_s.dds",
+      "bytes": 262272,
+      "sha256": "774ec7a50f8b665303c0bd600618bbc7fe5dfbeca68e67cb2c37e90cb96104fd",
+      "source_sha256": "774ec7a50f8b665303c0bd600618bbc7fe5dfbeca68e67cb2c37e90cb96104fd"
+    },
+    {
+      "path": "mods/Vault_customs_no_combat_auras/Vault_customs_no_combat_auras.esp",
+      "bytes": 7672,
+      "sha256": "e291ea4cd3cd528cd5c1e65fea4597395e09613af2900f5b201ae70a22cd5f06",
+      "source_sha256": "e291ea4cd3cd528cd5c1e65fea4597395e09613af2900f5b201ae70a22cd5f06"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/AutoBuildPlots/Lights/NoPowerNeeded/StringLights_3Bulbs.nif",
+      "bytes": 15191,
+      "sha256": "fcf4d653297e7d92ea3655ea903b2a9b65db259c2af8eb5bc6431b62a6e83559",
+      "source_sha256": "fcf4d653297e7d92ea3655ea903b2a9b65db259c2af8eb5bc6431b62a6e83559"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/AutoBuildPlots/Lights/NoPowerNeeded/StringLights_4Bulbs.nif",
+      "bytes": 18930,
+      "sha256": "0d10930f88448028d868e020ae5d89512b84d0158af0d80a32b94f2a53f5d174",
+      "source_sha256": "0d10930f88448028d868e020ae5d89512b84d0158af0d80a32b94f2a53f5d174"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/AutoBuildPlots/Lights/NoPowerNeeded/StringLights_5Bulbs.nif",
+      "bytes": 22402,
+      "sha256": "1188b473e7c1f38876a9349d91077639bd80e88d29ba13d6bea265a1e7cbfa3e",
+      "source_sha256": "1188b473e7c1f38876a9349d91077639bd80e88d29ba13d6bea265a1e7cbfa3e"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/AutoBuildPlots/Lights/NoPowerNeeded/StringLights_7Bulbs.nif",
+      "bytes": 28418,
+      "sha256": "c09bacbcb946ba1f4ea342286cb81939baf0696d8575db08e067d42303d2031e",
+      "source_sha256": "c09bacbcb946ba1f4ea342286cb81939baf0696d8575db08e067d42303d2031e"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/AutoBuildPlots/Lights/NoPowerNeeded/StringLights_7Bulbs_Low.nif",
+      "bytes": 28418,
+      "sha256": "7e6d180dc4fe7b94c4c087f62e04cbbd61da05f8c35a0042cfe38b80b2c99ff3",
+      "source_sha256": "7e6d180dc4fe7b94c4c087f62e04cbbd61da05f8c35a0042cfe38b80b2c99ff3"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopCagebulbWallLight.nif",
+      "bytes": 46782,
+      "sha256": "a22e49db25be0700946f4dc11c90be7f196b7976702d6b63ff31383dab2c1e8a",
+      "source_sha256": "a22e49db25be0700946f4dc11c90be7f196b7976702d6b63ff31383dab2c1e8a"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopHighTechCeilingLight01.nif",
+      "bytes": 27310,
+      "sha256": "a1fd9f369856d55fcac72a93bbf5c985eb697847de122ff6337c988569f3c239",
+      "source_sha256": "a1fd9f369856d55fcac72a93bbf5c985eb697847de122ff6337c988569f3c239"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopHighTechWallLight01.nif",
+      "bytes": 20963,
+      "sha256": "19ebe0e868af3ddabe553dabfb53897fb01d50cef6ffecb8504bb21d46e13c4b",
+      "source_sha256": "19ebe0e868af3ddabe553dabfb53897fb01d50cef6ffecb8504bb21d46e13c4b"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopHighTechWallLight02.nif",
+      "bytes": 25581,
+      "sha256": "26eb602a214a827607469ea4eea667ebedbc26ba7c68b9481f4dc69f8bfbac44",
+      "source_sha256": "26eb602a214a827607469ea4eea667ebedbc26ba7c68b9481f4dc69f8bfbac44"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopStringofLightbulbs01.nif",
+      "bytes": 26392,
+      "sha256": "e3d0262c263b9c35a4104530059e7d26d9440792d2a5eba87924e5305220a187",
+      "source_sha256": "e3d0262c263b9c35a4104530059e7d26d9440792d2a5eba87924e5305220a187"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopTableLight01.nif",
+      "bytes": 20442,
+      "sha256": "80297fe8fecbd4f998091e988605caca4f9570db8d8747137271628147adb071",
+      "source_sha256": "80297fe8fecbd4f998091e988605caca4f9570db8d8747137271628147adb071"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC02/SetDressing/Workshop/WorkshopTableLight02.nif",
+      "bytes": 52400,
+      "sha256": "a268759888be8160b98c3c0566185b23b85dc6e01494bc577591ea138a980b0d",
+      "source_sha256": "a268759888be8160b98c3c0566185b23b85dc6e01494bc577591ea138a980b0d"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC05/SetDressing/Workshop/Conduits/DLC05ConduitCeilingLight01A.nif",
+      "bytes": 45036,
+      "sha256": "542fcbd6851b40ef66cbf2594429d0e2f7581e5bafd17a567059da543ad7cc08",
+      "source_sha256": "542fcbd6851b40ef66cbf2594429d0e2f7581e5bafd17a567059da543ad7cc08"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/DLC05/SetDressing/Workshop/Conduits/DLC05ConduitFloorLight01A.nif",
+      "bytes": 44353,
+      "sha256": "a659d7d9d5fa47ec0f45d1e82acb95bdb20433fc9ed7c561bd2f94f3412dafe0",
+      "source_sha256": "a659d7d9d5fa47ec0f45d1e82acb95bdb20433fc9ed7c561bd2f94f3412dafe0"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/HighTech/Workshop_HighTechLightCeiling04_Dirty_Cream_On.nif",
+      "bytes": 50150,
+      "sha256": "1933714ea39cf733277fffa2f435fc3f3ec14682d1c31a3cd2d24fcb290b6432",
+      "source_sha256": "1933714ea39cf733277fffa2f435fc3f3ec14682d1c31a3cd2d24fcb290b6432"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/HighTech/Workshop_HighTechLightCeiling06_Dirty_Cream_On.nif",
+      "bytes": 78322,
+      "sha256": "a7db5a3fe35df1c5ae60d58ea0853d7b75189622b15e678c2ba825b6e186359f",
+      "source_sha256": "a7db5a3fe35df1c5ae60d58ea0853d7b75189622b15e678c2ba825b6e186359f"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/HighTech/Workshop_HighTechLightFloor01_Dirty_Cream_On.nif",
+      "bytes": 36032,
+      "sha256": "40e270c876fbe5893bf432961b1d455179598f5f2a5d1938aeffed1f5ee1d9cb",
+      "source_sha256": "40e270c876fbe5893bf432961b1d455179598f5f2a5d1938aeffed1f5ee1d9cb"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/HighTech/Workshop_HighTechLightFloor02_Dirty_Cream_On.nif",
+      "bytes": 35370,
+      "sha256": "7b5be0651fd982a996abe45069ae6381bb888b67796f6231c7c1d1672386ed64",
+      "source_sha256": "7b5be0651fd982a996abe45069ae6381bb888b67796f6231c7c1d1672386ed64"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/LightFixtures/WorkshopCeilingFanLight01.nif",
+      "bytes": 37427,
+      "sha256": "7d20a4e01d8ff3809d1dc267cbe360d119b03a586a609a23d8fb7a679fd6504d",
+      "source_sha256": "7d20a4e01d8ff3809d1dc267cbe360d119b03a586a609a23d8fb7a679fd6504d"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/LightFixtures/WorkshopIndCatLight.nif",
+      "bytes": 37547,
+      "sha256": "448a7be72c542e859a34c2201cbcdc3daa1bc03db6059f0ef7f4f128d0348cf2",
+      "source_sha256": "448a7be72c542e859a34c2201cbcdc3daa1bc03db6059f0ef7f4f128d0348cf2"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Meshes/SetDressing/LightFixtures/WorkshopLightbulbHanging01.nif",
+      "bytes": 12225,
+      "sha256": "010e8c3d194d000222c86fcb2b0b2a01b50fe9c995c79e6c8b8e2cd8925884b4",
+      "source_sha256": "010e8c3d194d000222c86fcb2b0b2a01b50fe9c995c79e6c8b8e2cd8925884b4"
+    },
+    {
+      "path": "mods/Vault_customs_warm_lights/Vault_customs_warm_lights.esp",
+      "bytes": 5737,
+      "sha256": "f4a4117815d81ee80064b50793d17c109a4c94e08f49607fcc56b5c9cced5976",
+      "source_sha256": "f4a4117815d81ee80064b50793d17c109a4c94e08f49607fcc56b5c9cced5976"
+    },
+    {
+      "path": "mods/Vault_customs_hydro_optics/F4SE/Plugins/HydroOpticsF4.dll",
+      "bytes": 573440,
+      "sha256": "6aa353101c77d53d9c2defa86b1369abcd731217949f38914fd7d9866833437c",
+      "source_sha256": "3639281e9d06fcb6da915431856eebc7f0ffb23f2e0ea87ef07d4a5b628d8f8a"
+    },
+    {
+      "path": "mods/Vault_customs_hydro_optics/F4SE/Plugins/HydroOpticsF4.ini",
+      "bytes": 347,
+      "sha256": "f6de6d61ae29cf16cfe3c4cb8ec0be3043e96bb0b5673215ae190aa50262c476",
+      "source_sha256": "f6de6d61ae29cf16cfe3c4cb8ec0be3043e96bb0b5673215ae190aa50262c476"
+    },
+    {
+      "path": "mods/Vault_customs_hydro_optics/Vault_customs_hydro_optics.esp",
+      "bytes": 4713,
+      "sha256": "719b2a7543b9d60371672d5b8709607817dc6b73f8c9dbefe74fbef4d9551716",
+      "source_sha256": "719b2a7543b9d60371672d5b8709607817dc6b73f8c9dbefe74fbef4d9551716"
+    },
+    {
+      "path": "mods/Vault_customs_weather_schedule/MCM/Config/WeatherSchedule/config.json",
+      "bytes": 5203,
+      "sha256": "d3717721e959f010e9c8247633e709ead5a22f571f2bbc3b59bc2729984fadfe",
+      "source_sha256": "d3717721e959f010e9c8247633e709ead5a22f571f2bbc3b59bc2729984fadfe"
+    },
+    {
+      "path": "mods/Vault_customs_weather_schedule/Scripts/Vault_customs_WeatherSchedule.pex",
+      "bytes": 10550,
+      "sha256": "952b1e8280015225c1c763ed78604ced0c863690dccd8016f11532afc5002e64",
+      "source_sha256": "c641deae06c33bac3680414bfa73221e4ae277e2ca2ab942542431128562a1d3"
+    },
+    {
+      "path": "mods/Vault_customs_weather_schedule/Vault_customs_weather_schedule.esp",
+      "bytes": 1512,
+      "sha256": "569aee3f71a5cee02b7ea2fc548644cfb2f7dd0963bf078d11fd35d05302b5da",
+      "source_sha256": "569aee3f71a5cee02b7ea2fc548644cfb2f7dd0963bf078d11fd35d05302b5da"
+    },
+    {
+      "path": "mods/Vault_customs_pipboy_light_on_pelvis/meshes/pipboy/characterassets/PipboyLowPlayer.nif",
+      "bytes": 238835,
+      "sha256": "5e6b40fd883912c5bb538a03962752f3170992702e66b2215f9d9bb4167757df",
+      "source_sha256": "5e6b40fd883912c5bb538a03962752f3170992702e66b2215f9d9bb4167757df"
+    },
+    {
+      "path": "mods/Vault_customs_vault113_no_perk/Vault_customs_vault113_no_perk.esp",
+      "bytes": 1178,
+      "sha256": "f0ec2ebf49fc7d2dfcafc732e0d50438c43a0d242b5a6d0eb5afd8986201cd9c",
+      "source_sha256": "f0ec2ebf49fc7d2dfcafc732e0d50438c43a0d242b5a6d0eb5afd8986201cd9c"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/MCM/Config/SettlementHardship/config.json",
+      "bytes": 6963,
+      "sha256": "ea9ca29262250191be3e525e996d04832340f8759939343e244695386c547943",
+      "source_sha256": "ea9ca29262250191be3e525e996d04832340f8759939343e244695386c547943"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Meshes/Vault_customs/HardshipProbe.nif",
+      "bytes": 288,
+      "sha256": "b6e62c8b20a9fe87161f69a1c6254185b88c91735d1ddc6f493c6bd9faec5340",
+      "source_sha256": "b6e62c8b20a9fe87161f69a1c6254185b88c91735d1ddc6f493c6bd9faec5340"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Meshes/Vault_customs/HardshipTarget.nif",
+      "bytes": 2871,
+      "sha256": "56e6864d496ebb3f0c06a35fd0b777ee499f1e8a426427f5607fd2e2745fb5c3",
+      "source_sha256": "56e6864d496ebb3f0c06a35fd0b777ee499f1e8a426427f5607fd2e2745fb5c3"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Scripts/Vault_customs_Hardship.pex",
+      "bytes": 35611,
+      "sha256": "4220b06d2a22f9a65a6b371f6e9d1e85853d5e455c1377f7e0daf6eb37688048",
+      "source_sha256": "746bac21eb84d3d61e86f0e5e77f30b219ffb8e19fe5a2c56ec1360ff1fb0fc8"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Vault_customs_settlement_hardship.esp",
+      "bytes": 5281,
+      "sha256": "c12daadc286f2a7804a13f7a5aebeea3a94fc2122650f81d6839db21deafbca7",
+      "source_sha256": "c12daadc286f2a7804a13f7a5aebeea3a94fc2122650f81d6839db21deafbca7"
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Scripts/Vault_customs_AutoSiren.pex",
+      "bytes": 25236,
+      "sha256": "9bdc9a39844bb5a4188ee7fd17765685554f961d7ab8490e80c5237e3166b898",
+      "source_sha256": "879e0f61c2c184b333bd4c2ff084cf1dfcede6c56b7d6449b1c97d6ef4ec6edd"
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Vault_customs_auto_siren.esp",
+      "bytes": 1882,
+      "sha256": "2cf40d8c026784ffb8bdfae74834e848578d4023a13a99dc9744cc3b201687d1",
+      "source_sha256": "2cf40d8c026784ffb8bdfae74834e848578d4023a13a99dc9744cc3b201687d1"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/MCM/Config/VaultAttacks/config.json",
+      "bytes": 5259,
+      "sha256": "b1300444e3e5cd4fa552daa6298515a7eec380eba6b956b0882a330f40abd34d",
+      "source_sha256": "b1300444e3e5cd4fa552daa6298515a7eec380eba6b956b0882a330f40abd34d"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/MCM/Config/VaultAttacks/settings.ini",
+      "bytes": 29,
+      "sha256": "b8aec957633cae0dc0823f2af1778a60683523b04fb1b65d67f0ad3cf3ee8d2e",
+      "source_sha256": "b8aec957633cae0dc0823f2af1778a60683523b04fb1b65d67f0ad3cf3ee8d2e"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Vault_customs_AttacksWhenPresent.pex",
+      "bytes": 22296,
+      "sha256": "ecd23060e17ee74b6fde318b44cb5d66ce711e8ffe1efd02324841508f783fe1",
+      "source_sha256": "62b4f723c6e5437576f1179bab51636f35bc4dee08d18635dd6a4ba4dd19fedc"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Vault_customs_MiniAttack.pex",
+      "bytes": 930,
+      "sha256": "d3d0d0d68d913ee1944330e4fec8c60fcc12b7f5de0f78d8ef0a854982740a0a",
+      "source_sha256": "b3a8b0628c16498eb0eef1c8d450f95d3e660c30509c078481b36fdb49cb7f61"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Vault_customs_attacks_when_present.esp",
+      "bytes": 51444,
+      "sha256": "b0f7b45a73fc14e0bf754b14e404db68b6fbec2d6469cf5b887f77d0dd04e23d",
+      "source_sha256": "b0f7b45a73fc14e0bf754b14e404db68b6fbec2d6469cf5b887f77d0dd04e23d"
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/MCM/Config/Vault_customs_CityPlanNotes/config.json",
+      "bytes": 2610,
+      "sha256": "411597551bc79ea23e3b26feab063d1dcaf43e4639d02afa0084310a3ba7f173",
+      "source_sha256": "411597551bc79ea23e3b26feab063d1dcaf43e4639d02afa0084310a3ba7f173"
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/Scripts/Vault_customs_CityPlanNote.pex",
+      "bytes": 2059,
+      "sha256": "696f87f719743df53d1d1a169e9415407964f17d634d97b363fad64c2df1ae1c",
+      "source_sha256": "437fabd35cf65bbafe4addd5ecfa6418b20ee6c9f5e050b2ce1e783425cb2bfd"
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/Vault_customs_city_plan_notes.esp",
+      "bytes": 26994,
+      "sha256": "ec4a45e96b5f59ea53eb3343d978498e0f769f1467bc1316ec8dbf2ac86e9f22",
+      "source_sha256": "ec4a45e96b5f59ea53eb3343d978498e0f769f1467bc1316ec8dbf2ac86e9f22"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/MCM/Config/Vault_customs_settler_names/config.json",
+      "bytes": 3168,
+      "sha256": "fce983773aee06324e27e11706178eda6e850e638669ad45db71be3a72a49d3f",
+      "source_sha256": "fce983773aee06324e27e11706178eda6e850e638669ad45db71be3a72a49d3f"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/MCM/Config/Vault_customs_settler_names/keybinds.json",
+      "bytes": 317,
+      "sha256": "df11bea8f53981a724ba816e6d1106838db7be318f740a8fcf500b1dd94798d1",
+      "source_sha256": "df11bea8f53981a724ba816e6d1106838db7be318f740a8fcf500b1dd94798d1"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/AliasHelperScript.pex",
+      "bytes": 610,
+      "sha256": "c2ef24f0d98709c3c8349f5c862b6ae2b0be184905f768efb5484afa765f1662",
+      "source_sha256": "525c58bc034a8bd7e96ad24f03eb5eac9d8223ebeee8bef5edc6a8e06590e1a8"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/CanarySaveFileMonitor.pex",
+      "bytes": 1212,
+      "sha256": "e84d300729f4fbd45476f1e42a1c0b85fbd7eddedb0a34ddb1bef52e20a0eb09",
+      "source_sha256": "6f8dbaf0d599d275d5885e1055f67468f29b9d65433a3ed4b5c680c3e69c3427"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Perks/PRKF_SettlerRename_Hotkey_01000ED6.pex",
+      "bytes": 677,
+      "sha256": "f658a3a5a4a57005181ae8598eee71b74777a7e0ba935163228699517b7d297b",
+      "source_sha256": "9e638c7f91a35a9a73a1e487e18f782501081d6a788fdb300a2a26d0faed676d"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Perks/PRKF_SettlerRenamePerk_01000F99.pex",
+      "bytes": 822,
+      "sha256": "58aacba572c47b253613380d41de78fa545d3f84acb2b67270e7cafa0a187941",
+      "source_sha256": "172dbeef56054c3d8f5caca272401d963b2c1ec1074368d86e2cf6b9f35a0d41"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Quests/QF_RenameQuest_01000F9C.pex",
+      "bytes": 622,
+      "sha256": "7508a22cbc45dfd3046262ede72282b39611659f6f109636b3b455726bf2d5f1",
+      "source_sha256": "6b504de78cd4705ab3487c567eba5cfba262549860c0f34d6a26fdb466dca347"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Terminals/TERM_RenameConfigMenu_01000F9E.pex",
+      "bytes": 2107,
+      "sha256": "8288966a605c0e82ca01340daa4bcccbbe9f5cb01a8d24013698b6f7b611783b",
+      "source_sha256": "3b54946025f7543ce55aa4f3ec1893d5a366e2c336e624522d585f698ccad32b"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/PlayerLoadGameListener.pex",
+      "bytes": 587,
+      "sha256": "1c2ae623ac7aa07afb8b4867cb9f4a585480a40626f9edfd2a76537089389c4a",
+      "source_sha256": "659c6cf7226b6bb15462ae024663f80bbd65628cbce6f4a35bbfa34af108ed23"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameCompatScript.pex",
+      "bytes": 1093,
+      "sha256": "6acbc0efd6975e024053da359a3f333887214be63aa2ebd0165b96ea58fd4ced",
+      "source_sha256": "60dacea90d8e0e074998e3016720050239e06387e900fc8d1249fb91fe2de493"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameHotkeyEffect.pex",
+      "bytes": 803,
+      "sha256": "87cfd7d1ff8aa17c59eb89402afc0e416f7cd596de3a93c3a640710810777a0a",
+      "source_sha256": "52aa7c29c6109d24b670820e5f322ba08b5d7222741b604b922400590cc32e83"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameQuestScript.pex",
+      "bytes": 29708,
+      "sha256": "1f59bcc5e9c16bcc7c742cf7cd82627279080ddf2764eac11f5cbf7c43ddfdbd",
+      "source_sha256": "2efcbb1476a893eb17b07c255727cdc383cbd83c9504bd6d015f385b257777a4"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Vault_customs_settler_names.esp",
+      "bytes": 98723,
+      "sha256": "33d151bebbaf0e39f1401db334f500f6d47e349f53890062ce2b461b6c4e7248",
+      "source_sha256": "33d151bebbaf0e39f1401db334f500f6d47e349f53890062ce2b461b6c4e7248"
+    },
+    {
+      "path": "mods/Vault_customs_cep_encounter_trim/Vault_customs_cep_encounter_trim.esp",
+      "bytes": 5174,
+      "sha256": "1867f8b94a7d9ad1bbbaf27cdc9405829292a9820a2a38b908d90c3b5f60e2d7",
+      "source_sha256": "1867f8b94a7d9ad1bbbaf27cdc9405829292a9820a2a38b908d90c3b5f60e2d7"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/CoreFlashF4.dll",
+      "bytes": 1075200,
+      "sha256": "3198b9740bc6c8fc5cd4c626767aaf084ae3785512c23ed81e919287b4fd436e",
+      "source_sha256": "e8af6c19c18da688adb25005f89bd5b94e8dfe2518dd2c14858361bab77514a8"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/CoreFlashF4.ini",
+      "bytes": 628,
+      "sha256": "94fd790964a7ce6095509c6b507ced3c3516aab46ad3390b977a1ca507b1f18d",
+      "source_sha256": "94fd790964a7ce6095509c6b507ced3c3516aab46ad3390b977a1ca507b1f18d"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAAccessF4.dll",
+      "bytes": 581120,
+      "sha256": "3c241af5731cd0ddbac8b9d369019460ef5b7ba4700726662e9b258479d7fae0",
+      "source_sha256": "8b29c32e30b8ef66867ca0e41fd79cc511c9b066330ec770512b3db91672de7d"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAAccessF4.ini",
+      "bytes": 1769,
+      "sha256": "b57d81fe8ff24ef11166ae8596c68df91ebcc85c2e71121a2fe89d9552f2c8be",
+      "source_sha256": "b57d81fe8ff24ef11166ae8596c68df91ebcc85c2e71121a2fe89d9552f2c8be"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAConsumptionF4.dll",
+      "bytes": 547328,
+      "sha256": "e8fd86663971359a173a99218d6919f9ec7e7704db3d969e5cffba2a4f67cf27",
+      "source_sha256": "1048258fab80f89920fce78c6ebe19f187a101870fad7a84b3d18e0d6c8071b1"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAGearF4.dll",
+      "bytes": 636928,
+      "sha256": "26b063d0fcd9832ffea535478af1f7cd3fd0da3c067e20034879d4905de22101",
+      "source_sha256": "35569b5f8966c9d63e660235d29842c726e8d4e44c5d3fb24cdda299ae9b82bf"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAGearF4.ini",
+      "bytes": 8638,
+      "sha256": "999c88f23bfc2db997a361ceed96ad2dd31a094838fab4768bf709c844fde5f7",
+      "source_sha256": "999c88f23bfc2db997a361ceed96ad2dd31a094838fab4768bf709c844fde5f7"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAMovementNoiseF4.dll",
+      "bytes": 848384,
+      "sha256": "6ad214be01926174ea2c29ccc1608f204391c382dfdb63aacbcc88a4b924796d",
+      "source_sha256": "6ad214be01926174ea2c29ccc1608f204391c382dfdb63aacbcc88a4b924796d"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAMovementNoiseF4.ini",
+      "bytes": 234,
+      "sha256": "465f9fed356c7630c2d1fd98ac360a041b096943ea80dfeaa7abd3d00fcefdc4",
+      "source_sha256": "465f9fed356c7630c2d1fd98ac360a041b096943ea80dfeaa7abd3d00fcefdc4"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PARepairF4.dll",
+      "bytes": 1052160,
+      "sha256": "5c3ac59fda15d0de105250836d60632f66c927748ea1c840f99e66c24fa8f724",
+      "source_sha256": "bb18b9470568856829309da4689c3814a493eba573bfdc6f88431eb65f480d40"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAServoWaterF4.dll",
+      "bytes": 860160,
+      "sha256": "55be0aeacafefcd5f9a32b2fcc7b162412b0114aee17c6aecada8324da2f6991",
+      "source_sha256": "55be0aeacafefcd5f9a32b2fcc7b162412b0114aee17c6aecada8324da2f6991"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PASprintF4.dll",
+      "bytes": 555520,
+      "sha256": "4fdbf82e417affbe0629838089ed5c9500ca8b05a795ae270be577794f899b5f",
+      "source_sha256": "b25d9dcab1af9ffff6acfb76d680a6c8e1026caefcc94875ac576f8a49bdfda9"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PASprintF4.ini",
+      "bytes": 1291,
+      "sha256": "583974bd8e4c90b0d2bfe593645fab9301400818f94f041142794b73370bc902",
+      "source_sha256": "583974bd8e4c90b0d2bfe593645fab9301400818f94f041142794b73370bc902"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/JetPackDrain70.esp",
+      "bytes": 203,
+      "sha256": "a0490b14efc357eea0adb38b3a07e0bc855a3d7b55e87c4203551b71d4d1b289",
+      "source_sha256": "a0490b14efc357eea0adb38b3a07e0bc855a3d7b55e87c4203551b71d4d1b289"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Meshes/AnimObjects/FusionCore01.nif",
+      "bytes": 15752,
+      "sha256": "9d75050674f5ea5aa46956743dcc40c4347f73e2f360b76a83a04334fb6b37c5",
+      "source_sha256": "9d75050674f5ea5aa46956743dcc40c4347f73e2f360b76a83a04334fb6b37c5"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Meshes/Vault_customs/FusionCore01_hidden.nif",
+      "bytes": 22677,
+      "sha256": "4acaeccb8ad08bde0ed59e80db0389f2bf486cb987de75a6cae8b7f95abaa9f1",
+      "source_sha256": "4acaeccb8ad08bde0ed59e80db0389f2bf486cb987de75a6cae8b7f95abaa9f1"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/PowerArmorDrainCustom.esp",
+      "bytes": 234,
+      "sha256": "01eb185355e3ac062f6e0832a47b4c0b74af7e2f4398458e829db3878008db0c",
+      "source_sha256": "01eb185355e3ac062f6e0832a47b4c0b74af7e2f4398458e829db3878008db0c"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/PowerArmorBatteryInsertScript.pex",
+      "bytes": 10494,
+      "sha256": "871fc06e11ce573bfc825925a6a5ad86526f24cb181ed72e616762c6bc3e2446",
+      "source_sha256": "ce744dc2e5a7c54976d519dd42365019e40523aa3d0672717f88040295ae9361"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/Vault_customs_PAClose.pex",
+      "bytes": 8937,
+      "sha256": "f89bcea7bc351deceb5139953d986f91ff09bfaa25a004d10e7fe580bc57a766",
+      "source_sha256": "73f85fac6efcc60284a0227f328acd17541e377c4197baa3f1dfeea68302ba65"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Sound/FX/Vault_customs/Vault_customs_PA_Close_01.wav",
+      "bytes": 353850,
+      "sha256": "067de3b1c9acc76bb2ec462fefd5863364264a7235a650ab7df6b610248b5fa3",
+      "source_sha256": "067de3b1c9acc76bb2ec462fefd5863364264a7235a650ab7df6b610248b5fa3"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Vault_customs_power_armor_close.esp",
+      "bytes": 1053,
+      "sha256": "369b49fad5e4cd50529ad67bad3e15c9c39648ef7adc947b520ff541c3a7fbb8",
+      "source_sha256": "369b49fad5e4cd50529ad67bad3e15c9c39648ef7adc947b520ff541c3a7fbb8"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Materials/Vault_customs/SkeletonCharred.bgsm",
+      "bytes": 353,
+      "sha256": "31f9b2038aceb5478ea459cdf47870d3d4cab8753e56625911f51b57bf3d420c",
+      "source_sha256": "31f9b2038aceb5478ea459cdf47870d3d4cab8753e56625911f51b57bf3d420c"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Meshes/Vault_customs/AshPile01_ghost.nif",
+      "bytes": 9166,
+      "sha256": "20b39ecd39d5ddb123dca949a797b9981e52aeb0eb79c699d4db59c3ce520aa5",
+      "source_sha256": "20b39ecd39d5ddb123dca949a797b9981e52aeb0eb79c699d4db59c3ce520aa5"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Meshes/Vault_customs/SkeletonBareBody01_ghost.nif",
+      "bytes": 279165,
+      "sha256": "6b9d8ce89b49328b3f79610a137a523107d2dd688cc4c15c900a8ccb6d1e19b9",
+      "source_sha256": "6b9d8ce89b49328b3f79610a137a523107d2dd688cc4c15c900a8ccb6d1e19b9"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Meshes/Vault_customs/SkeletonBareBody01_static.nif",
+      "bytes": 279165,
+      "sha256": "f4b98b1ed49958f4928359cf8b40298997252eadbd6af719c2a45caea4e49e6e",
+      "source_sha256": "f4b98b1ed49958f4928359cf8b40298997252eadbd6af719c2a45caea4e49e6e"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Vault_customs_AshFade.pex",
+      "bytes": 1702,
+      "sha256": "6abdd576d650d44f9de1e164cec18bb43d3bbe4990662269ba54757fccf0197a",
+      "source_sha256": "293d01e8255bbd9e7ba6d821da4a474b728b5cbc4f8f7e9d94564665cdf7c1af"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Vault_customs_BurnCorpseTrigger.pex",
+      "bytes": 35705,
+      "sha256": "3dd5e032ce5a31b487b18474e648db7d805e524ed23e8902b1090c85413fe540",
+      "source_sha256": "d01a042a1c9a94a6d70890ab8f4cad60b5bab3b31367c2e65c4ca1e9606c1a0e"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Textures/Vault_customs/Skeletons/SkeletonCharred_d.dds",
+      "bytes": 349700,
+      "sha256": "f060eb38edc51aa70520a0c4f2a854ae86f13f3482a70c9d5e0b1903a92fa4f4",
+      "source_sha256": "f060eb38edc51aa70520a0c4f2a854ae86f13f3482a70c9d5e0b1903a92fa4f4"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Vault_customs_burn_corpses.esp",
+      "bytes": 3349,
+      "sha256": "2ddea97e72474b8aac8eabf03eaf528e0819e9300e048520feb4197c1e7dcf12",
+      "source_sha256": "2ddea97e72474b8aac8eabf03eaf528e0819e9300e048520feb4197c1e7dcf12"
+    },
+    {
+      "path": "mods/Vault_customs_codsworth_tougher/Vault_customs_codsworth_tougher.esp",
+      "bytes": 407,
+      "sha256": "78bf99d77cd93af57124e72cb65376f81f8212225f26bfdc4170c674dfac5fee",
+      "source_sha256": "78bf99d77cd93af57124e72cb65376f81f8212225f26bfdc4170c674dfac5fee"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/F4SE/Plugins/VaultPerksTestF4.dll",
+      "bytes": 1169920,
+      "sha256": "cfa6476083f8a8d8a58ea9ccb04bfe4805ef0a8eef1d62c33e60b630902b372e",
+      "source_sha256": "2027f2e9dfb1ee22a61821620c3e941299dd3da17a7f815565b3f7db01558d80"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Interface/LevelUpMenu.swf",
+      "bytes": 12327189,
+      "sha256": "d809222770079b696f53746d1181e1a7294a4c7d1ea73f29691e5612f3b622d5",
+      "source_sha256": "d809222770079b696f53746d1181e1a7294a4c7d1ea73f29691e5612f3b622d5"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/VCTP_Manager.pex",
+      "bytes": 13154,
+      "sha256": "365a320ccb5167ea8cfe72d0dd34cf2a74917be578c227901ff860d7b64fdbda",
+      "source_sha256": "6da52411ac8223635858f94bcfb3f5d953248df7a712c877b5ac5b374f89693e"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/VCTP_Native.pex",
+      "bytes": 889,
+      "sha256": "69b9ddd2431f5310b937cd6aa63eef809e41dd1057384cd3ede23dc622de7ce7",
+      "source_sha256": "92c0e75563d41ff60296881f6d5337b2294f5f22b0048222782768f299354f45"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Vault_customs_perks_test.esp",
+      "bytes": 73408,
+      "sha256": "4f12b66c0dce9b069499c58069bb5356b862a755a9ce81a8ca4e7dccba644f13",
+      "source_sha256": "4f12b66c0dce9b069499c58069bb5356b862a755a9ce81a8ca4e7dccba644f13"
+    },
+    {
+      "path": "mods/Vault_customs_perks/Interface/LevelUpMenu.swf",
+      "bytes": 3843716,
+      "sha256": "3f18ae3a8fe617184f41cabe5ef370ef276f905f815516b8419772286f700f4b",
+      "source_sha256": "3f18ae3a8fe617184f41cabe5ef370ef276f905f815516b8419772286f700f4b"
+    },
+    {
+      "path": "mods/Vault_customs_perks/Textures/Interface/PerkGrid/PerkGrid_Bottom_d.DDS",
+      "bytes": 4194452,
+      "sha256": "d0ed2cbae00e5b38498a04b1b6322ccfc29edd1cbc76ceaadccd5765bda920e0",
+      "source_sha256": "d0ed2cbae00e5b38498a04b1b6322ccfc29edd1cbc76ceaadccd5765bda920e0"
+    },
+    {
+      "path": "mods/Vault_customs_perks/Textures/Interface/PerkGrid/PerkGrid_Top_d.DDS",
+      "bytes": 4194452,
+      "sha256": "d44d609e8745fea08c7eb560e1e8548c31229adb76fb2b255253dff99d3a8bae",
+      "source_sha256": "d44d609e8745fea08c7eb560e1e8548c31229adb76fb2b255253dff99d3a8bae"
+    },
+    {
+      "path": "mods/Vault_customs_perks/Vault_customs_perks.esp",
+      "bytes": 20486,
+      "sha256": "216851d841711316d871988d6b05487ea7e91a1b6c2a860caf07e7f01232f649",
+      "source_sha256": "216851d841711316d871988d6b05487ea7e91a1b6c2a860caf07e7f01232f649"
+    },
+    {
+      "path": "mods/Vault_customs_scrapper/Scripts/Vault_customs_ScrapReturn.pex",
+      "bytes": 2362,
+      "sha256": "3cdf6f102a3efedfe7aa2c74af425536c52f87c49af48b3d3253be4b9e907560",
+      "source_sha256": "3487144217471f8afe9b36e77fcb5ce4c966488cd9d32fbcf3fe0d68c2154424"
+    },
+    {
+      "path": "mods/Vault_customs_scrapper/Vault_customs_scrapper.esp",
+      "bytes": 1188489,
+      "sha256": "b3375bf227a874c3968c46087319e9f0f26e20f7a1d202782d85485e25ce01b3",
+      "source_sha256": "b3375bf227a874c3968c46087319e9f0f26e20f7a1d202782d85485e25ce01b3"
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_by_race/Vault_customs_dismemberment_by_race.esp",
+      "bytes": 49266,
+      "sha256": "9359b7d8eaae37e7c3e1ad791d6251962fe1ba4b4d55f5064257e1997e2669f6",
+      "source_sha256": "9359b7d8eaae37e7c3e1ad791d6251962fe1ba4b4d55f5064257e1997e2669f6"
+    },
+    {
+      "path": "mods/Vault_customs_casing_tuning/Vault_customs_casing_tuning.esp",
+      "bytes": 241,
+      "sha256": "bacbcf53441a1d80fde0362f4762676be5bd6a0f2c46ce97b4a96ff8fcb9145f",
+      "source_sha256": "bacbcf53441a1d80fde0362f4762676be5bd6a0f2c46ce97b4a96ff8fcb9145f"
+    },
+    {
+      "path": "mods/Vault_customs_ragdoll_tuning/Vault_customs_ragdoll_tuning.esp",
+      "bytes": 317,
+      "sha256": "83303d30cf9c695a666b413eefa28c0878b1f71e6ca25f81632eb23e38668e24",
+      "source_sha256": "83303d30cf9c695a666b413eefa28c0878b1f71e6ca25f81632eb23e38668e24"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/F4SE/Plugins/CorpseGuardF4.dll",
+      "bytes": 857600,
+      "sha256": "0d7b09744162ae053fc402757dea4b3a61ea22dfe455b9b61ec1afcec71c413f",
+      "source_sha256": "1e7f0b2cad516672300e4e0dd40148d79ab5b122eb6a0bbafbbda9892a77be4c"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/F4SE/Plugins/CorpseGuardF4.ini",
+      "bytes": 63,
+      "sha256": "67fe6ebef33f5874a6500d87116f5c8b3e96d42d8f2395b20fe1bd04697f3db7",
+      "source_sha256": "67fe6ebef33f5874a6500d87116f5c8b3e96d42d8f2395b20fe1bd04697f3db7"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/meshes/actors/character/characterassets/FemaleHandsForearm.nif",
+      "bytes": 226427,
+      "sha256": "08e6cfcbc63debcb720175668e10971c10c9ebef6b834311fb296f5b43164f02",
+      "source_sha256": "08e6cfcbc63debcb720175668e10971c10c9ebef6b834311fb296f5b43164f02"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/meshes/actors/character/characterassets/MaleHandsForearm.nif",
+      "bytes": 217863,
+      "sha256": "b82d121a05dbad3e85bfb0c8d8dd1eb81ce32b45c3536b6442628fc79a1ca007",
+      "source_sha256": "b82d121a05dbad3e85bfb0c8d8dd1eb81ce32b45c3536b6442628fc79a1ca007"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_cleanup/Vault_customs_corpse_cleanup.esp",
+      "bytes": 581,
+      "sha256": "3f01abc42073863c55d5b699085bd22eff5f791d5a23faf483f44b580471e607",
+      "source_sha256": "3f01abc42073863c55d5b699085bd22eff5f791d5a23faf483f44b580471e607"
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_tuning/Vault_customs_dismemberment_tuning.esp",
+      "bytes": 594,
+      "sha256": "84728102200a04a45e3581910ed16022aa27b4d4ac97046cf0690e09bbe2ebff",
+      "source_sha256": "84728102200a04a45e3581910ed16022aa27b4d4ac97046cf0690e09bbe2ebff"
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_rules_robco/F4SE/Plugins/RobCo_Patcher/weapon/Vault_customs_DismemberRules.ini",
+      "bytes": 8070,
+      "sha256": "012b1239950b29e66fd386e501363376861460ad1c2085a4a3bba9d2a539c0f3",
+      "source_sha256": "012b1239950b29e66fd386e501363376861460ad1c2085a4a3bba9d2a539c0f3"
+    },
+    {
+      "path": "mods/Vault_customs_no_lock_difficulty_text/Vault_customs_no_lock_difficulty_text.esp",
+      "bytes": 388,
+      "sha256": "ad63eead4210078f68551cbd5ed6eb7c6f86d312eff2937114e1c9cc37f865dc",
+      "source_sha256": "ad63eead4210078f68551cbd5ed6eb7c6f86d312eff2937114e1c9cc37f865dc"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/GMA/DLC03/armor/CombatUnderArmor/Combat_UnderArmor_Gloves_Digital.BGSM",
+      "bytes": 510,
+      "sha256": "8cdae5ab0f07a0d4e0d44f3cc3ce94216a3ae7544ad97f3e461a6eabfb38e452",
+      "source_sha256": "8cdae5ab0f07a0d4e0d44f3cc3ce94216a3ae7544ad97f3e461a6eabfb38e452"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Black.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Brown.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Gray.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_LightGray.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Navy.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Olive.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Red.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_Tan.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/ArmoredCoat/Armored_Coat_Glove_White.BGSM",
+      "bytes": 393,
+      "sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4",
+      "source_sha256": "8e0ed9ab46463efdf8ae7ade04d96e3bcdf18f06574a6650efa751bb62f419e4"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/Leather/TorsoStuds_Winter.BGSM",
+      "bytes": 442,
+      "sha256": "411a02951551c21e973c169b34fe7273d3981b1cedefd5655e56582857106735",
+      "source_sha256": "411a02951551c21e973c169b34fe7273d3981b1cedefd5655e56582857106735"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Armor/Raider03/Raider03Body_Plaid.BGSM",
+      "bytes": 399,
+      "sha256": "49d09b79c6159ae22c5bee7df3e3b3c4bbe5445d5e62c4d897c429616623139f",
+      "source_sha256": "49d09b79c6159ae22c5bee7df3e3b3c4bbe5445d5e62c4d897c429616623139f"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Clothes/Hancock/HancockBody2Sided_Denim.BGSM",
+      "bytes": 411,
+      "sha256": "eec3264b6e370791cda570e89140e3636fc70635ec7a12c10a3cbc05560e79d8",
+      "source_sha256": "eec3264b6e370791cda570e89140e3636fc70635ec7a12c10a3cbc05560e79d8"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Clothes/Hancock/HancockBody_Denim.BGSM",
+      "bytes": 412,
+      "sha256": "92ccb03f7b1d62e9e49a8297b58358666fd3a873c45b330fe8e6b82173275b3d",
+      "source_sha256": "92ccb03f7b1d62e9e49a8297b58358666fd3a873c45b330fe8e6b82173275b3d"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Weapons/10mmPistol/WL/10mmPistolWL.BGSM",
+      "bytes": 470,
+      "sha256": "d05335c3023e7d87289072962ff056cd2d8d1b43cf536b08167ad21f7339672b",
+      "source_sha256": "d05335c3023e7d87289072962ff056cd2d8d1b43cf536b08167ad21f7339672b"
+    },
+    {
+      "path": "mods/Vault_customs_clothing_texture_fix/Materials/HARVEST/Weapons/Handmade/Grips/SpringStock/SpringstockBrass.BGSM",
+      "bytes": 541,
+      "sha256": "1f11d4ca0f63e500035b95e3eae8e2bba16c93d36b9895281425322ffa6f6157",
+      "source_sha256": "1f11d4ca0f63e500035b95e3eae8e2bba16c93d36b9895281425322ffa6f6157"
+    },
+    {
+      "path": "mods/Vault_customs_scrapheap_collision_fix/meshes/Props/BurntCable/BurntCable.nif",
+      "bytes": 26941,
+      "sha256": "3789e30f169eeab8b267a0210e7ff4d33dbfa34ac5aba0cdf6106138ab24df33",
+      "source_sha256": "3789e30f169eeab8b267a0210e7ff4d33dbfa34ac5aba0cdf6106138ab24df33"
+    },
+    {
+      "path": "mods/Vault_customs_scrapheap_collision_fix/meshes/Props/GramophoneDisk/GramophoneDisk.nif",
+      "bytes": 13780,
+      "sha256": "a18e853fc3292ca15035fbc8feb08e3de5855e7f15806ffc27dde1402f38902d",
+      "source_sha256": "a18e853fc3292ca15035fbc8feb08e3de5855e7f15806ffc27dde1402f38902d"
+    },
+    {
+      "path": "mods/Vault_customs_scrapheap_collision_fix/meshes/Props/Pliers/Pliers.nif",
+      "bytes": 26889,
+      "sha256": "6406042ee19cfa7701b73508dfba6aece82cefa1b340b0a039ba4c6c87069d8b",
+      "source_sha256": "6406042ee19cfa7701b73508dfba6aece82cefa1b340b0a039ba4c6c87069d8b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Bloatfly/BloatFlyColorWing.BGEM",
+      "bytes": 243,
+      "sha256": "40696cd482618febe359e1f9de66866aae139d6f59212d1398075e2fac539c5b",
+      "source_sha256": "40696cd482618febe359e1f9de66866aae139d6f59212d1398075e2fac539c5b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Bloatfly/BloatFlyDarkWing.BGEM",
+      "bytes": 238,
+      "sha256": "0e8b025f6b64837eb3a59a1b850584f74aa4980c7057f84538418952511f507d",
+      "source_sha256": "0e8b025f6b64837eb3a59a1b850584f74aa4980c7057f84538418952511f507d"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Bloatfly/BloatFlyWing.BGEM",
+      "bytes": 238,
+      "sha256": "569cf81a44c77b63cf50d8a0cefaf87ffbfbd31a4ae51c61d48e071430a9ff38",
+      "source_sha256": "569cf81a44c77b63cf50d8a0cefaf87ffbfbd31a4ae51c61d48e071430a9ff38"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/BloodBug/BloodBugHair.BGEM",
+      "bytes": 240,
+      "sha256": "90c3d583d2b9afecb59d99a26ba6594cc6f8682ac4c9f6d3defa1952f16d09c2",
+      "source_sha256": "90c3d583d2b9afecb59d99a26ba6594cc6f8682ac4c9f6d3defa1952f16d09c2"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/BloodBug/BloodBugWing.BGEM",
+      "bytes": 275,
+      "sha256": "33c871a0bd051173bedce1afc1385fe07ee8d767455fb64a4043630f90600236",
+      "source_sha256": "33c871a0bd051173bedce1afc1385fe07ee8d767455fb64a4043630f90600236"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/BloodBug/BloodBugWingClear.BGEM",
+      "bytes": 277,
+      "sha256": "ac2b790a722a0c6edf3520ac51df3ee4deb7a6f530c895369caa75f512f2f5a2",
+      "source_sha256": "ac2b790a722a0c6edf3520ac51df3ee4deb7a6f530c895369caa75f512f2f5a2"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/BloodBug/BloodBugWingJuvi.BGEM",
+      "bytes": 266,
+      "sha256": "57a8b46407752c3dc77e7b6ff53973f4eda774e48584c383b76d2c8a130e3d0f",
+      "source_sha256": "57a8b46407752c3dc77e7b6ff53973f4eda774e48584c383b76d2c8a130e3d0f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/CreateABot/DrinkinBuddyGlass.BGEM",
+      "bytes": 301,
+      "sha256": "caf4313c9b2c2396b8c9e632c18facc82a2d6c3a76f3a324a335df43d8e12b54",
+      "source_sha256": "caf4313c9b2c2396b8c9e632c18facc82a2d6c3a76f3a324a335df43d8e12b54"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/CreateABot/ProtectronCanopyGlass.BGEM",
+      "bytes": 295,
+      "sha256": "42ee3b30a103d25c47bf0bcf831dc1d356a38d8378269a309690044353b4d163",
+      "source_sha256": "42ee3b30a103d25c47bf0bcf831dc1d356a38d8378269a309690044353b4d163"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/CreateABot/ProtectronMEDICGlass.BGEM",
+      "bytes": 310,
+      "sha256": "57cf12c43f55eda0579cfeac05cb254e09ed9452d6fe7c22b2affce2447bb837",
+      "source_sha256": "57cf12c43f55eda0579cfeac05cb254e09ed9452d6fe7c22b2affce2447bb837"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/DLC03/Hermit/glass.BGEM",
+      "bytes": 268,
+      "sha256": "cb8519c706098fa297c8ae980f95b6de8701e20388e0f1a9a7049f594f8702ad",
+      "source_sha256": "cb8519c706098fa297c8ae980f95b6de8701e20388e0f1a9a7049f594f8702ad"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/DLC04/BotColors/SpaceGlass.BGEM",
+      "bytes": 245,
+      "sha256": "16a1bb2fcdda4396fbbaebf28e9da7c9338cb1355f4386e9586addabfeca8017",
+      "source_sha256": "16a1bb2fcdda4396fbbaebf28e9da7c9338cb1355f4386e9586addabfeca8017"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Radroach/RadroachWingAlpha01.BGEM",
+      "bytes": 245,
+      "sha256": "897c9d93e40ea897707769b3db3ca3a3c15fe800fff4533cc7c1327e4ec26dfb",
+      "source_sha256": "897c9d93e40ea897707769b3db3ca3a3c15fe800fff4533cc7c1327e4ec26dfb"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Radroach/RadroachWingAlpha02.BGEM",
+      "bytes": 246,
+      "sha256": "1cb9945745a0e7339ad5d21d35273d7e11e358f9a0efafad923b27145a8ffc62",
+      "source_sha256": "1cb9945745a0e7339ad5d21d35273d7e11e358f9a0efafad923b27145a8ffc62"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Radroach/RadroachWingAlpha03.BGEM",
+      "bytes": 246,
+      "sha256": "711eb77fb3058850c3110847372e525a6edd6096c6610a645f65e72c78fefa51",
+      "source_sha256": "711eb77fb3058850c3110847372e525a6edd6096c6610a645f65e72c78fefa51"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/Robot/HandyLens.BGEM",
+      "bytes": 252,
+      "sha256": "62da263aaf60649e615529a9ac13424461531b6be7854f7783d4e73e10cf152d",
+      "source_sha256": "62da263aaf60649e615529a9ac13424461531b6be7854f7783d4e73e10cf152d"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/StingWing/StingwingWing.BGEM",
+      "bytes": 242,
+      "sha256": "e9a2903112ff7e5e57a0f3cf4e1826ecab40cf77d0c3a9fb40737dd148e22d18",
+      "source_sha256": "e9a2903112ff7e5e57a0f3cf4e1826ecab40cf77d0c3a9fb40737dd148e22d18"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/StingWing/StingwingWing01.BGEM",
+      "bytes": 244,
+      "sha256": "c4b674fbec8c96466cc5e81f1a9ebd2200f4d6e72dfaa5aaec7d831faab20525",
+      "source_sha256": "c4b674fbec8c96466cc5e81f1a9ebd2200f4d6e72dfaa5aaec7d831faab20525"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/StingWing/StingwingWing02.BGEM",
+      "bytes": 244,
+      "sha256": "b0b4da28c089a041cee4087d3f1bf07cfe00b08d3869d2e8a465c9e1cf29487f",
+      "source_sha256": "b0b4da28c089a041cee4087d3f1bf07cfe00b08d3869d2e8a465c9e1cf29487f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/actors/StingWing/StingwingWing03.BGEM",
+      "bytes": 244,
+      "sha256": "dba56b641228c0e62b24f3269183926a6b6a9140a407ae7987c78e498a373329",
+      "source_sha256": "dba56b641228c0e62b24f3269183926a6b6a9140a407ae7987c78e498a373329"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/hightech/HitTechGlassExterior01.BGEM",
+      "bytes": 279,
+      "sha256": "4c19295ac52df62335dd49a2cb1eb1bceffd4a97258bcd9facca0d4cf9b5ecd3",
+      "source_sha256": "4c19295ac52df62335dd49a2cb1eb1bceffd4a97258bcd9facca0d4cf9b5ecd3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/hightech/HitTechGlassExterior01NA.BGEM",
+      "bytes": 301,
+      "sha256": "4a6138d391689ee5dee4c9c239dea694d3289246e80358f313e0aabc72e8ab77",
+      "source_sha256": "4a6138d391689ee5dee4c9c239dea694d3289246e80358f313e0aabc72e8ab77"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/PrewarWindows_Exterior.BGEM",
+      "bytes": 310,
+      "sha256": "4a7c3872f792b5e21ca3222d3514986acf4c86c737b721b569f38532bf293bc9",
+      "source_sha256": "4a7c3872f792b5e21ca3222d3514986acf4c86c737b721b569f38532bf293bc9"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/PrewarWindows_Interior.BGEM",
+      "bytes": 311,
+      "sha256": "2a59b9ac1138042f2629a78c6dcf040a3dfa1a5cc1c97785ff731af86beec934",
+      "source_sha256": "2a59b9ac1138042f2629a78c6dcf040a3dfa1a5cc1c97785ff731af86beec934"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/WindowsExterior_PreWar.BGEM",
+      "bytes": 331,
+      "sha256": "59c46ca286d5b1b7cbce27a7828a1c8e3caa4e631fb0070d12a47198566fc109",
+      "source_sha256": "59c46ca286d5b1b7cbce27a7828a1c8e3caa4e631fb0070d12a47198566fc109"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Buildings/WindowsInterior_PreWar.BGEM",
+      "bytes": 331,
+      "sha256": "0ef1a060c19069afda62e2182addef4ccd67e2589026502c3d7a59a63d5f7bcc",
+      "source_sha256": "0ef1a060c19069afda62e2182addef4ccd67e2589026502c3d7a59a63d5f7bcc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Capsules/CapGlassTile01.BGEM",
+      "bytes": 304,
+      "sha256": "60b54defd21c59ef8a5cf0b9be5dbc0440458e51b66acf1ed23ace2fc0109766",
+      "source_sha256": "60b54defd21c59ef8a5cf0b9be5dbc0440458e51b66acf1ed23ace2fc0109766"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Capsules/CapGlassTile01a.BGEM",
+      "bytes": 264,
+      "sha256": "d63083142787381eba6cf01849b024f052ed4b29b8fed8d651f4d88aa589c7b3",
+      "source_sha256": "d63083142787381eba6cf01849b024f052ed4b29b8fed8d651f4d88aa589c7b3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Architecture/Unique/Menu/GarageWindowsE.BGEM",
+      "bytes": 310,
+      "sha256": "065fe604e1802b80ae4ca0245c6dc559b663931ddf1eecc187333fc12683f0c9",
+      "source_sha256": "065fe604e1802b80ae4ca0245c6dc559b663931ddf1eecc187333fc12683f0c9"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC01/Actors/CreateABot/RobobrainCanopyGlass.BGEM",
+      "bytes": 304,
+      "sha256": "47db4ea6d25211609447ac59249aa1e05878bedfc994006913980fe57b8d71dc",
+      "source_sha256": "47db4ea6d25211609447ac59249aa1e05878bedfc994006913980fe57b8d71dc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC01/Architecture/GlassTile01ForDark.BGEM",
+      "bytes": 274,
+      "sha256": "5a4c0d1eed1c74bd57d6e5545115b4677d4c23d4ca9cbe236ceeba6baa6da776",
+      "source_sha256": "5a4c0d1eed1c74bd57d6e5545115b4677d4c23d4ca9cbe236ceeba6baa6da776"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC01/Interiors/DLCGlassLight01.BGEM",
+      "bytes": 305,
+      "sha256": "a228ea1412e9378ddafc5e5bed42be51fc6edfbec5636b7ec0a88b5b6f628e06",
+      "source_sha256": "a228ea1412e9378ddafc5e5bed42be51fc6edfbec5636b7ec0a88b5b6f628e06"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC01/SetDressing/ProtectronPod/ProtectronPodDarkGlass01.BGEM",
+      "bytes": 319,
+      "sha256": "7bd6b0f1ace3bc2d647362b2ee104b2d803d039816d919a3563c70e8d2185dfd",
+      "source_sha256": "7bd6b0f1ace3bc2d647362b2ee104b2d803d039816d919a3563c70e8d2185dfd"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Actors/RoboBrain/DLC03_RobobrainBrokenGlass.BGEM",
+      "bytes": 322,
+      "sha256": "1b578fdfd922c552d02abf13c3521a371f71e2f8da5742446042ced8ded869a2",
+      "source_sha256": "1b578fdfd922c552d02abf13c3521a371f71e2f8da5742446042ced8ded869a2"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Actors/RoboBrain/DLC03_RobobrainCanopyGlass.BGEM",
+      "bytes": 322,
+      "sha256": "53d512901d820cb208088634322563bbae078b21bd1c725acf742164cc0e3692",
+      "source_sha256": "53d512901d820cb208088634322563bbae078b21bd1c725acf742164cc0e3692"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Actors/RoboBrain/DLC03_RobobrainGlassFluidFX.BGEM",
+      "bytes": 293,
+      "sha256": "1c3dab76ba99c202367bc844e0dfcbf97568b9eddd95d3fd2272649ba8c26bd4",
+      "source_sha256": "1c3dab76ba99c202367bc844e0dfcbf97568b9eddd95d3fd2272649ba8c26bd4"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Architecture/Hotel/HotelGlassWindowA_Glow.BGEM",
+      "bytes": 312,
+      "sha256": "11d5f43887dbc73b3542ba7da85c4b10401ea718620384b0645017186b0a6d5c",
+      "source_sha256": "11d5f43887dbc73b3542ba7da85c4b10401ea718620384b0645017186b0a6d5c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Architecture/Observatory/ObservatoryGlass01.BGEM",
+      "bytes": 286,
+      "sha256": "62161fea9273c82b60afddc1eb9d888dfedabeecd9db2e1f0dd875682bb257bc",
+      "source_sha256": "62161fea9273c82b60afddc1eb9d888dfedabeecd9db2e1f0dd875682bb257bc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Props/DLC03_Quartz.BGEM",
+      "bytes": 163,
+      "sha256": "13aa4392bf11dc4e945e97e9fbe7ab645449f613baeac267ec811786aa433fdc",
+      "source_sha256": "13aa4392bf11dc4e945e97e9fbe7ab645449f613baeac267ec811786aa433fdc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Props/DLC03_Refresh.BGEM",
+      "bytes": 163,
+      "sha256": "0a245f5b0e4de1d99b183e77f7e7450f0f0b47530298cb3f4ce9420b5032a6a5",
+      "source_sha256": "0a245f5b0e4de1d99b183e77f7e7450f0f0b47530298cb3f4ce9420b5032a6a5"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/Props/DLC_CaptainsBlend.BGEM",
+      "bytes": 163,
+      "sha256": "67ac6bd72c0a464669de98639ba2b723739ba29249406197395920e3fe8ea097",
+      "source_sha256": "67ac6bd72c0a464669de98639ba2b723739ba29249406197395920e3fe8ea097"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/SetDressing/HydroponicGlass01.BGEM",
+      "bytes": 259,
+      "sha256": "316bb8523fe7cc813e1754ea0f7d904b4f89070ca839e4da1237d58307a62751",
+      "source_sha256": "316bb8523fe7cc813e1754ea0f7d904b4f89070ca839e4da1237d58307a62751"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC03/SetDressing/MirelurkBoilVatGlass01.BGEM",
+      "bytes": 312,
+      "sha256": "7793444e456a7ec6924440c59771047e2df14b5a49b7bf457250bb92134d7d53",
+      "source_sha256": "7793444e456a7ec6924440c59771047e2df14b5a49b7bf457250bb92134d7d53"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC04/Architecture/GalacticZone/DLC04GlassNoOcclude.BGEM",
+      "bytes": 271,
+      "sha256": "022ff2770e49d31d9ee969e9b52064fd2ca820a571c0e2eeec622b00698bd459",
+      "source_sha256": "022ff2770e49d31d9ee969e9b52064fd2ca820a571c0e2eeec622b00698bd459"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC04/Architecture/OverlookGlass01.BGEM",
+      "bytes": 283,
+      "sha256": "763c2be2c7127e7008d930d5b553c245e94a1599fb28c72263d0a65ccece4dc7",
+      "source_sha256": "763c2be2c7127e7008d930d5b553c245e94a1599fb28c72263d0a65ccece4dc7"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/DLC06/SetDressing/Jukebox/Jukebox01Clean.BGEM",
+      "bytes": 298,
+      "sha256": "fa6f77c8f7b4e8e703c85b911c05029e0f9bbc558731b35751fe7c381e503165",
+      "source_sha256": "fa6f77c8f7b4e8e703c85b911c05029e0f9bbc558731b35751fe7c381e503165"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassGlowExt01.BGEM",
+      "bytes": 212,
+      "sha256": "24aafc40bd839401081c5bbee9acfbf1f1f5733da7ad4a86717bf49c7de74ede",
+      "source_sha256": "24aafc40bd839401081c5bbee9acfbf1f1f5733da7ad4a86717bf49c7de74ede"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassTile01.BGEM",
+      "bytes": 274,
+      "sha256": "eae7b7c24eb62c7cfa79be97602633e60b2d7f68dc1d7940c5910c6a382e7ee6",
+      "source_sha256": "eae7b7c24eb62c7cfa79be97602633e60b2d7f68dc1d7940c5910c6a382e7ee6"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassTile01ArcJet.bgem",
+      "bytes": 236,
+      "sha256": "44b4aba3fc958075908445bfac2b84dc3c52d80641e360726850adad7e366577",
+      "source_sha256": "44b4aba3fc958075908445bfac2b84dc3c52d80641e360726850adad7e366577"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassTile01Glow.BGEM",
+      "bytes": 274,
+      "sha256": "c5ee077c7402fe27bd8cd9f6fd31bbe9bc1f80b13d3f720324aa1896e4f3714f",
+      "source_sha256": "c5ee077c7402fe27bd8cd9f6fd31bbe9bc1f80b13d3f720324aa1896e4f3714f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassTile01NoAlphaTest.BGEM",
+      "bytes": 277,
+      "sha256": "b9c2074ba7106a8d956d6de79db1721c3a1a463fbc1e9ca0cb45dba124e2c5e1",
+      "source_sha256": "b9c2074ba7106a8d956d6de79db1721c3a1a463fbc1e9ca0cb45dba124e2c5e1"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/building/GlassTileMoreIntense01.bgem",
+      "bytes": 260,
+      "sha256": "94498e713763ac9b56b1463423261245e0fec083f4ffa8516a654985ddd15587",
+      "source_sha256": "94498e713763ac9b56b1463423261245e0fec083f4ffa8516a654985ddd15587"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/HighTech/GlassTile01.BGEM",
+      "bytes": 305,
+      "sha256": "c30acc62f5d2d560c0c2879d0684faf2171a64a54e6d74a70d174cd47c776104",
+      "source_sha256": "c30acc62f5d2d560c0c2879d0684faf2171a64a54e6d74a70d174cd47c776104"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02.BGEM",
+      "bytes": 281,
+      "sha256": "9b0c1398532c5c7b336e2c7fad4148e9986155eb350c3442838c15ed5c682008",
+      "source_sha256": "9b0c1398532c5c7b336e2c7fad4148e9986155eb350c3442838c15ed5c682008"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02a.BGEM",
+      "bytes": 259,
+      "sha256": "c7a9ff835ee93a5d79642d57b8de30c97301516726c8176d1bec90b29b84437f",
+      "source_sha256": "c7a9ff835ee93a5d79642d57b8de30c97301516726c8176d1bec90b29b84437f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02Bright.BGEM",
+      "bytes": 259,
+      "sha256": "85871417de13f0497d750e41baf9fe14797384c86f3897682aeff5f0039cded2",
+      "source_sha256": "85871417de13f0497d750e41baf9fe14797384c86f3897682aeff5f0039cded2"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02Flat.BGEM",
+      "bytes": 257,
+      "sha256": "4d2063938be9b06e40161ab65e362a642a8f3efdaae4da286c4233c7c796121c",
+      "source_sha256": "4d2063938be9b06e40161ab65e362a642a8f3efdaae4da286c4233c7c796121c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02New.BGEM",
+      "bytes": 259,
+      "sha256": "9d1ab9d7b694d9e339471dfa11928545d892dfa392c8ea6e27ba25dd81109acf",
+      "source_sha256": "9d1ab9d7b694d9e339471dfa11928545d892dfa392c8ea6e27ba25dd81109acf"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlass02New2.BGEM",
+      "bytes": 259,
+      "sha256": "9e3d0c4924960eeb1100e2347a4fc3de1e96c4f89e56469b269eed0438c258ff",
+      "source_sha256": "9e3d0c4924960eeb1100e2347a4fc3de1e96c4f89e56469b269eed0438c258ff"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlassFloor01.BGEM",
+      "bytes": 259,
+      "sha256": "411ba6a69e43ae0c9dfd9b1eb92fd4e934cc25472b134af787522a8e9bcaa899",
+      "source_sha256": "411ba6a69e43ae0c9dfd9b1eb92fd4e934cc25472b134af787522a8e9bcaa899"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlassShaun.BGEM",
+      "bytes": 257,
+      "sha256": "25936aae0dad6c2296bea0dab90d58921181492fa63f007b34e2e3c88a36a6e6",
+      "source_sha256": "25936aae0dad6c2296bea0dab90d58921181492fa63f007b34e2e3c88a36a6e6"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsGlassSymbol01.BGEM",
+      "bytes": 265,
+      "sha256": "f44aca545b5404579fdc780642ad14b6366cd89bb7c452fe7bb42726a03cf148",
+      "source_sha256": "f44aca545b5404579fdc780642ad14b6366cd89bb7c452fe7bb42726a03cf148"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/InsLights01.BGEM",
+      "bytes": 262,
+      "sha256": "196a00fc65ed3395891a305d4ef25cc73434be80b4c91e834681727bd7bb2e94",
+      "source_sha256": "196a00fc65ed3395891a305d4ef25cc73434be80b4c91e834681727bd7bb2e94"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Institute/SnythRingMembrane01.BGEM",
+      "bytes": 269,
+      "sha256": "5074fb9f43b35e514155afc1d8a2c1c7aa0a75193534960dfb64300ed6e20d2e",
+      "source_sha256": "5074fb9f43b35e514155afc1d8a2c1c7aa0a75193534960dfb64300ed6e20d2e"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Prydwen/PryWindows01Alpha.BGEM",
+      "bytes": 286,
+      "sha256": "ab5dc3577168735dc122f841f432f47fbb995fc45f3c723f0c27f2a733352fad",
+      "source_sha256": "ab5dc3577168735dc122f841f432f47fbb995fc45f3c723f0c27f2a733352fad"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Subway/SubDoor01Window.BGEM",
+      "bytes": 274,
+      "sha256": "92ea55772a68a38410b202cd25193e25fe4e431c28427e879318318fdec31a7e",
+      "source_sha256": "92ea55772a68a38410b202cd25193e25fe4e431c28427e879318318fdec31a7e"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/Vault111/V111GearDoorConsoleGlass01.BGEM",
+      "bytes": 314,
+      "sha256": "a324e4b1abdcabfde60f47b41c89a343e8a4222f5ed6c7e4a0f5a138243cb613",
+      "source_sha256": "a324e4b1abdcabfde60f47b41c89a343e8a4222f5ed6c7e4a0f5a138243cb613"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/Vault111/V111Glass01.BGEM",
+      "bytes": 304,
+      "sha256": "3114c611d096aa358a0edd08c55215ca7e4152fa70ce861fef2c8dd72cdd9f82",
+      "source_sha256": "3114c611d096aa358a0edd08c55215ca7e4152fa70ce861fef2c8dd72cdd9f82"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/Vault111/V111Glass01.BGSM.BGEM",
+      "bytes": 238,
+      "sha256": "441ed2a1dc75d8f0abbdf7c75cab822748b4afe6dc5032e067b5488e35361c36",
+      "source_sha256": "441ed2a1dc75d8f0abbdf7c75cab822748b4afe6dc5032e067b5488e35361c36"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/Vault111/V111PodGlass.BGEM",
+      "bytes": 252,
+      "sha256": "1c5344f15e5006ac9cf5ff613d19432dcd6c9c106888096379988ed66e910ef5",
+      "source_sha256": "1c5344f15e5006ac9cf5ff613d19432dcd6c9c106888096379988ed66e910ef5"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/VltGlass01.BGEM",
+      "bytes": 297,
+      "sha256": "6ddf4dc790abdd1d9925661fea3d7b1f8c9a2df968b693dfcb4cc403b2e49492",
+      "source_sha256": "6ddf4dc790abdd1d9925661fea3d7b1f8c9a2df968b693dfcb4cc403b2e49492"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/VltGlass02Mural.BGEM",
+      "bytes": 285,
+      "sha256": "1d31406526db17d92439760559f05fd87187f93c9e69d2c938cc50d913a47980",
+      "source_sha256": "1d31406526db17d92439760559f05fd87187f93c9e69d2c938cc50d913a47980"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/VltGlass03Clear.BGEM",
+      "bytes": 305,
+      "sha256": "369037648a680472664371a8f166c4977dfed766e05765764fcf691b35e84c5d",
+      "source_sha256": "369037648a680472664371a8f166c4977dfed766e05765764fcf691b35e84c5d"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/interiors/Vault/VltGlass04Clear.BGEM",
+      "bytes": 240,
+      "sha256": "5cb4a36e40254f3567a756353df09370eee85d6719de778e5867ba46b0a79ab9",
+      "source_sha256": "5cb4a36e40254f3567a756353df09370eee85d6719de778e5867ba46b0a79ab9"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/Bobrovs.BGEM",
+      "bytes": 201,
+      "sha256": "c076d5a6b122e203c655057758d165113ff3c6950428b545f341fe12415c928c",
+      "source_sha256": "c076d5a6b122e203c655057758d165113ff3c6950428b545f341fe12415c928c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBeaker01.BGEM",
+      "bytes": 313,
+      "sha256": "d78412e145dc99bc1e3f89eeae2cdf1c4ccd0dc9f28050f8b6878990bff604f3",
+      "source_sha256": "d78412e145dc99bc1e3f89eeae2cdf1c4ccd0dc9f28050f8b6878990bff604f3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBeaker02.BGEM",
+      "bytes": 313,
+      "sha256": "3cd42ac6b13ed941ffdc730e0e1692aada940d077f2f4d43e65842eddd371352",
+      "source_sha256": "3cd42ac6b13ed941ffdc730e0e1692aada940d077f2f4d43e65842eddd371352"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBeaker03.BGEM",
+      "bytes": 313,
+      "sha256": "0ce07dc8bfc4ff980a016ebf8db0d879d6c1fa3dcd21478cb7d711511f238d2a",
+      "source_sha256": "0ce07dc8bfc4ff980a016ebf8db0d879d6c1fa3dcd21478cb7d711511f238d2a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBeaker04.BGEM",
+      "bytes": 313,
+      "sha256": "23f197d4d6e15ab83ff15306e59c823028770d2e60cc291ce65074905c533354",
+      "source_sha256": "23f197d4d6e15ab83ff15306e59c823028770d2e60cc291ce65074905c533354"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBeaker04LS.BGEM",
+      "bytes": 313,
+      "sha256": "083a135d2143a4d58fea533b86666b407efcf812cc8547a378ed945e5fb2582c",
+      "source_sha256": "083a135d2143a4d58fea533b86666b407efcf812cc8547a378ed945e5fb2582c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBottle01.BGEM",
+      "bytes": 313,
+      "sha256": "5a8fae57dfba232c541d34399a26eb2acc93631f8173a91ba395b7f474b10aa0",
+      "source_sha256": "5a8fae57dfba232c541d34399a26eb2acc93631f8173a91ba395b7f474b10aa0"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/ChemistrySet/ChemistrySetBottle02.BGEM",
+      "bytes": 313,
+      "sha256": "51d12fa625c697522bbafa9c2c44fc53af13a561464bb9f397885fb8e4c9635d",
+      "source_sha256": "51d12fa625c697522bbafa9c2c44fc53af13a561464bb9f397885fb8e4c9635d"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/CrystalDecanter02.BGEM",
+      "bytes": 278,
+      "sha256": "850627d8e5c7574e2c613e896f83e511c17f964a7f6b2dd7194e9dcdd676929e",
+      "source_sha256": "850627d8e5c7574e2c613e896f83e511c17f964a7f6b2dd7194e9dcdd676929e"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/GlassForClass.BGEM",
+      "bytes": 226,
+      "sha256": "9c844029e9cade87dcc2e9e655abe6ba2c5a3e49a804f2c4513082edc1e7a793",
+      "source_sha256": "9c844029e9cade87dcc2e9e655abe6ba2c5a3e49a804f2c4513082edc1e7a793"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/GlassForNukaColaMachine.BGEM",
+      "bytes": 226,
+      "sha256": "30eaa224c98734ba642a6596e1c11b017ca8b48376d7af821f17020d17c4f99d",
+      "source_sha256": "30eaa224c98734ba642a6596e1c11b017ca8b48376d7af821f17020d17c4f99d"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/GlassForNukaColaMachine_LS.BGEM",
+      "bytes": 226,
+      "sha256": "fc1d4740b64aa53f6d6a991ea891a1c68730da34924cf7e433a4feea5d8df9e0",
+      "source_sha256": "fc1d4740b64aa53f6d6a991ea891a1c68730da34924cf7e433a4feea5d8df9e0"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/Lab/Beakers.BGEM",
+      "bytes": 238,
+      "sha256": "f5e34fa5697a969b8c8a62d347dddd0862270207f3ba17371d76ada76d9da39e",
+      "source_sha256": "f5e34fa5697a969b8c8a62d347dddd0862270207f3ba17371d76ada76d9da39e"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/MagnifyingGlassGlass.BGEM",
+      "bytes": 252,
+      "sha256": "916220d5ff25167993fd9cb2e4802408dbe494c84ef9ececaf18722a91d90d94",
+      "source_sha256": "916220d5ff25167993fd9cb2e4802408dbe494c84ef9ececaf18722a91d90d94"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/MirelurkEgg02.BGEM",
+      "bytes": 246,
+      "sha256": "8b2a59580396bc5989cc5d5aaae5534ed85df251ee5b293fee4ca29cf476c19f",
+      "source_sha256": "8b2a59580396bc5989cc5d5aaae5534ed85df251ee5b293fee4ca29cf476c19f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaBottleEmpty.BGEM",
+      "bytes": 228,
+      "sha256": "de3bdfaeaf842fcd438ac8c0da546c2bd8ba7311dc74dcf2cae974d603f0175c",
+      "source_sha256": "de3bdfaeaf842fcd438ac8c0da546c2bd8ba7311dc74dcf2cae974d603f0175c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaColaGlass.BGEM",
+      "bytes": 163,
+      "sha256": "a2f706f875232e7ca7dae704e3131696b068bcd6e536700fd20540f17f5c4b53",
+      "source_sha256": "a2f706f875232e7ca7dae704e3131696b068bcd6e536700fd20540f17f5c4b53"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaColaGlassCherry.BGEM",
+      "bytes": 239,
+      "sha256": "1d131cce44d26e0f786943052916dab46c10f95ef5b2ad83ad34c62710ac731a",
+      "source_sha256": "1d131cce44d26e0f786943052916dab46c10f95ef5b2ad83ad34c62710ac731a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaColaGlassEmpty.BGEM",
+      "bytes": 199,
+      "sha256": "f1c06d889a458c3dfef22a675f8ad2fcb813d5d87328299306922ab285232a04",
+      "source_sha256": "f1c06d889a458c3dfef22a675f8ad2fcb813d5d87328299306922ab285232a04"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaColaGlassPrewar.BGEM",
+      "bytes": 163,
+      "sha256": "f1e0e2443b7b4367af59c49b1ee3e5286bd8c90d20f182ea66d9743c69e228f2",
+      "source_sha256": "f1e0e2443b7b4367af59c49b1ee3e5286bd8c90d20f182ea66d9743c69e228f2"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/NukaColaGlassQuantum.BGEM",
+      "bytes": 239,
+      "sha256": "b02477d45030e5d4a05de826ff7a07c1c525f560e41c9151813fe9e1527742f4",
+      "source_sha256": "b02477d45030e5d4a05de826ff7a07c1c525f560e41c9151813fe9e1527742f4"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/Parking_Meter_Set01.BGEM",
+      "bytes": 271,
+      "sha256": "dd6825deb31c240bb1c16d4d00a40e3f9a0cc335ac50a7a4c2600a1ad77272b8",
+      "source_sha256": "dd6825deb31c240bb1c16d4d00a40e3f9a0cc335ac50a7a4c2600a1ad77272b8"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/StuffedAnimals/Jangles01.BGEM",
+      "bytes": 250,
+      "sha256": "8f918ecda63d5b1271b923d722a2fdd074b294bf7b5615547938ee71c11e2683",
+      "source_sha256": "8f918ecda63d5b1271b923d722a2fdd074b294bf7b5615547938ee71c11e2683"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/SynthChip/SynthChip.BGEM",
+      "bytes": 259,
+      "sha256": "d4d783e349eae7e4e9d417b0604bf5917a1880a4681965dce4bda66945733d31",
+      "source_sha256": "d4d783e349eae7e4e9d417b0604bf5917a1880a4681965dce4bda66945733d31"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/TTube.BGEM",
+      "bytes": 213,
+      "sha256": "3c299f98c46fa60b529cf2abe3cc034ae28c428386099b3b207e81ec6cc943c8",
+      "source_sha256": "3c299f98c46fa60b529cf2abe3cc034ae28c428386099b3b207e81ec6cc943c8"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Props/Watch/watchface.BGEM",
+      "bytes": 235,
+      "sha256": "3c237391dc05254526b5014230ad19315dff505a3bce87fe70c199623b0e3d2b",
+      "source_sha256": "3c237391dc05254526b5014230ad19315dff505a3bce87fe70c199623b0e3d2b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/BabyBottle/BabyBottleClean01empty.BGEM",
+      "bytes": 316,
+      "sha256": "cc7361f76b552ae94f6fcfe7cebc07b0ca21aba3f78b219fbe0729ba93b78251",
+      "source_sha256": "cc7361f76b552ae94f6fcfe7cebc07b0ca21aba3f78b219fbe0729ba93b78251"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/BabyBottle/BabyBottleDirty01empty.BGEM",
+      "bytes": 316,
+      "sha256": "f0ccf350a671c5c2ed05b4e993787e32c391bb4ad8db50000eb9025a0be34919",
+      "source_sha256": "f0ccf350a671c5c2ed05b4e993787e32c391bb4ad8db50000eb9025a0be34919"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/FoodVendingMachines/EatOTronic01.BGEM",
+      "bytes": 328,
+      "sha256": "40d452171a44b07875239d7287e9f59542efac31acaea247bcd1294764b9f9c3",
+      "source_sha256": "40d452171a44b07875239d7287e9f59542efac31acaea247bcd1294764b9f9c3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/FoodVendingMachines/EatOTronic01Dirty.BGEM",
+      "bytes": 343,
+      "sha256": "143d6b5b466b0b1ec99a0e72f33892a00e1a0769e562e7eedd4389db598c28b1",
+      "source_sha256": "143d6b5b466b0b1ec99a0e72f33892a00e1a0769e562e7eedd4389db598c28b1"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/FoodVendingMachines/PortADiner02.BGEM",
+      "bytes": 328,
+      "sha256": "df9ee3a167b84e3039ab63089cd2c5f03f86d8ae1888d4fdb7e79718d9760117",
+      "source_sha256": "df9ee3a167b84e3039ab63089cd2c5f03f86d8ae1888d4fdb7e79718d9760117"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/FoodVendingMachines/PortADiner02Dirty.BGEM",
+      "bytes": 343,
+      "sha256": "8f712050379f24ec5c965bfa1b808fde8b994c06987de23cd95071d8714a185a",
+      "source_sha256": "8f712050379f24ec5c965bfa1b808fde8b994c06987de23cd95071d8714a185a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/institute/InstituteSynthLab01.BGEM",
+      "bytes": 319,
+      "sha256": "4e177eddbec8789b2f2dd4d467e014acaf490083494614a5a81fdf505bccbad3",
+      "source_sha256": "4e177eddbec8789b2f2dd4d467e014acaf490083494614a5a81fdf505bccbad3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Jukebox/Jukebox01.BGEM",
+      "bytes": 271,
+      "sha256": "c1b4f45cff3dd9485831f8e2213bc84ca0fade06aac51cf3e2643bc89bc44bfc",
+      "source_sha256": "c1b4f45cff3dd9485831f8e2213bc84ca0fade06aac51cf3e2643bc89bc44bfc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Jukebox/Jukebox01Clean.BGEM",
+      "bytes": 287,
+      "sha256": "a08d554b27ebb09e1de465b553d1cb359e54b1ae46d62f5dc7a5bedbcb681bed",
+      "source_sha256": "a08d554b27ebb09e1de465b553d1cb359e54b1ae46d62f5dc7a5bedbcb681bed"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/LightFixtures/LightFixtureGlass01.BGSM.BGEM",
+      "bytes": 235,
+      "sha256": "a86dac160248dbb11dbb8dc4d2622f37beda5dcfd468134928a7bf2d998cdb7a",
+      "source_sha256": "a86dac160248dbb11dbb8dc4d2622f37beda5dcfd468134928a7bf2d998cdb7a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/LightFixtures/LightFixtureGlass01OFF.BGSM.BGEM",
+      "bytes": 235,
+      "sha256": "759116c2658785c11a98b8b9c71a576341a84e15f9c405403c052a6d5890a42a",
+      "source_sha256": "759116c2658785c11a98b8b9c71a576341a84e15f9c405403c052a6d5890a42a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/MemoryLounge/MemoryLoungerGlass01.BGEM",
+      "bytes": 317,
+      "sha256": "c30c60c5aebea4a7ac7582fc42ab3bdb26a302a7e98e0e4e55849e3f2d1394dc",
+      "source_sha256": "c30c60c5aebea4a7ac7582fc42ab3bdb26a302a7e98e0e4e55849e3f2d1394dc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Newsstand/newstandGlass.BGEM",
+      "bytes": 278,
+      "sha256": "d6a5452b37a7000799c252619090289d99f280049208e93303d72c33a6adeb44",
+      "source_sha256": "d6a5452b37a7000799c252619090289d99f280049208e93303d72c33a6adeb44"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Park/SaucerSlideGlassDome.BGEM",
+      "bytes": 274,
+      "sha256": "184ca4f2e96d909d8ab01ce29ef34be68c711643b4c119795e7b32b3f22905bc",
+      "source_sha256": "184ca4f2e96d909d8ab01ce29ef34be68c711643b4c119795e7b32b3f22905bc"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Phone/PhoneBoothGlass.BGEM",
+      "bytes": 278,
+      "sha256": "0433e268864c4e21e157c1e090aecce5dc91f578459cbd2fa5f6ed85eb15bd4a",
+      "source_sha256": "0433e268864c4e21e157c1e090aecce5dc91f578459cbd2fa5f6ed85eb15bd4a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PhoneBoothGlassWithClass.BGEM",
+      "bytes": 230,
+      "sha256": "8c6c44196be7603134f712858052d2da990b1343f79b6c73cea692c1b168cdb0",
+      "source_sha256": "8c6c44196be7603134f712858052d2da990b1343f79b6c73cea692c1b168cdb0"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/BottleBourbonGlass01.BGEM",
+      "bytes": 163,
+      "sha256": "68dfda016e9fe720b95f132249c05ad92472dd058cd882ccec9da9cde2b0e366",
+      "source_sha256": "68dfda016e9fe720b95f132249c05ad92472dd058cd882ccec9da9cde2b0e366"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/BottleGlass.BGEM",
+      "bytes": 301,
+      "sha256": "d2b93a556a972788c91d079583e4f0f352aa0e9ff6ae97bfcaf6b215df65d970",
+      "source_sha256": "d2b93a556a972788c91d079583e4f0f352aa0e9ff6ae97bfcaf6b215df65d970"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/BottleGlassB.BGEM",
+      "bytes": 301,
+      "sha256": "d2b93a556a972788c91d079583e4f0f352aa0e9ff6ae97bfcaf6b215df65d970",
+      "source_sha256": "d2b93a556a972788c91d079583e4f0f352aa0e9ff6ae97bfcaf6b215df65d970"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/BottleGlassPrewar01.BGEM",
+      "bytes": 315,
+      "sha256": "ca41faa6de955002ee6900acd4ccbc3f117c1531c1d6e0f6f6cdb51e3e470eb9",
+      "source_sha256": "ca41faa6de955002ee6900acd4ccbc3f117c1531c1d6e0f6f6cdb51e3e470eb9"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/Bottles01.BGEM",
+      "bytes": 280,
+      "sha256": "d342d3c9a7bd2c5191249d0317a5996c63889189084acdf978db6b4e09eda73b",
+      "source_sha256": "d342d3c9a7bd2c5191249d0317a5996c63889189084acdf978db6b4e09eda73b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/PlayerHouseClutterClean/PrewarBottleGlass.BGEM",
+      "bytes": 315,
+      "sha256": "76e4f2cc9a5ca3e5f6adf371e8a93f1646904e56b933af81fbc8acedfc8a9ebd",
+      "source_sha256": "76e4f2cc9a5ca3e5f6adf371e8a93f1646904e56b933af81fbc8acedfc8a9ebd"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/ProtectronPod/ProtectronPod01.BGEM",
+      "bytes": 319,
+      "sha256": "e329bbe1534069845f60aaa0dd98642c3f0056105951d24b0acbdf12221b4c8c",
+      "source_sha256": "e329bbe1534069845f60aaa0dd98642c3f0056105951d24b0acbdf12221b4c8c"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/TrafficLights/TrafficLightDoor01.bgem",
+      "bytes": 299,
+      "sha256": "2bf090842f6544ca49d6d7206863ec99194288eeecf8186979b3629fcc39ac7b",
+      "source_sha256": "2bf090842f6544ca49d6d7206863ec99194288eeecf8186979b3629fcc39ac7b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/WaterCooler/WaterCooler_Clean.BGEM",
+      "bytes": 319,
+      "sha256": "56e0110a29ceb2da8618400a2d06f3ac7b120782fc1ee09419c09673519422a3",
+      "source_sha256": "56e0110a29ceb2da8618400a2d06f3ac7b120782fc1ee09419c09673519422a3"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/WaterCooler/WaterCooler_Dirty.BGEM",
+      "bytes": 319,
+      "sha256": "540984275ef1a52adb3514afc8786568dde68ea1b84c5def264c148451594388",
+      "source_sha256": "540984275ef1a52adb3514afc8786568dde68ea1b84c5def264c148451594388"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Workstations/WorkstationChemistryA02.BGEM",
+      "bytes": 340,
+      "sha256": "a1edcf2b057d456d4b07defbff5eadfbbb8098946bf62231f81cdb65391c8249",
+      "source_sha256": "a1edcf2b057d456d4b07defbff5eadfbbb8098946bf62231f81cdb65391c8249"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Workstations/WorkstationChemistryA02LS.BGEM",
+      "bytes": 340,
+      "sha256": "e465198a97a6dd598548870d8c41ca1f1a2e7b1ce61a7490b33d3e6a75e0df1f",
+      "source_sha256": "e465198a97a6dd598548870d8c41ca1f1a2e7b1ce61a7490b33d3e6a75e0df1f"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/SetDressing/Workstations/WorkstationChemistryB02.BGEM",
+      "bytes": 340,
+      "sha256": "e3ea9804224b9ae45110b3d61ad2bef61e6d139c2053d0bedf10fbda52a53bc6",
+      "source_sha256": "e3ea9804224b9ae45110b3d61ad2bef61e6d139c2053d0bedf10fbda52a53bc6"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GenericExteriorGlass01.BGEM",
+      "bytes": 178,
+      "sha256": "cc423e9566c89a082de4080bc4f78670fe872e8c2740e3a14cdb156ed46abcec",
+      "source_sha256": "cc423e9566c89a082de4080bc4f78670fe872e8c2740e3a14cdb156ed46abcec"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GlassCleanUnbroken.BGEM",
+      "bytes": 305,
+      "sha256": "15e1d0786689964f093c2731ec7c06edbd7626604fbd1bd25f7f401cbd5efe9a",
+      "source_sha256": "15e1d0786689964f093c2731ec7c06edbd7626604fbd1bd25f7f401cbd5efe9a"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GlassTile01.BGEM",
+      "bytes": 254,
+      "sha256": "939fb3a3d48bc715f066a5c074a3fb0889a4b4dd2fbf9f0ee6b430d0227d5eed",
+      "source_sha256": "939fb3a3d48bc715f066a5c074a3fb0889a4b4dd2fbf9f0ee6b430d0227d5eed"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GlassTile01Off.BGEM",
+      "bytes": 254,
+      "sha256": "0766539c51c0b502977aa352b722e26ab775f27a1ea1af2064b1a99d76ece1db",
+      "source_sha256": "0766539c51c0b502977aa352b722e26ab775f27a1ea1af2064b1a99d76ece1db"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GlassTile01On.BGEM",
+      "bytes": 254,
+      "sha256": "2de4ee48dbf81beca5441ea345b65fdef90406c377b8d59c3f9aaf56bc9c35c1",
+      "source_sha256": "2de4ee48dbf81beca5441ea345b65fdef90406c377b8d59c3f9aaf56bc9c35c1"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Shared/GreenHsGlass.BGEM",
+      "bytes": 364,
+      "sha256": "2bceade8808b84d92c329f12b9a762f263d830e48c1e6dd14aa9d7b7f6c9d3d8",
+      "source_sha256": "2bceade8808b84d92c329f12b9a762f263d830e48c1e6dd14aa9d7b7f6c9d3d8"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Automotive/Car_Glass01.BGEM",
+      "bytes": 299,
+      "sha256": "2bf090842f6544ca49d6d7206863ec99194288eeecf8186979b3629fcc39ac7b",
+      "source_sha256": "2bf090842f6544ca49d6d7206863ec99194288eeecf8186979b3629fcc39ac7b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Automotive/CarPrewar_Glass01.BGEM",
+      "bytes": 271,
+      "sha256": "402b4fd92144441896da854ba0e3995b33b0c85a6ac8004acd4d39507c1f058b",
+      "source_sha256": "402b4fd92144441896da854ba0e3995b33b0c85a6ac8004acd4d39507c1f058b"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Automotive/CarPrewarSanctuary_Glass01.BGEM",
+      "bytes": 264,
+      "sha256": "a739b96ec0f8a2b77609250e609d8724967349f9599b5900ed00806ce457d4d9",
+      "source_sha256": "a739b96ec0f8a2b77609250e609d8724967349f9599b5900ed00806ce457d4d9"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Automotive/FusionFlea02.BGEM",
+      "bytes": 316,
+      "sha256": "e04e23fc1e9e587bd43b9f255c74e1080b286eea7fe60e7902517b5a1bcb0b11",
+      "source_sha256": "e04e23fc1e9e587bd43b9f255c74e1080b286eea7fe60e7902517b5a1bcb0b11"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Automotive/FusionFlea02Clean.BGEM",
+      "bytes": 307,
+      "sha256": "25895c7d1221345bacb1a0328772c78b1c8b0b0a9d22f3038c8aec5a505aa852",
+      "source_sha256": "25895c7d1221345bacb1a0328772c78b1c8b0b0a9d22f3038c8aec5a505aa852"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/MiniCar/MiniCar_Clean02.BGEM",
+      "bytes": 292,
+      "sha256": "75e9cd94160143aef79fa16fc2a03c1f1281ed8f9815e1bbd36e47f7f9d71d18",
+      "source_sha256": "75e9cd94160143aef79fa16fc2a03c1f1281ed8f9815e1bbd36e47f7f9d71d18"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/MiniCar/MiniCar_Dirty02.BGEM",
+      "bytes": 316,
+      "sha256": "bfec787df8924e2fe71a40e0afbbb4032e4658561425a3449ce8e762fdb3a0e5",
+      "source_sha256": "bfec787df8924e2fe71a40e0afbbb4032e4658561425a3449ce8e762fdb3a0e5"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Vertibird/VertibirdGlass.BGEM",
+      "bytes": 286,
+      "sha256": "73a90b03fc79ccc43b89340146fb3d0cff5d559814c332cb0f6ae19df274c8f4",
+      "source_sha256": "73a90b03fc79ccc43b89340146fb3d0cff5d559814c332cb0f6ae19df274c8f4"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Materials/Vehicles/Vertibird/VertibirdGlassBroken.BGEM",
+      "bytes": 286,
+      "sha256": "4c40d9b5a2a2a7b17a5745e13244cc5f5ec128ec30d8245f94abe1280fef5290",
+      "source_sha256": "4c40d9b5a2a2a7b17a5745e13244cc5f5ec128ec30d8245f94abe1280fef5290"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Textures/AUR/transparent_d.DDS",
+      "bytes": 176,
+      "sha256": "ec5ed6ee3417afd9cb8415f14ad6d8991b198eded36112d66e2e397af38e16ef",
+      "source_sha256": "ec5ed6ee3417afd9cb8415f14ad6d8991b198eded36112d66e2e397af38e16ef"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Textures/AUR/transparent_n.DDS",
+      "bytes": 176,
+      "sha256": "5ce75bd24b00ff8f5e2276e30eca93635edddafb9be9e95cd59345a0f1d72c46",
+      "source_sha256": "5ce75bd24b00ff8f5e2276e30eca93635edddafb9be9e95cd59345a0f1d72c46"
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/Textures/AUR/transparent_s.DDS",
+      "bytes": 176,
+      "sha256": "8000aa212c92f4394949d9a003c6d1bd046b6afadce7d90c42c8de3ad5f4dbe4",
+      "source_sha256": "8000aa212c92f4394949d9a003c6d1bd046b6afadce7d90c42c8de3ad5f4dbe4"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Interface/HUDMenu.swf",
+      "bytes": 209322,
+      "sha256": "8cda24ab394dfacd051a2d54d1576a3be17049c7f1cd16081a39ff8b39dad374",
+      "source_sha256": "8cda24ab394dfacd051a2d54d1576a3be17049c7f1cd16081a39ff8b39dad374"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/MCM/Config/NotifyCtrl/config.json",
+      "bytes": 1676,
+      "sha256": "f8fdb72fd2c9896f9bb640b5b77a3c793f6166d591285566109795698a2390b9",
+      "source_sha256": "f8fdb72fd2c9896f9bb640b5b77a3c793f6166d591285566109795698a2390b9"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/MCM/Config/NotifyCtrl/settings.ini",
+      "bytes": 109,
+      "sha256": "db3df04dea9e58a3d367cf68b625923a194bc68617528781a99c7b3c86eb4442",
+      "source_sha256": "db3df04dea9e58a3d367cf68b625923a194bc68617528781a99c7b3c86eb4442"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Scripts/Vault_customs_NotifyCtrl.pex",
+      "bytes": 3545,
+      "sha256": "0d4e1760d624cf3c69002930de0e2d5a086cb1a7f3bd716aa8331bdaeda3442a",
+      "source_sha256": "b517713e1e5a42e282b2dde8c8b5a6275bfaec172c11661bc6d62647449f81d5"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Vault_customs_notification_control.esp",
+      "bytes": 411,
+      "sha256": "54316ecd4efe12ab51bf2494e2340a20e5f106a0fccbec9a56012bfc41bc87ce",
+      "source_sha256": "54316ecd4efe12ab51bf2494e2340a20e5f106a0fccbec9a56012bfc41bc87ce"
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/MCM/Config/UIColorSync/config.json",
+      "bytes": 2004,
+      "sha256": "570bbdc61aa4ff5a1587d52f8627c0d233afd15f834cbe1c3ffa1eec66a2cbfc",
+      "source_sha256": "570bbdc61aa4ff5a1587d52f8627c0d233afd15f834cbe1c3ffa1eec66a2cbfc"
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/MCM/Config/UIColorSync/settings.ini",
+      "bytes": 290,
+      "sha256": "181a44823e44d363ccdd827c4f0ef4f7bc11d0258f227d7a1a45b3fcc92c32ea",
+      "source_sha256": "181a44823e44d363ccdd827c4f0ef4f7bc11d0258f227d7a1a45b3fcc92c32ea"
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Scripts/Vault_customs_UIColorSync.pex",
+      "bytes": 4802,
+      "sha256": "86cbd099722e683f72efc2f173c5b0aa8376e748ccac6f1f3a4fc52202cd13c7",
+      "source_sha256": "5591e30f7c76490bbc4894dcd891c08ddfe63c08fa24abe0c8a2fecda6834a78"
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Vault_customs_ui_color_sync.esp",
+      "bytes": 431,
+      "sha256": "821d2e66df4019c0405741e2e387f7a987a8f66743417a106f3efe2c6d32f907",
+      "source_sha256": "821d2e66df4019c0405741e2e387f7a987a8f66743417a106f3efe2c6d32f907"
+    },
+    {
+      "path": "mods/Vault_customs_hide_companion_names/Interface/HUDMenu.swf",
+      "bytes": 209176,
+      "sha256": "f644ad0d0ea4928bd6b8cf94fc976bba068f79d5525fe1f4556290de221d78ee",
+      "source_sha256": "f644ad0d0ea4928bd6b8cf94fc976bba068f79d5525fe1f4556290de221d78ee"
+    },
+    {
+      "path": "mods/Vault_customs_workbench_dps_column/Interface/ExamineMenu.swf",
+      "bytes": 133855,
+      "sha256": "d33fe01e4d7edb2b6a6195464573e990dce187fb9b625c9274b04049d3c45754",
+      "source_sha256": "d33fe01e4d7edb2b6a6195464573e990dce187fb9b625c9274b04049d3c45754"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCFailsafeShoulderFaceNPCL.nif",
+      "bytes": 5965,
+      "sha256": "159674ffb605626035d0ad6ba7a99357efe18a1d591b4583806356bd1e3d3e4f",
+      "source_sha256": "159674ffb605626035d0ad6ba7a99357efe18a1d591b4583806356bd1e3d3e4f"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCFailsafeShoulderFaceNPCR.nif",
+      "bytes": 5965,
+      "sha256": "d1a3761611b2693dc1b0680a9eadcc3e6de955bf532fd8811b9d9970edb67a2f",
+      "source_sha256": "d1a3761611b2693dc1b0680a9eadcc3e6de955bf532fd8811b9d9970edb67a2f"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderL02.nif",
+      "bytes": 5947,
+      "sha256": "35c842b2e3b8dddcca114721f05207e7d4e785d9a5fb4acdc3939823af950dfb",
+      "source_sha256": "35c842b2e3b8dddcca114721f05207e7d4e785d9a5fb4acdc3939823af950dfb"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderNPCL01.nif",
+      "bytes": 5953,
+      "sha256": "ccc1bc23f74c5f81d1ad5c9787aa538dfc007e4d72f8405627e14b0d488ff0ea",
+      "source_sha256": "ccc1bc23f74c5f81d1ad5c9787aa538dfc007e4d72f8405627e14b0d488ff0ea"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderNPCL02.nif",
+      "bytes": 5953,
+      "sha256": "71abb7f79537498c9ee115d0c018f23f024331c9a52229f0088ceefad8b1e4ad",
+      "source_sha256": "71abb7f79537498c9ee115d0c018f23f024331c9a52229f0088ceefad8b1e4ad"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderNPCR01.nif",
+      "bytes": 5953,
+      "sha256": "e4f22347b9eedac050db8eb1a265a9eca16e222b9f4ec32d52e2e95565d69f1c",
+      "source_sha256": "e4f22347b9eedac050db8eb1a265a9eca16e222b9f4ec32d52e2e95565d69f1c"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderNPCR02.nif",
+      "bytes": 5953,
+      "sha256": "9c423e680e47bc724f0fbe394fd075f293033c210cc216be3ec28b048fdc51f1",
+      "source_sha256": "9c423e680e47bc724f0fbe394fd075f293033c210cc216be3ec28b048fdc51f1"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/CCOverShoulderR02.nif",
+      "bytes": 5947,
+      "sha256": "75229268b70e736480740c3a433e8dd0433f7d7714287c64e1a73e266b1bcd7d",
+      "source_sha256": "75229268b70e736480740c3a433e8dd0433f7d7714287c64e1a73e266b1bcd7d"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/FailSafeCloseUpNPCL.nif",
+      "bytes": 5951,
+      "sha256": "26c9c7b79dc934edf698730f5e919cb776e6be863706239ec6b1ae6ee348a044",
+      "source_sha256": "26c9c7b79dc934edf698730f5e919cb776e6be863706239ec6b1ae6ee348a044"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Meshes/Cameras/FailSafeCloseUpNPCR.nif",
+      "bytes": 5951,
+      "sha256": "8b50fde710b6fca222a725a7593492e86a7ee519229677a45b84e3739b9bc8cb",
+      "source_sha256": "8b50fde710b6fca222a725a7593492e86a7ee519229677a45b84e3739b9bc8cb"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Vault_customs_dialogue_camera.esp",
+      "bytes": 238,
+      "sha256": "3e9ed279dd5a5f207693e071a4dd79424c4e6273c2b35e245b3d0cd756bbc5e6",
+      "source_sha256": "3e9ed279dd5a5f207693e071a4dd79424c4e6273c2b35e245b3d0cd756bbc5e6"
+    },
+    {
+      "path": "mods/Vault_customs_inventory_hints/Interface/BarterMenu.swf",
+      "bytes": 134346,
+      "sha256": "72c3eb77dd2f0f13b351c88d6209ba64fba6af8db6a627f85f1b83558add5ae0",
+      "source_sha256": "72c3eb77dd2f0f13b351c88d6209ba64fba6af8db6a627f85f1b83558add5ae0"
+    },
+    {
+      "path": "mods/Vault_customs_inventory_hints/Interface/ContainerMenu.swf",
+      "bytes": 144360,
+      "sha256": "3506fea756b5b12bcd73306b04425c878e8a858c87223e4b175a3353737f2ffa",
+      "source_sha256": "3506fea756b5b12bcd73306b04425c878e8a858c87223e4b175a3353737f2ffa"
+    },
+    {
+      "path": "mods/Vault_customs_recent_items/F4SE/Plugins/RecentItemsF4.dll",
+      "bytes": 873472,
+      "sha256": "9688ee4a6b1c7b944dd1cd408b3bf871d94803feb1b7fa68732c662c1da01113",
+      "source_sha256": "9688ee4a6b1c7b944dd1cd408b3bf871d94803feb1b7fa68732c662c1da01113"
+    },
+    {
+      "path": "mods/Vault_customs_recent_items/Interface/Pipboy_InvPage.swf",
+      "bytes": 101307,
+      "sha256": "f81c46fa3e3c191bfe5c9a289262f4a143345fe11c1c0f2b37fab2cd210a3be9",
+      "source_sha256": "f81c46fa3e3c191bfe5c9a289262f4a143345fe11c1c0f2b37fab2cd210a3be9"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu_root/Vault_customs_workshop_menu_root.esp",
+      "bytes": 500,
+      "sha256": "c5bfffac4dbf05393acb29c0995a624bac9323dc42c557527f161976e23e053f",
+      "source_sha256": "c5bfffac4dbf05393acb29c0995a624bac9323dc42c557527f161976e23e053f"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/Vault_customs_workshop_menu.esp",
+      "bytes": 135737,
+      "sha256": "742885f57f426ecffa5b8a040cde7d35229305b29e029ac84e65f6b50c5ae31f",
+      "source_sha256": "742885f57f426ecffa5b8a040cde7d35229305b29e029ac84e65f6b50c5ae31f"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/Vault_customs_workshop_menu_resort.esp",
+      "bytes": 208567,
+      "sha256": "4e986d7b4f08dde079569c41136d6e7d38168a587e652abc7a87161477fb8ef6",
+      "source_sha256": "4e986d7b4f08dde079569c41136d6e7d38168a587e652abc7a87161477fb8ef6"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_preview/Vault_customs_workshop_preview.esp",
+      "bytes": 1488298,
+      "sha256": "cdc8d4de3aa447035bfca01e602382f9b3a3891564c6a555894f456aa164a4a0",
+      "source_sha256": "cdc8d4de3aa447035bfca01e602382f9b3a3891564c6a555894f456aa164a4a0"
+    },
+    {
+      "path": "mods/Vault_customs_stove_preview/Vault_customs_stove_preview.esp",
+      "bytes": 421,
+      "sha256": "5196e1b91f8620546a7bce65400181e6ffffc79daa7a5ebb673e3db566bf574a",
+      "source_sha256": "5196e1b91f8620546a7bce65400181e6ffffc79daa7a5ebb673e3db566bf574a"
+    },
+    {
+      "path": "mods/Vault_customs_backpack_stack/F4SE/Plugins/BackpackStackF4.dll",
+      "bytes": 612352,
+      "sha256": "d323381866fc1acf2597fd4d9c1ffa5723ff05ad87d1c411a74c63b475c4fbd2",
+      "source_sha256": "42e6adead4ddaa3b378702ede4d607b00748d610a3a5add9fc4894516bc40044"
+    },
+    {
+      "path": "mods/Vault_customs_backpack_stack/F4SE/Plugins/BackpackStackF4.ini",
+      "bytes": 2589,
+      "sha256": "f5834d1d0c2268d642688934a4ece20f72d7e53a620773b358ba09ccbd98c347",
+      "source_sha256": "f5834d1d0c2268d642688934a4ece20f72d7e53a620773b358ba09ccbd98c347"
+    },
+    {
+      "path": "mods/Vault_customs_main_menu_deck/F4SE/Plugins/MainMenuDeckF4.dll",
+      "bytes": 593920,
+      "sha256": "b1e80e179b5eb5a6a7b5d37a9faba854eab0c13e07185334f007b7402c3167f0",
+      "source_sha256": "13ce8bdc2c0c7e17a3c4013ff2e9baa72561e98110ac71f462d8b46b250b8ac5"
+    },
+    {
+      "path": "mods/Vault_customs_main_menu_deck/F4SE/Plugins/MainMenuDeckF4.ini",
+      "bytes": 889,
+      "sha256": "0fcccf2af4439976319cd5f007b979fcfec93ee3ad757270a04ee042014da3cb",
+      "source_sha256": "0fcccf2af4439976319cd5f007b979fcfec93ee3ad757270a04ee042014da3cb"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_tree_guard/F4SE/Plugins/DialogueTreeGuardF4.dll",
+      "bytes": 441344,
+      "sha256": "60faf56bb5c96d68437596e8cc55ed82df70c135c68ffb1cd2b35e04fcebd5d3",
+      "source_sha256": "09471a8babf13ea40261a158fc466658b3949191edb16e4c4347d06d65500052"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_stack_guard/F4SE/Plugins/WorkshopStackGuardF4.dll",
+      "bytes": 559616,
+      "sha256": "894cfdb1c18a7b17c63da80799d65223be6724d10d1dcf25c71ceb119ba6faa8",
+      "source_sha256": "7239b1b8f017ac6242eb838942e71f4d88c0d728846ab0078536c263ce7dcb34"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 109
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Source/User/Vault_customs_VisibleFavoritesMCM.psc",
+      "reason": "source/optional/original material",
+      "bytes": 6125
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Source/User/Vault_customs_VisibleFavoritesNative.psc",
+      "reason": "source/optional/original material",
+      "bytes": 207
+    },
+    {
+      "path": "mods/Vault_customs_blood_splash_fix/manifest.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 988
+    },
+    {
+      "path": "mods/Vault_customs_blood_splash_fix/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 178
+    },
+    {
+      "path": "mods/Vault_customs_normal_finishers/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 102
+    },
+    {
+      "path": "mods/Vault_customs_lowered_no_speed/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 103
+    },
+    {
+      "path": "mods/Vault_customs_turret_soundfix/build_manifest.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 971
+    },
+    {
+      "path": "mods/Vault_customs_turret_soundfix/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 95
+    },
+    {
+      "path": "mods/Vault_customs_turret_soundfix/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4811
+    },
+    {
+      "path": "mods/Vault_customs_pa_finishers/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 77
+    },
+    {
+      "path": "mods/Vault_customs_sneaky_kills_compat/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 90
+    },
+    {
+      "path": "mods/Vault_customs_lever_lowered/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 154
+    },
+    {
+      "path": "mods/Vault_customs_enemy_level_floor/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 127
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 174
+    },
+    {
+      "path": "mods/Vault_customs_NR_settings/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 130
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 538
+    },
+    {
+      "path": "mods/Vault_customs_mcm_ru/README.txt",
+      "reason": "MO2 metadata or development document",
+      "bytes": 5070
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/MCM/Config/WorkshopFramework/config.json.bak_progressbar",
+      "reason": "backup/debug/cache",
+      "bytes": 35709
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2498
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 884
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 5420
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Scripts/Source/User/Vault_customs_PlaceMCM.psc",
+      "reason": "source/optional/original material",
+      "bytes": 4497
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Vault_customs_place_mcm.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 378
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Vault_customs_place_mcm.esp.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 385
+    },
+    {
+      "path": "mods/Vault_customs_ss2_defaults/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 206
+    },
+    {
+      "path": "mods/Vault_customs_ss2_defaults/Vault_customs_ss2_defaults.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 1044
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.dll.bak_author",
+      "reason": "backup/debug/cache",
+      "bytes": 1068032
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.ini.bak_debrand",
+      "reason": "backup/debug/cache",
+      "bytes": 2281
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.pdb",
+      "reason": "backup/debug/cache",
+      "bytes": 19673088
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1046
+    },
+    {
+      "path": "mods/Vault_customs_hydro_optics/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 9437
+    },
+    {
+      "path": "mods/Vault_customs_weather_schedule/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 117
+    },
+    {
+      "path": "mods/Vault_customs_pipboy_light_on_pelvis/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2056
+    },
+    {
+      "path": "mods/Vault_customs_vault113_no_perk/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 438
+    },
+    {
+      "path": "mods/Vault_customs_vault113_no_perk/Vault_customs_vault113_no_perk.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 1169
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/MCM/Config/SettlementHardship/config.json.bak_pluginrename",
+      "reason": "backup/debug/cache",
+      "bytes": 6804
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/MCM/Config/SettlementHardship/config.json.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 6930
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 111
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 19552
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Scripts/Source/User/Vault_customs_Hardship.psc",
+      "reason": "source/optional/original material",
+      "bytes": 31505
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Scripts/Vault_customs_Hardship.pex.bak_triggers",
+      "reason": "backup/debug/cache",
+      "bytes": 28239
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Vault_customs_settlement_hardship.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 5071
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Vault_customs_settlement_hardship.esp.bak_noise490",
+      "reason": "backup/debug/cache",
+      "bytes": 5281
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Vault_customs_settlement_hardship.esp.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 5078
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 362
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Scripts/Source/User/Vault_customs_AutoSiren.psc",
+      "reason": "source/optional/original material",
+      "bytes": 24411
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Vault_customs_auto_siren.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 1791
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Vault_customs_auto_siren.esp.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 1798
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 307
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/README.txt",
+      "reason": "MO2 metadata or development document",
+      "bytes": 10674
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Source/User/Vault_customs_AttacksWhenPresent.psc",
+      "reason": "source/optional/original material",
+      "bytes": 24053
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Source/User/Vault_customs_MiniAttack.psc",
+      "reason": "source/optional/original material",
+      "bytes": 641
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Vault_customs_attacks_when_present.esp.bak_mindefend_20260924",
+      "reason": "backup/debug/cache",
+      "bytes": 43440
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/MCM/Config/Vault_customs_CityPlanNotes/config.json.bak_pluginrename",
+      "reason": "backup/debug/cache",
+      "bytes": 2615
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/MCM/Config/Vault_customs_CityPlanNotes/config.json.bak_rename_title",
+      "reason": "backup/debug/cache",
+      "bytes": 2636
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 279
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/Scripts/Source/Vault_customs_CityPlanNote.psc",
+      "reason": "source/optional/original material",
+      "bytes": 2296
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/Vault_customs_city_plan_notes.esp.bak_masters",
+      "reason": "backup/debug/cache",
+      "bytes": 26945
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 297
+    },
+    {
+      "path": "mods/Vault_customs_cep_encounter_trim/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 219
+    },
+    {
+      "path": "mods/Vault_customs_cep_encounter_trim/Vault_customs_cep_encounter_trim.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 5165
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/FusionCore01.vanilla.nif",
+      "reason": "source/optional/original material",
+      "bytes": 15752
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/meta_no_pa_battery_pathing.ini",
+      "reason": "source/optional/original material",
+      "bytes": 3334
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/meta_notes_paclose.txt",
+      "reason": "source/optional/original material",
+      "bytes": 7513
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/PowerArmorBatteryInsertScript.nopabatterypathing.psc",
+      "reason": "source/optional/original material",
+      "bytes": 3681
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/PowerArmorBatteryInsertScript.vanilla.psc",
+      "reason": "source/optional/original material",
+      "bytes": 3663
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/PowerArmorDrainCustom.esp.bak_run01",
+      "reason": "backup/debug/cache",
+      "bytes": 234
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/_original/shift_anio.pl",
+      "reason": "source/optional/original material",
+      "bytes": 1351
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/CHANGELOG_core_flash.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4007
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/CHANGELOG_core_insert_align.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4205
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PASprintF4.dll.bak_v10",
+      "reason": "backup/debug/cache",
+      "bytes": 554496
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2083
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/meta.ini.bak_paaccess",
+      "reason": "backup/debug/cache",
+      "bytes": 873
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/PowerArmorDrainCustom.esp.bak_sprintonly",
+      "reason": "backup/debug/cache",
+      "bytes": 234
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 29303
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/Source/User/PowerArmorBatteryInsertScript.psc",
+      "reason": "source/optional/original material",
+      "bytes": 12537
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/Source/User/Vault_customs_PAClose.psc",
+      "reason": "source/optional/original material",
+      "bytes": 8649
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 181
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/README.txt",
+      "reason": "MO2 metadata or development document",
+      "bytes": 15541
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Source/User/Vault_customs_AshFade.psc",
+      "reason": "source/optional/original material",
+      "bytes": 1439
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Source/User/Vault_customs_BurnCorpseTrigger.psc",
+      "reason": "source/optional/original material",
+      "bytes": 37230
+    },
+    {
+      "path": "mods/Vault_customs_codsworth_tougher/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 127
+    },
+    {
+      "path": "mods/Vault_customs_codsworth_tougher/Vault_customs_CodsworthTough_DISTR.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 251
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/additional_perk_size_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1727
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/agreed_perks.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1501
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/ANIMATION_FIX_0.1.2.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2233
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/approved_rank_distribution.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 101591
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/art_selector_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 233
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/CHARISMA_LOYALTY_ART_0.1.9.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2390
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/charisma_loyalty_art_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 701
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/CHARISMA_OUTLINES_0.1.5.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2715
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/CLEANUP_0.1.4.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2875
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/CRASH_FIX_0.1.1.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2937
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/description_humor_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 12741
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/F4SE/Plugins/VaultPerksTestF4.tsv",
+      "reason": "not a runtime extension",
+      "bytes": 46271
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/final_tree.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2046
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/GAME_TEST_PLAN.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 3772
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/heavy_hit_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 554
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/line_style_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 479
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/LOYALTY_PACKER_0.1.6.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 5474
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/loyalty_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 5059
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/outline_fill_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 347
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/outline_spacing_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 340
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/package_manifest.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4164
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/perk_description_texts.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 5615
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/PERK_DESCRIPTIONS_0.1.16.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 6616
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/PERK_SIZE_AUDIT_20261010.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 11419
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/perk_size_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2782
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/pipboy_abi_evidence.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4094
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/POLISH_0.1.3.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2530
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/preservation.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 594
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/rank_distribution_verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 11303
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 21320
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/recipe_prices.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 2827
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/records_manifest.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 17376
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/Source/User/VCTP_Manager.psc",
+      "reason": "source/optional/original material",
+      "bytes": 11549
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/Source/User/VCTP_Native.psc",
+      "reason": "source/optional/original material",
+      "bytes": 774
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/verification.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 408
+    },
+    {
+      "path": "mods/Vault_customs_perks/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1795
+    },
+    {
+      "path": "mods/Vault_customs_scrapper/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 546
+    },
+    {
+      "path": "mods/Vault_customs_scrapper/Scripts/Source/User/Vault_customs_ScrapReturn.psc",
+      "reason": "source/optional/original material",
+      "bytes": 1785
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_by_race/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 297
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_by_race/meta.ini.bak_debrand",
+      "reason": "backup/debug/cache",
+      "bytes": 290
+    },
+    {
+      "path": "mods/Vault_customs_casing_tuning/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 222
+    },
+    {
+      "path": "mods/Vault_customs_casing_tuning/Vault_customs_casing_tuning.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 232
+    },
+    {
+      "path": "mods/Vault_customs_ragdoll_tuning/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 130
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/F4SE/Plugins/CorpseGuardF4.pdb",
+      "reason": "backup/debug/cache",
+      "bytes": 23310336
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/manifest.json",
+      "reason": "MO2 metadata or development document",
+      "bytes": 4313
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 299
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 46025
+    },
+    {
+      "path": "mods/Vault_customs_corpse_cleanup/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 274
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_tuning/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 255
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_tuning/Vault_customs_dismemberment_tuning.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 585
+    },
+    {
+      "path": "mods/Vault_customs_dismemberment_rules_robco/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 292
+    },
+    {
+      "path": "mods/Vault_customs_no_lock_difficulty_text/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1100
+    },
+    {
+      "path": "mods/Vault_customs_no_lock_difficulty_text/meta.ini.bak_profname",
+      "reason": "backup/debug/cache",
+      "bytes": 1098
+    },
+    {
+      "path": "mods/Vault_customs_no_lock_difficulty_text/Vault_customs_no_lock_difficulty_text.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 379
+    },
+    {
+      "path": "mods/Vault_customs_scrapheap_collision_fix/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 434
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 587
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/optional/reflection_dimmer/Textures/Shared/Cubemaps/mipblur_DefaultOutside1.dds",
+      "reason": "source/optional/original material",
+      "bytes": 524428
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/optional/street_lamp_sheen/Materials/SetDressing/StreetLamps/Prewar_ResidentialStreetLamp01.bgsm",
+      "reason": "source/optional/original material",
+      "bytes": 456
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/optional/street_lamp_sheen/Materials/SetDressing/StreetLamps/ResidentialStreetLamp01.bgsm",
+      "reason": "source/optional/original material",
+      "bytes": 469
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/optional/street_lamp_sheen/Materials/SetDressing/StreetLamps/StreetLamp02.bgsm",
+      "reason": "source/optional/original material",
+      "bytes": 402
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/optional/traffic_light_door_dark/Materials/SetDressing/TrafficLights/TrafficLightDoor01.bgem",
+      "reason": "source/optional/original material",
+      "bytes": 328
+    },
+    {
+      "path": "mods/Vault_customs_immersive_glass/README.txt",
+      "reason": "MO2 metadata or development document",
+      "bytes": 6175
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 307
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 14331
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Scripts/Source/User/Vault_customs_NotifyCtrl.psc",
+      "reason": "source/optional/original material",
+      "bytes": 2768
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Vault_customs_notification_control.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 390
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Vault_customs_notification_control.esp.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 397
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 209
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Scripts/Source/User/Vault_customs_UIColorSync.psc",
+      "reason": "source/optional/original material",
+      "bytes": 4297
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Vault_customs_ui_color_sync.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 410
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Vault_customs_ui_color_sync.esp.bak_rename",
+      "reason": "backup/debug/cache",
+      "bytes": 417
+    },
+    {
+      "path": "mods/Vault_customs_hide_companion_names/Interface/HUDMenu.swf.bak_sneakmsg",
+      "reason": "backup/debug/cache",
+      "bytes": 208133
+    },
+    {
+      "path": "mods/Vault_customs_hide_companion_names/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 391
+    },
+    {
+      "path": "mods/Vault_customs_workbench_dps_column/Interface/ExamineMenu.swf.bak_original",
+      "reason": "backup/debug/cache",
+      "bytes": 132796
+    },
+    {
+      "path": "mods/Vault_customs_workbench_dps_column/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 547
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 370
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_camera/Vault_customs_dialogue_camera.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 231
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu_root/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 439
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 1219
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/meta.ini.bak_review5_0976eb3d450243639d4e60b42c448aa8",
+      "reason": "backup/debug/cache",
+      "bytes": 1175
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/Vault_customs_workshop_menu_resort.esp.bak_r101_6246b647d0ee4cde8544868fa81b85e2",
+      "reason": "backup/debug/cache",
+      "bytes": 202738
+    },
+    {
+      "path": "mods/Vault_customs_workshop_menu/Vault_customs_workshop_menu_resort.esp.bak_review5_28f748e757444eff974af11475cdd684",
+      "reason": "backup/debug/cache",
+      "bytes": 208005
+    },
+    {
+      "path": "mods/Vault_customs_workshop_preview/Vault_customs_workshop_preview.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 914703
+    },
+    {
+      "path": "mods/Vault_customs_workshop_preview/Vault_customs_workshop_preview.esp.bak_r101_648747e0e8204d3da76a7536c86a774c",
+      "reason": "backup/debug/cache",
+      "bytes": 1488223
+    },
+    {
+      "path": "mods/Vault_customs_stove_preview/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 297
+    },
+    {
+      "path": "mods/Vault_customs_stove_preview/Vault_customs_stove_preview.esp.bak_cnam",
+      "reason": "backup/debug/cache",
+      "bytes": 414
+    },
+    {
+      "path": "mods/Vault_customs_backpack_stack/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 110
+    },
+    {
+      "path": "mods/Vault_customs_backpack_stack/README.md",
+      "reason": "MO2 metadata or development document",
+      "bytes": 14952
+    },
+    {
+      "path": "mods/Vault_customs_main_menu_deck/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 430
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_tree_guard/F4SE/Plugins/DialogueTreeGuardF4.pdb",
+      "reason": "backup/debug/cache",
+      "bytes": 15937536
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_tree_guard/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 232
+    },
+    {
+      "path": "mods/Vault_customs_workshop_stack_guard/meta.ini",
+      "reason": "MO2 metadata or development document",
+      "bytes": 459
+    }
+  ],
+  "sanitized": [
+    {
+      "path": "profiles/Vault customs RUS/fallout4.ini",
+      "reason": "relative screenshot path"
+    },
+    {
+      "path": "profiles/Vault customs RUS/fallout4custom.ini",
+      "reason": "relative screenshot path"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Vault_customs_VisibleFavoritesMCM.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_visible_favorites_mcm/Scripts/Vault_customs_VisibleFavoritesNative.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_enemy_level_floor/F4SE/Plugins/EnemyLevelFloorF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_wall_weapon_racks/Scripts/DLC05/WeaponRackScript.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_russian_strings_fix/Scripts/Vault_customs_WorkshopPopulation.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_place_mcm/Scripts/Vault_customs_PlaceMCM.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_lock_variants/F4SE/Plugins/LockVariantsF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_hydro_optics/F4SE/Plugins/HydroOpticsF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_weather_schedule/Scripts/Vault_customs_WeatherSchedule.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settlement_hardship/Scripts/Vault_customs_Hardship.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_auto_siren/Scripts/Vault_customs_AutoSiren.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Vault_customs_AttacksWhenPresent.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_attacks_when_present/Scripts/Vault_customs_MiniAttack.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_city_plan_notes/Scripts/Vault_customs_CityPlanNote.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/AliasHelperScript.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/CanarySaveFileMonitor.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Perks/PRKF_SettlerRename_Hotkey_01000ED6.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Perks/PRKF_SettlerRenamePerk_01000F99.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Quests/QF_RenameQuest_01000F9C.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/Fragments/Terminals/TERM_RenameConfigMenu_01000F9E.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/PlayerLoadGameListener.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameCompatScript.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameHotkeyEffect.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_settler_names/Scripts/Vault_customs_SettlerNames/RenameQuestScript.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/CoreFlashF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAAccessF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAConsumptionF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PAGearF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PARepairF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/F4SE/Plugins/PASprintF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/PowerArmorBatteryInsertScript.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_power_armor/Scripts/Vault_customs_PAClose.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Vault_customs_AshFade.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_burn_corpses/Scripts/Vault_customs_BurnCorpseTrigger.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/F4SE/Plugins/VaultPerksTestF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/VCTP_Manager.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_perks_test/Scripts/VCTP_Native.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_scrapper/Scripts/Vault_customs_ScrapReturn.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_corpse_guard/F4SE/Plugins/CorpseGuardF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_notification_control/Scripts/Vault_customs_NotifyCtrl.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_ui_color_sync/Scripts/Vault_customs_UIColorSync.pex",
+      "reason": "PEX header metadata"
+    },
+    {
+      "path": "mods/Vault_customs_backpack_stack/F4SE/Plugins/BackpackStackF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_main_menu_deck/F4SE/Plugins/MainMenuDeckF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_dialogue_tree_guard/F4SE/Plugins/DialogueTreeGuardF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_workshop_stack_guard/F4SE/Plugins/WorkshopStackGuardF4.dll",
+      "reason": "DLL diagnostic paths"
+    },
+    {
+      "path": "mods/Vault_customs_normal_finishers/F4SE/Plugins/NormalFinishersF4.dll",
+      "reason": "DLL diagnostic paths"
+    }
+  ],
+  "source_files_unchanged": true,
+  "runtime_tested": false,
+  "redistribution_rights_reviewed": false
+}

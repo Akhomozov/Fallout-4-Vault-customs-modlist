@@ -1,0 +1,50 @@
+$_TRANSLATION_THIS_LANGUAGE_NAME	Русский
+$MCM_Categorizer	Категории меню MCM
+$Default	По умолчанию
+$ON	ВКЛ
+$OFF	ВЫКЛ
+$mcmcIntro	Раскладывайте меню MCM по категориям перетаскиванием.
+$Settings	Настройки
+$Categorization_Settings	Настройки категорий
+$EnableCategorization	Включить разбиение на категории
+$Style	Оформление
+$MainList	Главный список MCM
+$Icons	Значки
+$Icons_help	Показывать значки в главном списке MCM: у категорий, модов и их подстраниц.
+$SmallifyList	Мельче строки списка
+$SmallifyList_help	Уменьшает высоту строки и сжимает список, чтобы на страницу помещалось больше пунктов.
+$CategoryTextPrefix	Префикс названия категории
+$CategoryTextPrefix_help	Если не нравятся значки, можно использовать текстовые пометки [+] и [-].
+$WrapCategoryName	Переносить название категории
+$WrapCategoryName_help	Обрамлять названия категорий символами, заданными ниже.
+$Before	До
+$After	После
+$Miscellaneous	Разное
+$CategoryPage	Страница категорий
+$CategoryPage_help	Показывать страницу категории при нажатии на неё.
+$CategorizerStartModsFolded	Начальное состояние категорий слева
+$CategorizerStartModsFolded_help	Каким будет начальное состояние свёртки в левой части редактора категорий.
+$CategorizerStartCatsFolded	Начальное состояние категорий справа
+$CategorizerStartCatsFolded_help	Каким будет начальное состояние свёртки в правой части редактора категорий.
+$MainAllowManyUnfolded	Разрешить несколько открытых папок
+$MainAllowManyUnfolded_help	Отменяет обычное поведение, когда при открытии одной категории или мода остальные закрываются.
+$MainStartFolded	Начальное состояние категорий
+$MainStartFolded_help	Каким будет начальное состояние свёртки категорий в главном списке.
+$Folded	Свёрнуто
+$Unfolded	Развёрнуто
+$Mods	Моды
+$SortByName	По алфавиту
+$SortByName_confirm	Отсортировать ВСЕ моды и категории по алфавиту?
+$ToggleFolding	Свернуть или развернуть
+$Categories	Категории
+$Add	Добавить
+$AddCategory	Добавить категорию
+$NewCategory_help	Добавить новую категорию
+$NewCategory_input	Введите название новой категории:
+$DeleteCategory_confirm	Точно удалить категорию?
+$DeleteCategory_help	Удаляет категорию, а все её моды переносит на верхний уровень.
+$RenameCategory_help	Переименовать категорию
+$RenameCategory_input	Введите новое название категории:
+$MoveToNewConfirm	Этот мод уже в категории. Перенести в новую?
+$SortCategory_help	Отсортировать моды в этой категории по алфавиту
+$RemoveModFromCategory_help	Убрать мод из категории
