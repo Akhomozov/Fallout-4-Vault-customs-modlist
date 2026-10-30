@@ -4,21 +4,191 @@
 
 В каталоге 840 позиций MO2 и 15 записей DLC/Creation Club. Разделители и выключенные моды не включены. Патчи, переводы и упакованные ресурсы перечислены отдельно от основных модов.
 
-Разделы взяты за основу из MO2 и расположены по смыслу: сначала игровые изменения, затем мир, поселения, интерфейс, графика, звук и техническая часть. Названия модов сохранены для поиска в менеджере; порядок каталога не является порядком загрузки.
+Разделы взяты за основу из MO2 и расположены по смыслу: сначала сюжет, локации и мир, затем игровые изменения, оружие и противники, поселения, интерфейс, графика, звук и техническая часть. Названия модов сохранены для поиска в менеджере; порядок каталога не является порядком загрузки.
 
 Для ресурсов внутри общих архивов указано место упаковки. Экспериментальные разработки отмечены в соответствующих строках. Назначение остальных позиций описано по установленным файлам, локальным метаданным и документации; включение позиции не означает, что все функции исходного мода активны.
 
 ## Содержание
 
+- [Сюжет локации и мир](#сюжет-локации-и-мир)
 - [Геймплей](#геймплей)
 - [Оружие броня и противники](#оружие-броня-и-противники)
-- [Сюжет локации и мир](#сюжет-локации-и-мир)
 - [Поселения и строительство](#поселения-и-строительство)
 - [Интерфейс и переводы](#интерфейс-и-переводы)
 - [Графика внешность и анимации](#графика-внешность-и-анимации)
 - [Звук музыка и радио](#звук-музыка-и-радио)
 - [Совместимость и техническая основа](#совместимость-и-техническая-основа)
 - [Официальные дополнения и Creation Club](#официальные-дополнения-и-creation-club)
+
+## Сюжет локации и мир
+
+### Дополнительные истории и фракции
+
+Раздел MO2: Quests and Content.
+
+- **Reinforcements and Retribution** — Добавляет вероятностные подкрепления противникам и отряды возмездия после зачисток.
+- **Random Encounter Framework - America Rising 2 - Legacy of the Enclave** — Включает события America Rising 2 в систему Random Encounter Framework.
+- **Diverse Enclave Immersion Pack** — Разнообразит рост персонажей Анклава из America Rising 2.
+- **Diverse Enclave - America Rising 2** — Увеличивает разнообразие лиц солдат и специалистов Анклава.
+- **America Rising 2 Lt Fritz Dismemberment Fix** — Исправляет расчленение модели лейтенанта Фрица из America Rising 2.
+- **Myers PA Fix for America Rising 2** — Не даёт Майерсу садиться в силовую броню и тем самым ломать его сюжетную сцену.
+- **Wasteland Wonderglue - FaceGen Edition - America Rising 2** — Готовые данные лиц персонажей America Rising 2 для корректного отображения голов.
+- **America Rising 2 - Legacy of the Enclave (archives removed)** — Большая сюжетная линия Анклава с персонажами, заданиями и локациями; используется в общей балансировке сборки.
+- **Shady Motives - eXoPatch** — Откладывает начало Shady Motives и исправляет награды, диалоги и отдельные предметы.
+- **Modding for Charity - Shady Motives - with Wes Johnson** — Озвученная история с новым спутником, подземельем, жильём и экипировкой.
+- **You And What Army 2** — Добавляет патрули минитменов и их присутствие на дорогах и у контролируемых мест.
+- **C.R.P Minutemen Radio Network - Creation Club X-02 Patch** — Согласует радиосеть минитменов с контентом Creation Club X-02.
+- **C.R.P Minutemen Radio Relay Network** — Позволяет минитменам занять и обустроить радиоретрансляторы Содружества.
+- **The Bleachers - Grass Floors Patch** — Устраняет пересечения травы с полами и постройками The Bleachers.
+- **The Bleachers - A Diamond City Story - Author's choice textures** — Текстуры, рекомендованные автором для оформления The Bleachers.
+- **The Bleachers - A Diamond City Story** — Добавляет район и сюжетные задания внутри Даймонд-сити.
+- **DLC Commentary for TFTC** — Спутники из Tales from the Commonwealth комментируют события дополнений.
+- **Tales from the Commonwealth - eXoPatch Radio Raider delayed** — Откладывает запуск истории Radio Raider из Tales from the Commonwealth.
+- **Tales from the Commonwealth - eXoPatch Radio Raider Signal** — Согласует радиосигнал, ведущий к истории Radio Raider.
+- **Tales from the Commonwealth - eXoPatch** — Набор исправлений, балансировки и условий запуска Tales from the Commonwealth.
+- **Tales from the Commonwealth Visual Fixes** — Исправляет визуальные ошибки объектов и персонажей Tales from the Commonwealth.
+- **Tales from the Commonwealth - UFO4P Patch** — Согласует Tales from the Commonwealth с неофициальным патчем игры.
+- **Tales from the Commonwealth** — Добавляет озвученные задания, встречных персонажей и спутников в Содружество.
+
+### Изменения заданий и встреч
+
+Раздел MO2: Vanilla Quest Changes.
+
+- **More Diamond City Bounties** — Расширяет набор заказов на доске объявлений Даймонд-сити.
+- **Diamond City Delayed - DCD** — Меняет условия знакомства с Даймонд-сити и запуска связанных событий.
+- **More Weathervanes** — Добавляет места для заданий Тома по размещению устройств на крышах.
+- **Cora and Her Family Actually Go to Diamond City** — Позволяет Коре и её семье действительно отправиться в Даймонд-сити после разговора.
+- **Riley Sticks Around** — Не даёт Райли бесследно исчезнуть после событий у входа в Даймонд-сити.
+- **Whisky's Minutemen Quest Tweaks** — Уменьшает поток повторяемых поручений минитменов и меняет условия отдельных заданий.
+- **Who's The General Patch Hub** — Согласует Who’s The General с остальными изменениями заданий минитменов.
+- **Who's The General - Minutemen Quest Cleanup** — Даёт больше контроля над выдачей поручений минитменов и уменьшает навязчивость Престона.
+- **No Quest Autostart - Vault-Tec** — Убирает автоматический запуск задания Vault-Tec Workshop.
+- **Subversion - Alternate Endings** — Добавляет альтернативные решения конфликтов Института и других основных фракций.
+- **Publick Occurrences Expanded - UFO4P Patch (DLC and Sim Settlements 2)** — Согласует дополнительные выпуски газеты Пайпер с UFO4P, DLC и SS2.
+- **Publick Occurrences Expanded** — Расширяет выпуски «Общественных событий», отражающие поступки и успехи героя.
+- **More Valid Locations for Radiant Quests** — Разрешает повторяемым заданиям использовать больше подходящих локаций.
+- **Keeper of the Commonwealth Radiants** — Удерживает повторяемые задания Содружества в его пределах вместо отправки в дополнения.
+- **Integrated Addons - Community Fixes Merged Patch** — Согласует Integrated Addons с Community Fixes Merged.
+- **Integrated Addons** — Встраивает контент дополнений в мир через встречи и находки, уменьшая автоматическую выдачу заданий.
+- **No Quest Autostart - BoS Fire Support** — Убирает автоматический запуск «Огневой поддержки» при знакомстве с радиосигналом Братства.
+- **No Quest Autostart - Far Harbor** — Откладывает автоматическую выдачу вводного задания Фар-Харбора.
+- **No Quest Autostart - Nuka World** — Откладывает автоматическую выдачу вводного задания Ядер-Мира.
+- **Random Encounter Framework Patch Hub** — Патчи совместимости добавленных случайных встреч с системой Random Encounter Framework.
+- **Decreased Automatron Bullshit Encounters and Minor Rust Devil Tweaks** — Уменьшает чрезмерную частоту встреч Automatron и корректирует Ржавых Дьяволов.
+- **Vault_customs_cep_encounter_trim** — Убирает 11 выбранных встреч Commonwealth Encounter Pack, не подходящих концепции сборки.
+- **Commonwealth Encounter Pack** — Добавляет случайные столкновения и небольшие события при путешествиях по Содружеству.
+
+### Подземелья и небольшие истории
+
+Раздел MO2: Locations - Dungeons.
+
+- **Vault_customs_vault113_no_perk** — Отключает дополнительный перк из Убежища 113, сохраняя саму локацию и книгу.
+- **Vault 113** — Добавляет подземелье Убежище 113; его отдельный бонус-перк в сборке отключён нашей правкой.
+- **The Roadside Repository** — Добавляет спрятанное довоенное жилище игрока в Малдене.
+- **Subterranean Skirmish** — Добавляет подземную локацию с боевыми столкновениями в городской части Бостона.
+- **Hoistway Hideaway** — Небольшая скрытая локация, связанная с историей пропавшего патруля Братства.
+- **Rusty Subway Ashland Station Textures 2048x2048** — Ржавые текстуры метро для Ashland Station в разрешении 2K.
+- **Ashland Station - Quest-Dungeon-Settlement (RustyTextures Repacked)** — Новая станция метро с заданиями, подземельем и возможностью основать поселение.
+- **The Wild Key Chase - Quest and Location mod** — Цепочка поисков ключей и подсказок, ведущая через несколько новых локаций.
+- **More Railroad Tunnels - A Small Dungeon** — Дополнительные тоннели и небольшое подземелье рядом с тематикой Подземки.
+- **Radiant Redundance - Poseidon Offices - Accessible Bridges** — Согласует входы и окружение офиса «Посейдона» с Accessible Bridges.
+- **Radiant Redundance - Poseidon Offices** — Добавляет исследуемый офис «Посейдона» как дополнительное место для заданий.
+- **The Mannequin Cult** — Добавляет станцию метро, занятую культом манекенов, и связанные с ней предметы.
+- **Subway Runner - Revival** — Соединяет районы сетью исследуемых тоннелей метро; установлена исправленная редакция Revival.
+
+### Новые интерьеры и обустройство районов
+
+Раздел MO2: Locations.
+
+- **Landwer Interiors Project** — Дополнительные доступные интерьеры в зданиях Содружества.
+- **Bunker Stories** — Небольшие истории и сцены в бункерах, раскрываемые через обстановку и находки.
+- **Boston Unsealed and More (B.U.M.)** — Открывает новые небольшие места для исследования в Бостоне и Содружестве.
+- **People Live In - Federal Ration Stockpile** — Обставляет Федеральный продовольственный склад как постоянно обитаемую базу рейдеров.
+- **People Live In - Roadside Pines Motel** — Дополняет рейдерское жильё, укрепления и обстановку мотеля «Придорожные сосны».
+- **People Live In Dark Hollows Pond - A Forest Patch** — Устраняет пересечения деревьев A Forest с изменённым прудом «Тёмная лощина».
+- **People Live In - Dark Hollow Pond** — Добавляет жилище и бытовые детали у пруда «Тёмная лощина».
+- **4estGimp - South of the Sea and Minuteman Watchtowers (Redux) Patch** — Согласует положение башен минитменов с South of the Sea.
+- **Minuteman Watchtowers** — Добавляет наблюдательные башни минитменов, места обзора и добычу.
+- **Concord Resurrected - No Longer A Ghost Town** — Дополняет Конкорд местами и деталями, делающими его менее пустым.
+- **Accessible Bridges** — Добавляет удобные проходы по мостам и исправляет связанные маршруты персонажей.
+- **Acadia Survival Tweaks (Far Harbor)** — Дополняет Акадию бытовыми удобствами для временной базы в режиме выживания.
+- **Whisper's Workbench Storage** — Добавляет хранилища при верстаках в общественных и фракционных местах.
+- **People Live In - Harbormaster Hotel** — Обставляет отель «Харбормастер» как обитаемую рейдерскую базу.
+- **People Live In - Unmarked Raider Camps Pack 2** — Второй набор бытовых деталей и обстановки безымянных рейдерских лагерей.
+- **People Live In - Unmarked Raider Camps Pack 1** — Первый набор обжитых безымянных рейдерских лагерей.
+- **Lush But Not Green - Autumn In Goodneighbor - Trees and Leaves** — Добавляет в Добрососедство деревья и листву в осенней палитре.
+- **Goodneighbor View** — Согласует внешний вид Добрососедства при взгляде изнутри и снаружи.
+- **Lush But Not Green - Diamond City Edition** — Добавляет растительность в Даймонд-сити без превращения города в ярко-зелёный сад.
+- **Diamond City Lights** — Добавляет видимые издалека прожекторы Даймонд-сити.
+- **Diamond City Billboards** — Согласует щиты и детали стадиона между внутренним и внешним видом Даймонд-сити.
+- **Diamond City Auto Close Gate** — Автоматически закрывает ворота Даймонд-сити после ухода; их можно снова открыть при возвращении.
+- **Diamond City Supplements** — Заполняет пустые трибуны стадиона дополнительными постройками.
+- **Vanilla Locations Plus** — Добавляет исследуемые интерьеры в несколько прежде почти пустых ванильных мест.
+- **Jurttu's Interiors - Nuka-World** — Новые подземелья на окраинах Ядер-Мира.
+- **Jurttu's Interiors - Far Harbor** — Дополнительные интерьеры и места для исследования на Фар-Харборе.
+- **Jurttu's Interiors** — Набор новых исследуемых интерьеров в Содружестве.
+- **Jurttu's Mods Shared Assets** — Общие модели и другие ресурсы для локаций Jurttu; самостоятельно мест не добавляет.
+- **Bradberton Interiors** — Несколько новых интерьеров Брэдбертона с поиском подсказок и сражениями.
+- **The Beantown Interiors Project** — Открывает множество прежде закрытых зданий Бостона для исследования и поиска добычи.
+- **TG'z East Boston Interiors** — Дополнительные интерьеры в Восточном Бостоне, рядом с аэропортом.
+- **TG'z Cambridge Interiors** — Дополнительные интерьеры в Кембридже.
+- **TG'z Fens Interiors** — Дополнительные интерьеры в районе Фенс.
+- **Stumble Upon Interiors** — Небольшие новые интерьеры: заброшенные заведения, бары и другие места.
+- **Beantown Interiors - Inside Jobs - Bobs Beer and Bait** — Согласует локацию Bob’s Beer and Bait между Beantown Interiors и Inside Jobs.
+- **Inside Jobs - Commonwealth Interiors Add-On** — Делает доступной часть заколоченных зданий и добавляет их внутреннюю обстановку.
+- **Commonwealth Wilderness Overhaul** — Дополняет пустошь небольшими сценами, предметами и деталями окружения.
+- **The Rooftops - For Jumpers and Snipers** — Добавляет доступные крыши и новые пути над улицами Бостона.
+
+### Обжитые интерьеры и их совместимость
+
+Раздел MO2: Previs - Interiors.
+
+- **Peabody House PRP Compatibility** — Согласует дом Пибоди с оптимизацией видимости PRP.
+- **Nai's Goodneighbor Overhaul and Player Home (Cleaned and Tweaked)** — Дополняет Добрососедство и добавляет оформленный дом игрока; используется очищенная редакция сборки.
+- **Diamond City Vendor Clutter - Lite** — Сокращает наружный декор торговых мест Даймонд-сити ради производительности.
+- **Diamond City Vendor Clutter** — Обставляет торговые места Даймонд-сити товарами и бытовыми деталями.
+- **Better Third Rail - PATCH Pre-Vis and Navmesh** — Исправляет видимость объектов и маршруты NPC в переработанном «Третьем рельсе».
+- **Yet Another Prydwen Overhaul (no cambridge edits version)** — Переоформляет «Придвен»; установлен вариант без изменений Кембриджского полицейского участка.
+- **Previs - People Live In - USAF Satellite Station Olivia** — Данные оптимизированной видимости для обжитой станции «Оливия».
+- **People Live In - USAF Satellite Station Olivia** — Добавляет обстановку и следы жизни рейдеров на спутниковой станции «Оливия».
+- **NoRespawns - Home Plate Decorated (cleaned)** — Готовое оформление Хоум-Плейт с мебелью, водой и местом приготовления еды.
+- **Aloot's Better Cambridge Police Station** — Делает Кембриджский полицейский участок более обустроенной базой Братства.
+- **Bobblehead Stand Fix - Faction Housing Overhaul - AIO** — Восстанавливает недостающие текстуры подставок для пупсов в фракционном жилье.
+- **Faction Housing Overhaul - All In One** — Переоформляет комнаты игрока у фракций и добавляет недостающее жильё.
+
+### Изменённые районы и их совместимость
+
+Раздел MO2: PreVis-Cell Edits - Exteriors.
+
+- **Restore Worldspace Environment Maps** — Восстанавливает карты отражений окружения, в том числе для мокрых поверхностей.
+- **Show No Mercy - Fort Strong Expansion** — Расширяет Форт-Стронг укреплениями, обстановкой и дополнительными возможностями после зачистки.
+- **People Live In - Roadside Pines Motel Patch Hub** — Патчи совместимости обжитого мотеля «Придорожные сосны» с другими изменениями локации.
+- **PRP - People Live In - Roadside Pines Motel** — Согласует мотель «Придорожные сосны» с оптимизацией PRP.
+- **PRP - People Live In - Dark Hollow Pond** — Согласует обжитый пруд «Тёмная лощина» с оптимизацией PRP.
+- **South of the Sea Atom's Storm - Minuteman Watchtowers - You and What army 2 Patch** — Устраняет пересечения изменений South of the Sea, башен минитменов и их патрулей.
+- **South of the Sea - Atomic Embrace** — Дополняет и корректирует экипировку Детей Атома из South of the Sea.
+- **South of the Sea - Atom's Storm** — Добавляет места, подземелья и истории в Светящемся море и прилегающих районах.
+- **The Beantown Interiors Project - Precombined Visibility Patches** — Данные видимости для дополнительных интерьеров Beantown Interiors.
+- **Tales from the Commonwealth - Precombined Visibility Patch** — Данные видимости для мест, изменённых Tales from the Commonwealth.
+- **PRP - America Rising 2 - Legacy of the Enclave** — Согласует America Rising 2 с оптимизацией PRP.
+
+### Окружение и детали мира
+
+Раздел MO2: World.
+
+- **Grass Reworked** — Убирает траву с неподходящих поверхностей: дорог, камней, мусора и других покрытий.
+- **See region names on your save files** — Показывает более точные названия районов в подписях сохранений.
+- **Random Inner City** — Случайно расставляет городские заграждения и лагеря, меняя привычные проходы и маршруты между кварталами.
+- **Ownership Fixes** — Исправляет ошибочную принадлежность вещей: где кража должна считаться кражей, а где предмет заброшен.
+- **Glowing Sea Grass** — Добавляет растительность в Светящееся море.
+- **True Grass (repacked and pruned)** — Перерабатывает траву и низкую растительность; ресурсы в сборке перепакованы и сокращены.
+- **Town Line Signs** — Добавляет дорожные таблички на границах городов и населённых пунктов.
+- **The Fungal Forest** — Добавляет крупные грибы и грибные заросли в подходящих районах мира.
+- **A Forest - Marshland Border Fix** — Исправляет границы болотной растительности при использовании A Forest.
+- **A Forest 0.8 (Repacked and pruned textures)** — Добавляет густой лес и растения в Содружество; используется облегчённая упаковка текстур.
+- **Immersive Candles - Better Third Rail Patch** — Переставляет свечи под новую обстановку бара «Третий рельс».
+- **Immersive Candles** — Добавляет анимированное пламя свечей; в сборке используется с патчами видимости и размещения.
+
 
 ## Геймплей
 
@@ -281,176 +451,6 @@
 - **Capital Wasteland Bobbleheads and Mojave Snow Globes** — Добавляет коллекционные фигурки Столичной Пустоши и снежные шары Мохаве.
 - **Random Valuables Redux - Reduced Valuables** — Уменьшает количество ценностей, добавленных Random Valuables Redux.
 - **Random Valuables Redux - BeantownInteriors Disable Mags** — Убирает дублирующее размещение журналов при совместном использовании Random Valuables и Beantown Interiors.
-
-
-## Сюжет локации и мир
-
-### Дополнительные истории и фракции
-
-Раздел MO2: Quests and Content.
-
-- **Reinforcements and Retribution** — Добавляет вероятностные подкрепления противникам и отряды возмездия после зачисток.
-- **Random Encounter Framework - America Rising 2 - Legacy of the Enclave** — Включает события America Rising 2 в систему Random Encounter Framework.
-- **Diverse Enclave Immersion Pack** — Разнообразит рост персонажей Анклава из America Rising 2.
-- **Diverse Enclave - America Rising 2** — Увеличивает разнообразие лиц солдат и специалистов Анклава.
-- **America Rising 2 Lt Fritz Dismemberment Fix** — Исправляет расчленение модели лейтенанта Фрица из America Rising 2.
-- **Myers PA Fix for America Rising 2** — Не даёт Майерсу садиться в силовую броню и тем самым ломать его сюжетную сцену.
-- **Wasteland Wonderglue - FaceGen Edition - America Rising 2** — Готовые данные лиц персонажей America Rising 2 для корректного отображения голов.
-- **America Rising 2 - Legacy of the Enclave (archives removed)** — Большая сюжетная линия Анклава с персонажами, заданиями и локациями; используется в общей балансировке сборки.
-- **Shady Motives - eXoPatch** — Откладывает начало Shady Motives и исправляет награды, диалоги и отдельные предметы.
-- **Modding for Charity - Shady Motives - with Wes Johnson** — Озвученная история с новым спутником, подземельем, жильём и экипировкой.
-- **You And What Army 2** — Добавляет патрули минитменов и их присутствие на дорогах и у контролируемых мест.
-- **C.R.P Minutemen Radio Network - Creation Club X-02 Patch** — Согласует радиосеть минитменов с контентом Creation Club X-02.
-- **C.R.P Minutemen Radio Relay Network** — Позволяет минитменам занять и обустроить радиоретрансляторы Содружества.
-- **The Bleachers - Grass Floors Patch** — Устраняет пересечения травы с полами и постройками The Bleachers.
-- **The Bleachers - A Diamond City Story - Author's choice textures** — Текстуры, рекомендованные автором для оформления The Bleachers.
-- **The Bleachers - A Diamond City Story** — Добавляет район и сюжетные задания внутри Даймонд-сити.
-- **DLC Commentary for TFTC** — Спутники из Tales from the Commonwealth комментируют события дополнений.
-- **Tales from the Commonwealth - eXoPatch Radio Raider delayed** — Откладывает запуск истории Radio Raider из Tales from the Commonwealth.
-- **Tales from the Commonwealth - eXoPatch Radio Raider Signal** — Согласует радиосигнал, ведущий к истории Radio Raider.
-- **Tales from the Commonwealth - eXoPatch** — Набор исправлений, балансировки и условий запуска Tales from the Commonwealth.
-- **Tales from the Commonwealth Visual Fixes** — Исправляет визуальные ошибки объектов и персонажей Tales from the Commonwealth.
-- **Tales from the Commonwealth - UFO4P Patch** — Согласует Tales from the Commonwealth с неофициальным патчем игры.
-- **Tales from the Commonwealth** — Добавляет озвученные задания, встречных персонажей и спутников в Содружество.
-
-### Изменения заданий и встреч
-
-Раздел MO2: Vanilla Quest Changes.
-
-- **More Diamond City Bounties** — Расширяет набор заказов на доске объявлений Даймонд-сити.
-- **Diamond City Delayed - DCD** — Меняет условия знакомства с Даймонд-сити и запуска связанных событий.
-- **More Weathervanes** — Добавляет места для заданий Тома по размещению устройств на крышах.
-- **Cora and Her Family Actually Go to Diamond City** — Позволяет Коре и её семье действительно отправиться в Даймонд-сити после разговора.
-- **Riley Sticks Around** — Не даёт Райли бесследно исчезнуть после событий у входа в Даймонд-сити.
-- **Whisky's Minutemen Quest Tweaks** — Уменьшает поток повторяемых поручений минитменов и меняет условия отдельных заданий.
-- **Who's The General Patch Hub** — Согласует Who’s The General с остальными изменениями заданий минитменов.
-- **Who's The General - Minutemen Quest Cleanup** — Даёт больше контроля над выдачей поручений минитменов и уменьшает навязчивость Престона.
-- **No Quest Autostart - Vault-Tec** — Убирает автоматический запуск задания Vault-Tec Workshop.
-- **Subversion - Alternate Endings** — Добавляет альтернативные решения конфликтов Института и других основных фракций.
-- **Publick Occurrences Expanded - UFO4P Patch (DLC and Sim Settlements 2)** — Согласует дополнительные выпуски газеты Пайпер с UFO4P, DLC и SS2.
-- **Publick Occurrences Expanded** — Расширяет выпуски «Общественных событий», отражающие поступки и успехи героя.
-- **More Valid Locations for Radiant Quests** — Разрешает повторяемым заданиям использовать больше подходящих локаций.
-- **Keeper of the Commonwealth Radiants** — Удерживает повторяемые задания Содружества в его пределах вместо отправки в дополнения.
-- **Integrated Addons - Community Fixes Merged Patch** — Согласует Integrated Addons с Community Fixes Merged.
-- **Integrated Addons** — Встраивает контент дополнений в мир через встречи и находки, уменьшая автоматическую выдачу заданий.
-- **No Quest Autostart - BoS Fire Support** — Убирает автоматический запуск «Огневой поддержки» при знакомстве с радиосигналом Братства.
-- **No Quest Autostart - Far Harbor** — Откладывает автоматическую выдачу вводного задания Фар-Харбора.
-- **No Quest Autostart - Nuka World** — Откладывает автоматическую выдачу вводного задания Ядер-Мира.
-- **Random Encounter Framework Patch Hub** — Патчи совместимости добавленных случайных встреч с системой Random Encounter Framework.
-- **Decreased Automatron Bullshit Encounters and Minor Rust Devil Tweaks** — Уменьшает чрезмерную частоту встреч Automatron и корректирует Ржавых Дьяволов.
-- **Vault_customs_cep_encounter_trim** — Убирает 11 выбранных встреч Commonwealth Encounter Pack, не подходящих концепции сборки.
-- **Commonwealth Encounter Pack** — Добавляет случайные столкновения и небольшие события при путешествиях по Содружеству.
-
-### Подземелья и небольшие истории
-
-Раздел MO2: Locations - Dungeons.
-
-- **Vault_customs_vault113_no_perk** — Отключает дополнительный перк из Убежища 113, сохраняя саму локацию и книгу.
-- **Vault 113** — Добавляет подземелье Убежище 113; его отдельный бонус-перк в сборке отключён нашей правкой.
-- **The Roadside Repository** — Добавляет спрятанное довоенное жилище игрока в Малдене.
-- **Subterranean Skirmish** — Добавляет подземную локацию с боевыми столкновениями в городской части Бостона.
-- **Hoistway Hideaway** — Небольшая скрытая локация, связанная с историей пропавшего патруля Братства.
-- **Rusty Subway Ashland Station Textures 2048x2048** — Ржавые текстуры метро для Ashland Station в разрешении 2K.
-- **Ashland Station - Quest-Dungeon-Settlement (RustyTextures Repacked)** — Новая станция метро с заданиями, подземельем и возможностью основать поселение.
-- **The Wild Key Chase - Quest and Location mod** — Цепочка поисков ключей и подсказок, ведущая через несколько новых локаций.
-- **More Railroad Tunnels - A Small Dungeon** — Дополнительные тоннели и небольшое подземелье рядом с тематикой Подземки.
-- **Radiant Redundance - Poseidon Offices - Accessible Bridges** — Согласует входы и окружение офиса «Посейдона» с Accessible Bridges.
-- **Radiant Redundance - Poseidon Offices** — Добавляет исследуемый офис «Посейдона» как дополнительное место для заданий.
-- **The Mannequin Cult** — Добавляет станцию метро, занятую культом манекенов, и связанные с ней предметы.
-- **Subway Runner - Revival** — Соединяет районы сетью исследуемых тоннелей метро; установлена исправленная редакция Revival.
-
-### Новые интерьеры и обустройство районов
-
-Раздел MO2: Locations.
-
-- **Landwer Interiors Project** — Дополнительные доступные интерьеры в зданиях Содружества.
-- **Bunker Stories** — Небольшие истории и сцены в бункерах, раскрываемые через обстановку и находки.
-- **Boston Unsealed and More (B.U.M.)** — Открывает новые небольшие места для исследования в Бостоне и Содружестве.
-- **People Live In - Federal Ration Stockpile** — Обставляет Федеральный продовольственный склад как постоянно обитаемую базу рейдеров.
-- **People Live In - Roadside Pines Motel** — Дополняет рейдерское жильё, укрепления и обстановку мотеля «Придорожные сосны».
-- **People Live In Dark Hollows Pond - A Forest Patch** — Устраняет пересечения деревьев A Forest с изменённым прудом «Тёмная лощина».
-- **People Live In - Dark Hollow Pond** — Добавляет жилище и бытовые детали у пруда «Тёмная лощина».
-- **4estGimp - South of the Sea and Minuteman Watchtowers (Redux) Patch** — Согласует положение башен минитменов с South of the Sea.
-- **Minuteman Watchtowers** — Добавляет наблюдательные башни минитменов, места обзора и добычу.
-- **Concord Resurrected - No Longer A Ghost Town** — Дополняет Конкорд местами и деталями, делающими его менее пустым.
-- **Accessible Bridges** — Добавляет удобные проходы по мостам и исправляет связанные маршруты персонажей.
-- **Acadia Survival Tweaks (Far Harbor)** — Дополняет Акадию бытовыми удобствами для временной базы в режиме выживания.
-- **Whisper's Workbench Storage** — Добавляет хранилища при верстаках в общественных и фракционных местах.
-- **People Live In - Harbormaster Hotel** — Обставляет отель «Харбормастер» как обитаемую рейдерскую базу.
-- **People Live In - Unmarked Raider Camps Pack 2** — Второй набор бытовых деталей и обстановки безымянных рейдерских лагерей.
-- **People Live In - Unmarked Raider Camps Pack 1** — Первый набор обжитых безымянных рейдерских лагерей.
-- **Lush But Not Green - Autumn In Goodneighbor - Trees and Leaves** — Добавляет в Добрососедство деревья и листву в осенней палитре.
-- **Goodneighbor View** — Согласует внешний вид Добрососедства при взгляде изнутри и снаружи.
-- **Lush But Not Green - Diamond City Edition** — Добавляет растительность в Даймонд-сити без превращения города в ярко-зелёный сад.
-- **Diamond City Lights** — Добавляет видимые издалека прожекторы Даймонд-сити.
-- **Diamond City Billboards** — Согласует щиты и детали стадиона между внутренним и внешним видом Даймонд-сити.
-- **Diamond City Auto Close Gate** — Автоматически закрывает ворота Даймонд-сити после ухода; их можно снова открыть при возвращении.
-- **Diamond City Supplements** — Заполняет пустые трибуны стадиона дополнительными постройками.
-- **Vanilla Locations Plus** — Добавляет исследуемые интерьеры в несколько прежде почти пустых ванильных мест.
-- **Jurttu's Interiors - Nuka-World** — Новые подземелья на окраинах Ядер-Мира.
-- **Jurttu's Interiors - Far Harbor** — Дополнительные интерьеры и места для исследования на Фар-Харборе.
-- **Jurttu's Interiors** — Набор новых исследуемых интерьеров в Содружестве.
-- **Jurttu's Mods Shared Assets** — Общие модели и другие ресурсы для локаций Jurttu; самостоятельно мест не добавляет.
-- **Bradberton Interiors** — Несколько новых интерьеров Брэдбертона с поиском подсказок и сражениями.
-- **The Beantown Interiors Project** — Открывает множество прежде закрытых зданий Бостона для исследования и поиска добычи.
-- **TG'z East Boston Interiors** — Дополнительные интерьеры в Восточном Бостоне, рядом с аэропортом.
-- **TG'z Cambridge Interiors** — Дополнительные интерьеры в Кембридже.
-- **TG'z Fens Interiors** — Дополнительные интерьеры в районе Фенс.
-- **Stumble Upon Interiors** — Небольшие новые интерьеры: заброшенные заведения, бары и другие места.
-- **Beantown Interiors - Inside Jobs - Bobs Beer and Bait** — Согласует локацию Bob’s Beer and Bait между Beantown Interiors и Inside Jobs.
-- **Inside Jobs - Commonwealth Interiors Add-On** — Делает доступной часть заколоченных зданий и добавляет их внутреннюю обстановку.
-- **Commonwealth Wilderness Overhaul** — Дополняет пустошь небольшими сценами, предметами и деталями окружения.
-- **The Rooftops - For Jumpers and Snipers** — Добавляет доступные крыши и новые пути над улицами Бостона.
-
-### Обжитые интерьеры и их совместимость
-
-Раздел MO2: Previs - Interiors.
-
-- **Peabody House PRP Compatibility** — Согласует дом Пибоди с оптимизацией видимости PRP.
-- **Nai's Goodneighbor Overhaul and Player Home (Cleaned and Tweaked)** — Дополняет Добрососедство и добавляет оформленный дом игрока; используется очищенная редакция сборки.
-- **Diamond City Vendor Clutter - Lite** — Сокращает наружный декор торговых мест Даймонд-сити ради производительности.
-- **Diamond City Vendor Clutter** — Обставляет торговые места Даймонд-сити товарами и бытовыми деталями.
-- **Better Third Rail - PATCH Pre-Vis and Navmesh** — Исправляет видимость объектов и маршруты NPC в переработанном «Третьем рельсе».
-- **Yet Another Prydwen Overhaul (no cambridge edits version)** — Переоформляет «Придвен»; установлен вариант без изменений Кембриджского полицейского участка.
-- **Previs - People Live In - USAF Satellite Station Olivia** — Данные оптимизированной видимости для обжитой станции «Оливия».
-- **People Live In - USAF Satellite Station Olivia** — Добавляет обстановку и следы жизни рейдеров на спутниковой станции «Оливия».
-- **NoRespawns - Home Plate Decorated (cleaned)** — Готовое оформление Хоум-Плейт с мебелью, водой и местом приготовления еды.
-- **Aloot's Better Cambridge Police Station** — Делает Кембриджский полицейский участок более обустроенной базой Братства.
-- **Bobblehead Stand Fix - Faction Housing Overhaul - AIO** — Восстанавливает недостающие текстуры подставок для пупсов в фракционном жилье.
-- **Faction Housing Overhaul - All In One** — Переоформляет комнаты игрока у фракций и добавляет недостающее жильё.
-
-### Изменённые районы и их совместимость
-
-Раздел MO2: PreVis-Cell Edits - Exteriors.
-
-- **Restore Worldspace Environment Maps** — Восстанавливает карты отражений окружения, в том числе для мокрых поверхностей.
-- **Show No Mercy - Fort Strong Expansion** — Расширяет Форт-Стронг укреплениями, обстановкой и дополнительными возможностями после зачистки.
-- **People Live In - Roadside Pines Motel Patch Hub** — Патчи совместимости обжитого мотеля «Придорожные сосны» с другими изменениями локации.
-- **PRP - People Live In - Roadside Pines Motel** — Согласует мотель «Придорожные сосны» с оптимизацией PRP.
-- **PRP - People Live In - Dark Hollow Pond** — Согласует обжитый пруд «Тёмная лощина» с оптимизацией PRP.
-- **South of the Sea Atom's Storm - Minuteman Watchtowers - You and What army 2 Patch** — Устраняет пересечения изменений South of the Sea, башен минитменов и их патрулей.
-- **South of the Sea - Atomic Embrace** — Дополняет и корректирует экипировку Детей Атома из South of the Sea.
-- **South of the Sea - Atom's Storm** — Добавляет места, подземелья и истории в Светящемся море и прилегающих районах.
-- **The Beantown Interiors Project - Precombined Visibility Patches** — Данные видимости для дополнительных интерьеров Beantown Interiors.
-- **Tales from the Commonwealth - Precombined Visibility Patch** — Данные видимости для мест, изменённых Tales from the Commonwealth.
-- **PRP - America Rising 2 - Legacy of the Enclave** — Согласует America Rising 2 с оптимизацией PRP.
-
-### Окружение и детали мира
-
-Раздел MO2: World.
-
-- **Grass Reworked** — Убирает траву с неподходящих поверхностей: дорог, камней, мусора и других покрытий.
-- **See region names on your save files** — Показывает более точные названия районов в подписях сохранений.
-- **Random Inner City** — Случайно расставляет городские заграждения и лагеря, меняя привычные проходы и маршруты между кварталами.
-- **Ownership Fixes** — Исправляет ошибочную принадлежность вещей: где кража должна считаться кражей, а где предмет заброшен.
-- **Glowing Sea Grass** — Добавляет растительность в Светящееся море.
-- **True Grass (repacked and pruned)** — Перерабатывает траву и низкую растительность; ресурсы в сборке перепакованы и сокращены.
-- **Town Line Signs** — Добавляет дорожные таблички на границах городов и населённых пунктов.
-- **The Fungal Forest** — Добавляет крупные грибы и грибные заросли в подходящих районах мира.
-- **A Forest - Marshland Border Fix** — Исправляет границы болотной растительности при использовании A Forest.
-- **A Forest 0.8 (Repacked and pruned textures)** — Добавляет густой лес и растения в Содружество; используется облегчённая упаковка текстур.
-- **Immersive Candles - Better Third Rail Patch** — Переставляет свечи под новую обстановку бара «Третий рельс».
-- **Immersive Candles** — Добавляет анимированное пламя свечей; в сборке используется с патчами видимости и размещения.
 
 
 ## Поселения и строительство
